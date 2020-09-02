@@ -7,12 +7,23 @@
  * @subpackage utresponsive
  */
 
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<?php  get_template_part( 'template-parts/part-head' ); ?>
 
-get_header();
+<body <?php body_class(); ?>>
+<?php
+  wp_body_open();
+  $menu_type = get_theme_mod( 'menu_type' );
+  ?>
+  <a class="sr-only sr-only-focusable" href="#primary"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
+  <?php
+  get_template_part( 'template-parts/region-headsearch' );
 ?>
 
-  	<div class="container-fluid pt-5">
-	   <main id="primary">
+  	<div class="container-fluid">
+	   <main id="primary" class="row">
   		<?php
   		while ( have_posts() ) :
   			the_post();

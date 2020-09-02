@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer container-fluid">
   	<div class="row">
   		<div class="site-info col">
   				<p class="h5"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
@@ -28,10 +28,10 @@
 <div class="container-fluid">
   <div class="row bg-smokey pt-3">
     <div class="col-12 col-md-6">
-    <?php   get_template_part( 'template-parts/footer_logo' ); ?>
+    <?php   get_template_part( 'template-parts/style-footer-logo' ); ?>
     </div>
     <div class="col-12 col-md-6">
-      <p class="text-white small">The University of Tennessee, Knoxville, Knoxville, Tennessee 37996, 865-974-1000</p>
+      <p class="text-white small">The University of Tennessee, Knoxville<br>Knoxville, Tennessee 37996, 865-974-1000</p>
       <p class="text-white small">The flagship campus of the University of Tennessee System and partner in the Tennessee Transfer Pathway.</p>
       <p class="text-white small"><a>EEO</a>. <a>Legal</a>. <a>Privacy</a>. <a>Accessibility</a>.</p>
     </div> 
