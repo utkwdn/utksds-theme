@@ -65,3 +65,4 @@ add_action( 'customize_preview_init', 'ut_ds_customize_preview_js' );
 
 // UTK Customizer
 require_once ( get_template_directory() . '/inc/functions/utk-customizer-menu.php' );
+require_once ( get_template_directory() . '/inc/functions/utk-customizer-meta.php' );

@@ -19,14 +19,23 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) :
+
+    $meta_publisheddate = get_theme_mod( 'meta_publisheddate' );
+    $meta_tax = get_theme_mod( 'meta_tax' );
+    $meta_byline = get_theme_mod( 'meta_byline' );
+    $meta_excerpt = get_theme_mod( 'meta_excerpt' );
 			?>
 			<div class="entry-meta">
 				<?php
-				ut_ds_posted_on();
-				ut_ds_posted_by();
+  				if ($meta_publisheddate != "hide") { 
+	    			ut_ds_posted_on();
+	    	  };
+  				if ($meta_byline != "hide") { 
+    				ut_ds_posted_by();
+    		  };
 				?>
 			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<?php	 endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php ut_ds_post_thumbnail(); ?>
@@ -49,26 +58,39 @@
   			)
   		);
 		else :
-		the_excerpt(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="sr-only"> "%s"</span>', 'ut-ds' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+      if ($meta_excerpt != "content") : 
+  		
+    		the_excerpt(
+    			sprintf(
+    				wp_kses(
+    					/* translators: %s: Name of current post. Only visible to screen readers */
+    					__( 'Continue reading<span class="sr-only"> "%s"</span>', 'ut-ds' ),
+    					array(
+    						'span' => array(
+    							'class' => array(),
+    						),
+    					)
+    				),
+    				wp_kses_post( get_the_title() )
+    			)
+    		);
+  		else :
+    		the_content(
+  			sprintf(
+  				wp_kses(
+  					/* translators: %s: Name of current post. Only visible to screen readers */
+  					__( 'Continue reading<span class="sr-only"> "%s"</span>', 'ut-ds' ),
+  					array(
+  						'span' => array(
+  							'class' => array(),
+  						),
+  					)
+  				),
+  				wp_kses_post( get_the_title() )
+  			)
+  			);
+  		endif;
 		endif;
-
-
-
-
-
 		wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ut-ds' ),
@@ -77,9 +99,10 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php ut_ds_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+  <?php if ($meta_tax != "hide") { ?>
+	  <footer class="entry-footer">
+		  <?php ut_ds_entry_footer(); ?>
+	  </footer><!-- .entry-footer -->
+	 <?php }; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
 <hr>
