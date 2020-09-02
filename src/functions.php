@@ -172,7 +172,7 @@ function ut_designsystem_scripts() {
     }
 
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    '//images.utk.edu/designsystem/2020/assets/css/style.css', array(), _S_VERSION );
+    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    get_stylesheet_uri(), array(), _S_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  '//images.utk.edu/designsystem/2020/assets/js/utk.js', array( 'jquery' ), _S_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );

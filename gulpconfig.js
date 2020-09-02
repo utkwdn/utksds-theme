@@ -74,7 +74,7 @@ module.exports = {
 
   styles: {
     build: {
-      src: src+'**/*.scss',
+      src: src+'*.scss',
       dest: build
     },
     compiler: 'libsass', // Choose a Sass compiler: 'libsass' or 'rubysass'
@@ -86,7 +86,7 @@ module.exports = {
     },
     rubySass: { // Requires the Ruby implementation of Sass; run `gem install sass` if you use this; Compass is *not* included by default
       loadPath: [ // Adds Bower and npm directories to the load path so you can @import directly
-        './src/scss',
+        './src',
         modules+'scut/dist',
         modules,
         bower
@@ -96,7 +96,7 @@ module.exports = {
     },
     libsass: { // Requires the libsass implementation of Sass (included in this package)
       includePaths: [ // Adds Bower and npm directories to the load path so you can @import directly
-        './src/scss',
+        './src',
         modules+'scut/dist',
         modules,
         bower,
@@ -130,7 +130,7 @@ module.exports = {
 
   watch: { // What to watch before triggering each specified task; if files matching the patterns below change it will trigger BrowserSync or Livereload
     src: {
-      styles:       src+'scss/**/*.scss',
+      styles:       src+'*.scss',
       scripts:      src+'js/**/*.js', // You might also want to watch certain dependency trees but that's up to you
       images:       src+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)',
       theme:        src+'**/*.php',
