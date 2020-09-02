@@ -12,12 +12,12 @@ get_header();
 ?>
 
   	<div class="row pt-5">
-    	<div class="col-12 col-xl-2">
+    	<div class="col-12 col-xl-3">
 				<?php
 					get_template_part( 'template-parts/nav-left-rail' );
 				?>
     	</div>
-	   <main id="primary" class="col-12 col-md-10 col-xl-10">
+	   <main id="primary" class="col-12 col-md-10 col-xl-9">
      <?php get_template_part( 'template-parts/inc-breadcrumb' ); ?>
   		<?php
   		while ( have_posts() ) :
