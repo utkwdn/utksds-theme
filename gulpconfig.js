@@ -46,12 +46,14 @@ module.exports = {
 
   scripts: {
     bundles: { // Bundles are defined by a name and an array of chunks (below) to concatenate; warning: this method offers no dependency management!
-      navigation: ['navigation']
+      utk: ['utk']
     },
     chunks: { // Chunks are arrays of paths or globs matching a set of source files; this way you can organize a bunch of scripts that go together into pieces that can then be bundled (above)
       // The core footer chunk is loaded no matter what; put essential scripts that you want loaded by your theme in here
-      navigation: [
-        src+'js/navigation.js'
+      utk: [
+        '../design-system-build-files/node_modules/bootstrap/dist/js/bootstrap.min.js',
+        '../design-system-build-files/src/js/utk.js',
+        src+'js/utk.js'
       ]
       // The pageloader chunk provides an example of how you would add a user-configurable feature to your theme; you can delete this if you wish
       // Have a look at the `src/inc/assets.php` to see how script bundles could be conditionally loaded by a theme
@@ -60,7 +62,7 @@ module.exports = {
     dest: build+'js/', // Where the scripts end up in your theme
     lint: {
       src: [
-        src+'js/navigation.js'
+        src+'js/utk.js'
 
       ] // Linting checks the quality of the code; we only lint custom scripts, not those under the various modules, so we're relying on the original authors to ship quality code
     },
