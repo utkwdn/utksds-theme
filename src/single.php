@@ -22,14 +22,22 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			get_template_part( 'template-parts/content', 'single' );
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'ut-ds' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'ut-ds' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+
+
+      $single_show_pager = get_theme_mod( 'single_show_pager' );
+			if ($single_show_pager != "hide") { 
+  			the_post_navigation(
+  				array(
+  					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'ut-ds' ) . '</span> <span class="nav-title">%title</span>',
+  					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'ut-ds' ) . '</span> <span class="nav-title">%title</span>',
+  				)
+  			);
+  	  };
+
+
+
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
@@ -40,9 +48,17 @@ get_header();
 		?>
 
   	 </main><!-- #main -->
-     <div class="col-12 col-md-4 col-xl-3">
-    <?php get_sidebar();		?>
-     </div>
+
+      <?php 
+        $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
+			  if ($single_show_sidebar != "hide") { 
+  		?>
+      <div class="col-12 col-md-4 col-xl-3">
+        <?php get_sidebar();		?>
+      </div>
+      <?php
+  	    };
+  	  ?>
   </div>
 <?php
 get_footer();
