@@ -222,3 +222,13 @@ require_once ( get_template_directory() . '/inc/functions/utk-postsnavigation.ph
 require_once ( get_template_directory() . '/inc/functions/utk-color-palette.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-menus.php' );
 
+
+function register_navwalker(){
+	require_once ( get_template_directory() . '/inc/functions/class-wp-bootstrap-navwalker.php' );
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+) );
+

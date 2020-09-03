@@ -16,6 +16,7 @@ function ukds_customize_register( $wp_customize ) {
     'choices'    => array(
       'left-rail' => 'Left Rail',
       'horizontal'   => 'Horizontal',
+      'bootstrap'   => 'Bootstrap Style',
     ),
   ));
   $wp_customize->add_section('navigation' , array(
