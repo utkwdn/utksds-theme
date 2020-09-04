@@ -20,6 +20,41 @@ function ukds_customizesite_register( $wp_customize ) {
   ));
 
 
+  // Show the Parent in Header
+  $wp_customize->add_setting('site_parentunit_show', array(
+    'default'   => 'hide',
+    'transport' => 'refresh'
+  ));
+  $wp_customize->add_control('site_parentunit_show', array(
+    'label'      => __('Show Parent Unit in Header', 'utthehill'),
+    'section'    => 'site-settings',
+    'settings'   => 'site_parentunit_show',
+    'default'    => 'show',
+    'type'       => 'radio',
+    'choices'    => array(
+      'show'   => 'Show',
+      'hide'  => 'Hide',
+    ),
+  ));
+
+  // Parent Unit
+  $wp_customize->add_setting('site_parentunit_name', array());
+  $wp_customize->add_control('site_parentunit_name', array(
+    'label'      => __('Parent Unit', 'utthehill'),
+    'section'    => 'site-settings',
+    'settings'   => 'site_parentunit_name',
+    'type'       => 'text'
+  ));
+
+  // Parent Unit link
+  $wp_customize->add_setting('site_parentunit_link', array());
+  $wp_customize->add_control('site_parentunit_link', array(
+    'label'      => __('Parent Unit Link', 'utthehill'),
+    'section'    => 'site-settings',
+    'settings'   => 'site_parentunit_link',
+    'type'       => 'url'
+  ));
+
 
 
   // Create the section

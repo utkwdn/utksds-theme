@@ -9,20 +9,22 @@
  * @package UT_DS
  */
 
-    $site_width = get_theme_mod( 'site_width' );
-?>
+  $site_width = get_theme_mod( 'site_width' );
+  $site_parentunit_show = get_theme_mod( 'site_parentunit_show' );
+  $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
+  $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
+  ?>
 	<footer id="colophon" class="site-footer container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>">
   	<div class="row">
   		<div class="site-info col">
   				<p class="h5"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-  				<p class="site-description lead"><?php // echo $ut_ds_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+    		  <?php if ($site_parentunit_show == "show") { ?>
+			      <p class="small"><?php if ($site_parentunit_link != "") { ?><a class="text-reset" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
+			    <?php } ?>
   		</div>
   	</div>
 	</footer><!-- #colophon -->
-
-
-
-		</div><!-- .site-info -->
+  </div><!-- .site-info -->
 </div><!-- #page -->
 
 <div class="container-fluid">

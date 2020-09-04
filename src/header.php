@@ -19,6 +19,9 @@
   wp_body_open();
   $menu_type = get_theme_mod( 'menu_type' );
   $site_width = get_theme_mod( 'site_width' );
+  $site_parentunit_show = get_theme_mod( 'site_parentunit_show' );
+  $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
+  $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
   get_template_part( 'template-parts/region-headsearch' );
 ?>
 <a class="sr-only sr-only-focusable" href="#primary"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
@@ -38,11 +41,10 @@
 				<p class="h1"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$ut_ds_description = get_bloginfo( 'description', 'display' );
-			if ( $ut_ds_description || is_customize_preview() ) :
-				?>
-				<p class="site-description lead"><?php echo $ut_ds_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+
+			 if ($site_parentunit_show == "show") { ?>
+			    <p class="site-description lead"><?php if ($site_parentunit_link != "") { ?><a href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
+			<?php } ?>
 		</div><!-- .site-branding -->
 
    <!-- #site-navigation -->
@@ -52,7 +54,7 @@
     <nav id="site-navigation" class="navbar navbar-expand-lg navbar-light bg-light navbar-bootstrap">
       <?php 
         wp_nav_menu( array(
-      	'theme_location'  => 'primary',
+      	'theme_location'  => 'menu-1',
       	'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
       	'container'       => 'div',
       	'container_class' => 'collapse navbar-collapse',
@@ -63,24 +65,22 @@
       ) );
       ?>
      </nav>
-		<?php
-      } elseif  ($menu_type == "horizontal") { ?>
-    <nav id="site-navigation"   class="navbar navbar-light bg-light navbar-horizontal">
+		<?php } elseif  ($menu_type == "horizontal") { ?>
+    <nav id="site-navigation"   class="navbar-horizontal">
     	<button class="navbar-toggler" type="button" id="mobile-menu-close" data-toggle="site-navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg><span class="sr-only">Close Menu</span>
       </button>
+      	<div id="bellows">
   	<?php
   			wp_nav_menu(
   				array(
   					'theme_location' => 'menu-1',
            	'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
-  					'menu_id'        => 'bellows',
-  					'menu_class'        => 'nav mr-auto',
+  					'menu_id'        => 'primary-menu',
+  					'menu_class'        => 'list-unstyled',
   				)
   			);
      ?> 
+      	</div>
      </nav>
-		<?php
-      };
-  ?> 
-
+		<?php  }; ?>
