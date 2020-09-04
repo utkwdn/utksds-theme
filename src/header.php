@@ -18,11 +18,12 @@
 <?php
   wp_body_open();
   $menu_type = get_theme_mod( 'menu_type' );
+  $site_width = get_theme_mod( 'site_width' );
   get_template_part( 'template-parts/region-headsearch' );
 ?>
 <a class="sr-only sr-only-focusable" href="#primary"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
 
-<div id="page" class="container-fluid">
+<div id="page" class="container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>">
 
 	<header id="masthead" class="site-header py-5 px-4<?php if ($menu_type != "horizontal") { ?> bg-light<?php }; ?>">
 		<div class="site-branding">

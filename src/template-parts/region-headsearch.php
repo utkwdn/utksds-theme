@@ -1,5 +1,8 @@
-
+<?php
+    $site_width = get_theme_mod( 'site_width' );
+?>
   <nav class="navbar navbar-dark bg-smokey">
+    <?php if ($site_width == "max-width") { ?><div class="container"><?php }; ?>
     <a class="navbar-brand text-uppercase font-weight-bolder text-decoration-none text-small" href="https://www.utk.edu/">
       <svg version="1.1" id="utk-powert" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 20.74 20.74" style="enable-background:new 0 0 20.74 20.74;height: 1.75rem; width: 1.75rem;margin-top: -0.25rem;" xml:space="preserve">
@@ -25,12 +28,12 @@
         <button class="navbar-toggler" type="button" id="mobile-menu-open" data-toggle="site-navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg><span class="sr-only">Menu</span></button>
       </li>
     </ul>
-
+    <?php if ($site_width == "max-width") { ?></div><?php }; ?>
   </nav>
 
 
 
-  <div class="collapse container-fluid" id="searchHeader">
+  <div class="collapse container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>" id="searchHeader">
     <div class="row bg-smokey pb-2">
       <div class="col-12 col-md-6">
         <form method="GET" action="//google.tennessee.edu/search" class="form-inline hidden-print">
