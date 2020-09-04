@@ -14,7 +14,7 @@
   $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
   ?>
-	<footer id="colophon" class="site-footer container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>">
+	<footer id="colophon" class="site-footer container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?> mt-5">
   	<div class="row">
   		<div class="site-info col">
   				<p class="h5"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
