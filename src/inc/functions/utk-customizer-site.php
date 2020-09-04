@@ -55,6 +55,25 @@ function ukds_customizesite_register( $wp_customize ) {
     'type'       => 'url'
   ));
 
+  // Show Comments
+    $wp_customize->add_setting('site_comments', array(
+      'default'   => 'no',
+      'transport' => 'refresh'
+    ));
+    $wp_customize->add_control('site_comments', array(
+    'label'      => __('Allow comments?', 'utthehill'),
+    'section'    => 'site-settings',
+    'settings'   => 'site_comments',
+    'default'    => 'no',
+    'type'       => 'radio',
+    'choices'    => array(
+      'allow'      => 'Allow',
+      'no'         => 'No Comments',
+    ),
+  ));
+
+
+
 
 
   // Create the section

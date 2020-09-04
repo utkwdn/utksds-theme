@@ -18,8 +18,9 @@
 if ( post_password_required() ) {
 	return;
 }
+$site_comments = get_theme_mod( 'site_comments' );
 ?>
-
+<?php if ($site_comments == "allow") { ?>
 <div id="comments" class="comments-area">
 
 	<?php
@@ -74,4 +75,4 @@ if ( post_password_required() ) {
 	comment_form();
 	?>
 
-</div><!-- #comments -->
+</div><!-- #comments --><?php }; ?>
