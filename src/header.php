@@ -27,26 +27,62 @@
 <a class="sr-only sr-only-focusable" href="#primary"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
 
 <div id="page" class="container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>">
-
-	<header id="masthead" class="site-header py-5 px-4<?php if ($menu_type != "horizontal") { ?> bg-light<?php }; ?>">
-		<div class="site-branding">
+      <?php if ( get_header_image() ) : ?>
+          <div id="site-header">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                  <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+              </a>
+          </div>
+      <?php endif; ?>
+	<header id="masthead" class="site-header container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?> py-3 bg-light">
 			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
+			
+			
+			// Here is the function that puts a logo on the site. Regular UT logo by default, but if they upload a custom logo via the customizer, it'll display.
+			$custom_logo_id = get_theme_mod( 'custom_logo' );
+      $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+      if ( has_custom_logo() ) { ?>
+    				
+				<div class="row align-items-center">
+  				<div class="col-10 col-md-9 col-lg-6 col-xl-4">
+    				<a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="mb-4" src="<?php echo esc_url( $logo[0]  ); ?>" width="" height="" alt="<?php bloginfo( 'name' ); ?>"  rel="home"></a>
+  				</div>
+				</div>
+      <?php
+      } else {
+        // If it's the home page, let's use an H1. Otherwise, the page title will be the H1.
+      if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="h1"><a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<div class="row align-items-center">
+  				<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+    				<a href="https://www.utk.edu"><img class="utk-header-logo mb-4 mb-md-0" src="<?php echo get_template_directory_uri(); ?>/assets/logo-header.svg" width="" height="" alt="The University of Tennessee, Knoxville"></a>
+  				</div>
+  				<div class="ml-xl-4 col-auto">
+    				<?php
+      				if ($site_parentunit_show == "show") { ?>
+			          <p class="site-description mb-0"><?php if ($site_parentunit_link != "") { ?><a class="small text-reset text-decoration-none text-uppercase" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
+			      <?php } ?>
+     				<h1 class="h3"><a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a></h1>
+  				</div>
+				</div>
 				<?php
-			else :
-				?>
-				<p class="h1"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			    else : ?>
+			    				<div class="row align-items-center">
+  				<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+    				<a href="https://www.utk.edu"><img class="utk-header-logo mb-4 mb-md-0" src="<?php echo get_template_directory_uri(); ?>/assets/logo-header.svg" width="" height="" alt="The University of Tennessee, Knoxville"></a>
+  				</div>
+  				<div class="ml-xl-4 col-auto">
+    				<?php
+      				if ($site_parentunit_show == "show") { ?>
+			          <p class="site-description mb-0"><?php if ($site_parentunit_link != "") { ?><a class="small text-reset text-decoration-none text-uppercase" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
+			      <?php } ?>
+     				<h1 class="h3"><a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a></h1>
+  				</div>
+				</div>
 				<?php
-			endif;
-
-			 if ($site_parentunit_show == "show") { ?>
-			    <p class="site-description lead"><?php if ($site_parentunit_link != "") { ?><a href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
-			<?php } ?>
-		</div><!-- .site-branding -->
-
+  			endif;
+        };
+    ?>
    <!-- #site-navigation -->
 	</header><!-- #masthead -->
 

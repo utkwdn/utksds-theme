@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.6' );
+	define( '_S_VERSION', '0.0.1' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -218,6 +218,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * UTK Custom stuff
  */
+require get_template_directory() . '/inc/custom-logo.php';
 require_once ( get_template_directory() . '/inc/functions/utk-postsnavigation.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-color-palette.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-menus.php' );

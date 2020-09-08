@@ -25,7 +25,7 @@
     $meta_byline = get_theme_mod( 'meta_byline' );
     $meta_excerpt = get_theme_mod( 'meta_excerpt' );
 			?>
-			<div class="entry-meta">
+			<div class="entry-meta small">
 				<?php
   				if ($meta_publisheddate != "hide") { 
 	    			ut_ds_posted_on();
@@ -100,7 +100,7 @@
 		?>
 	</div><!-- .entry-content -->
   <?php if ($meta_tax != "hide") { ?>
-	  <footer class="entry-footer">
+	  <footer class="entry-footer small">
 		  <?php ut_ds_entry_footer(); ?>
 	  </footer><!-- .entry-footer -->
 	 <?php }; ?>

@@ -25,7 +25,7 @@
     $single_tax = get_theme_mod( 'single_tax' );
     $single_show_pager = get_theme_mod( 'single_show_pager' );
 			?>
-			<div class="entry-meta">
+			<div class="entry-meta small mb-5">
 				<?php
   				if ($single_show_pubdate != "hide") { 
 	    			ut_ds_posted_on();
@@ -65,7 +65,7 @@
 		?>
 	</div><!-- .entry-content -->
   <?php if ($single_tax != "hide") { ?>
-	  <footer class="entry-footer">
+	  <footer class="entry-footer small">
 		  <?php ut_ds_entry_footer(); ?>
 	  </footer><!-- .entry-footer -->
 	 <?php }; ?>
