@@ -4,7 +4,7 @@ function utk_add_custom_gutenberg_color_palette() {
 		'editor-color-palette',
 		[
 			[
-				'name'  => esc_html__( 'Brown', 'wpdc' ),
+				'name'  => esc_html__( 'Smokey', 'wpdc' ),
 				'slug'  => 'primary',
 				'color' => '#58595B',
 			],
@@ -47,6 +47,56 @@ function utk_add_custom_gutenberg_color_palette() {
 				'name'  => esc_html__( 'SmokeyX', 'wpdc' ),
 				'slug'  => 'dark',
 				'color' => '#333333',
+			],
+			[
+				'name'  => esc_html__( 'Leconte', 'wpdc' ),
+				'slug'  => 'leconte',
+				'color' => '#8D2048',
+			],
+			[
+				'name'  => esc_html__( 'River', 'wpdc' ),
+				'slug'  => 'river',
+				'color' => '#517C96',
+			],
+			[
+				'name'  => esc_html__( 'Sunsphere', 'wpdc' ),
+				'slug'  => 'sunsphere',
+				'color' => '#FED535',
+			],
+			[
+				'name'  => esc_html__( 'Rock', 'wpdc' ),
+				'slug'  => 'rock',
+				'color' => '#A7A9AC',
+			],
+			[
+				'name'  => esc_html__( 'Legacy', 'wpdc' ),
+				'slug'  => 'legacy',
+				'color' => '#579584',
+			],
+			[
+				'name'  => esc_html__( 'Summitt', 'wpdc' ),
+				'slug'  => 'summitt',
+				'color' => '#B9E1E2',
+			],
+			[
+				'name'  => esc_html__( 'Energy', 'wpdc' ),
+				'slug'  => 'energy',
+				'color' => '#EE3E80',
+			],
+			[
+				'name'  => esc_html__( 'Switchgrass', 'wpdc' ),
+				'slug'  => 'switchgrass',
+				'color' => '#ABC178',
+			],
+			[
+				'name'  => esc_html__( 'Eureka', 'wpdc' ),
+				'slug'  => 'eureka',
+				'color' => '#EBEA64',
+			],
+			[
+				'name'  => esc_html__( 'Buckskin', 'wpdc' ),
+				'slug'  => 'buckskin',
+				'color' => '#705550',
 			],
 		]
 	);
