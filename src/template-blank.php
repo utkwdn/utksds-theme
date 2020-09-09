@@ -16,14 +16,15 @@
 <?php
   wp_body_open();
   $menu_type = get_theme_mod( 'menu_type' );
+  $site_width = get_theme_mod( 'site_width' );
   ?>
-  <a class="sr-only sr-only-focusable" href="#primary"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
+  <a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
   <?php
   get_template_part( 'template-parts/region-headsearch' );
 ?>
 
-  	<div class="container-fluid">
-	   <main id="primary" class="row">
+  	<div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+	   <main id="content" class="row">
   		<?php
   		while ( have_posts() ) :
   			the_post();

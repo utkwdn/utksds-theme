@@ -24,7 +24,7 @@ get_header();
 				?>
     	</div>
     <?php } ?> 
-	   <main id="primary" class="col-12 col-md-8 <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
+	   <main id="content" class="col-12 col-md-8 <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
      <?php get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 		<?php if ( have_posts() ) : ?>
 
