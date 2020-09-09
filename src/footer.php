@@ -14,7 +14,7 @@
   $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
   ?>
-	<footer id="colophon" class="site-footer container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?> mt-5">
+	<footer id="colophon" class="site-footer container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?> mt-5">
   	<div class="row">
   		<div class="site-info col">
   				<p class="h5"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
@@ -29,7 +29,7 @@
 
 <div class="container-fluid">
   <div class="row bg-smokey pt-3">
-    <?php if ($site_width == "max-width") { ?><div class="container"><?php }; ?>
+    <?php if ($site_width != "full-width") { ?><div class="container"><?php }; ?>
     <div class="col-12 col-md-6">
     <?php   get_template_part( 'template-parts/style-footer-logo' ); ?>
     </div>
@@ -38,7 +38,7 @@
       <p class="text-white small">The flagship campus of the University of Tennessee System and partner in the Tennessee Transfer Pathway.</p>
       <p class="text-white small"><a>EEO</a>. <a>Legal</a>. <a>Privacy</a>. <a>Accessibility</a>.</p>
     </div>
-    <?php if ($site_width == "max-width") { ?></div><?php }; ?> 
+    <?php if ($site_width != "full-width") { ?></div><?php }; ?> 
   </div>
 </div>
 

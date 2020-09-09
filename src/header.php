@@ -26,7 +26,7 @@
 ?>
 <a class="sr-only sr-only-focusable" href="#primary"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
 
-<div id="page" class="container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>">
+<div id="page" class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
       <?php if ( get_header_image() ) : ?>
           <div id="site-header">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -34,7 +34,7 @@
               </a>
           </div>
       <?php endif; ?>
-	<header id="masthead" class="site-header container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?> py-3 bg-light">
+	<header id="masthead" class="site-header container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?> py-3 bg-light">
 			<?php
 			
 			

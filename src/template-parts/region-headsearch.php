@@ -2,7 +2,7 @@
     $site_width = get_theme_mod( 'site_width' );
 ?>
   <nav id="universal-header" class="bg-smokey">
-    <div class="container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>">
+    <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
 <!--
     <a class="text-uppercase text-decoration-none text-light nav-link text-small col-12 col-lg-4 text-center text-lg-left" href="https://www.utk.edu/">
       <svg version="1.1" id="utk-powert" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
