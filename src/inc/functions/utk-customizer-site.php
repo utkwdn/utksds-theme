@@ -2,7 +2,7 @@
 function ukds_customizesite_register( $wp_customize ) {
 
 
-  // Byline
+  // Site Width.
   $wp_customize->add_setting('site_width', array(
     'default'   => 'max-width',
     'transport' => 'refresh'
