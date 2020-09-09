@@ -229,7 +229,5 @@ function register_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 
-register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'THEMENAME' ),
-) );
+
 
