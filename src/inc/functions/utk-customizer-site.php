@@ -3,6 +3,22 @@ function ukds_customizesite_register( $wp_customize ) {
 
 
   // Site Width.
+  $wp_customize->add_setting('site_typography', array(
+    'default'   => 'system',
+    'transport' => 'refresh'
+  ));
+  $wp_customize->add_control('site_typography', array(
+    'label'      => __('System fonts or Gotham (requires licensing and activation by the Office of Communications and Marketing)', 'utthehill'),
+    'section'    => 'site-settings',
+    'settings'   => 'site_typography',
+    'default'    => 'system',
+    'type'       => 'radio',
+    'choices'    => array(
+      'system'   => 'System',
+      'gotham'   => 'Gotham',
+    ),
+  ));
+  // Typography.
   $wp_customize->add_setting('site_width', array(
     'default'   => 'max-width',
     'transport' => 'refresh'
