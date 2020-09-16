@@ -34,6 +34,7 @@ function ukds_customizemeta_register( $wp_customize ) {
       'hide'  => 'Hide',
     ),
   ));
+
   // taxonomy
   $wp_customize->add_setting('meta_tax', array(
     'default'   => 'show',

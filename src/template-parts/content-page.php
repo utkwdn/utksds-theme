@@ -10,9 +10,20 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	
+    <?php
+      // Is this the front page? And is this the switch to show the home page headline flipped?
+      $site_homeheadline = get_theme_mod( 'site_homeheadline' );
+      if (is_front_page() && $site_homeheadline=="hide"){
+
+      } else {
+        the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header>' );
+      }
+    ?>
+	<!-- .entry-header -->
+
+
+
 
 	<?php ut_ds_post_thumbnail(); ?>
 

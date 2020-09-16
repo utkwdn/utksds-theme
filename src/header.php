@@ -56,7 +56,7 @@
       if ( is_front_page() && is_home() ) :
 				?>
 				<div class="row align-items-center">
-  				<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+  				<div class="col-10 col-sm-6 col-md-4 col-lg-3">
     				<a href="https://www.utk.edu"><img class="utk-header-logo mb-4 mb-md-0" src="<?php echo get_template_directory_uri(); ?>/assets/logo-header.svg" width="" height="" alt="The University of Tennessee, Knoxville"></a>
   				</div>
   				<div class="ml-xl-4 col-auto">
