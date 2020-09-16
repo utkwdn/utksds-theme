@@ -19,7 +19,7 @@
     University of Tennessee, Knoxville</a>
 -->
     <ul class="row justify-content-between list-inline mb-0">
-      <li class="col-12 col-lg-6 list-inline-item mr-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">The University of Tennessee, Knoxville</a></small></li>
+      <li class="col-12 col-lg-6 list-inline-item mr-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
       <li class="col-auto"><small><a href="https://giveto.utk.edu" class="nav-link px-0 text-light text-uppercase">Give</a></small></li>
       <li class="col-auto"><small><a href="https://my.utk.edu" class="nav-link px-0 text-light text-uppercase">myUTK</a></small></li>
       <li class="col-auto"><small><a href="https://apply.utk.edu" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>

@@ -56,8 +56,13 @@
       if ( is_front_page() && is_home() ) :
 				?>
 				<div class="row align-items-center">
-  				<div class="col-10 col-sm-6 col-md-4 col-lg-3">
-    				<a href="https://www.utk.edu"><img class="utk-header-logo mb-4 mb-md-0" src="<?php echo get_template_directory_uri(); ?>/assets/logo-header.svg" width="" height="" alt="The University of Tennessee, Knoxville"></a>
+  				<div class="col">
+    				      				<svg version="1.1" id="power-t" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20.74 20.74" style="enable-background:new 0 0 20.74 20.74;" xml:space="preserve"><style type="text/css">.powert-orange{fill:#FF8200;}.powert-white{fill:#FFFFFF;}</style>
+                <polygon class="powert-orange" points="20.74,20.74 20.74,0 0,0 0,20.74 20.74,20.74 "/><path class="powert-white" d="M18.12,2.62v5.23h-1.94c0-0.96-0.95-1.74-2.13-1.74c-0.86,0-1.6,0.42-1.94,1.02v6.54
+	c0,1.39,1.08,2.52,2.42,2.52h0.01v1.94H6.2v-1.94h0.01c1.34,0,2.42-1.13,2.42-2.52V7.12C8.29,6.52,7.55,6.1,6.69,6.1
+	c-1.18,0-2.13,0.78-2.13,1.74H2.62V2.62H18.12L18.12,2.62z"/>
+              </svg>
+
   				</div>
   				<div class="ml-xl-4 col-auto">
     				<?php
@@ -70,10 +75,21 @@
 				<?php
 			    else : ?>
 			    				<div class="row align-items-center">
-  				<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-    				<a href="https://www.utk.edu"><img class="utk-header-logo mb-4 mb-md-0" src="<?php echo get_template_directory_uri(); ?>/assets/logo-header.svg" width="" height="" alt="The University of Tennessee, Knoxville"></a>
+  				<div class="col">
+<!--     				<a href="https://www.utk.edu"> -->
+      				
+      				<svg version="1.1" id="power-t" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20.74 20.74" style="enable-background:new 0 0 20.74 20.74;" xml:space="preserve"><style type="text/css">.powert-orange{fill:#FF8200;}.powert-white{fill:#FFFFFF;}</style>
+                <polygon class="powert-orange" points="20.74,20.74 20.74,0 0,0 0,20.74 20.74,20.74 "/><path class="powert-white" d="M18.12,2.62v5.23h-1.94c0-0.96-0.95-1.74-2.13-1.74c-0.86,0-1.6,0.42-1.94,1.02v6.54
+	c0,1.39,1.08,2.52,2.42,2.52h0.01v1.94H6.2v-1.94h0.01c1.34,0,2.42-1.13,2.42-2.52V7.12C8.29,6.52,7.55,6.1,6.69,6.1
+	c-1.18,0-2.13,0.78-2.13,1.74H2.62V2.62H18.12L18.12,2.62z"/>
+              </svg>
+
+<!--       				<img class="utk-header-logo mb-4 mb-md-0" src="<?php echo get_template_directory_uri(); ?>/assets/logo-header.svg" width="" height="" alt="The University of Tennessee, Knoxville"> -->
+<!--       				</a> -->
+<!--
   				</div>
   				<div class="ml-xl-4 col-auto">
+-->
     				<?php
       				if ($site_parentunit_show == "show") { ?>
 			          <p class="site-description mb-0"><?php if ($site_parentunit_link != "") { ?><a class="small text-reset text-decoration-none text-uppercase" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
