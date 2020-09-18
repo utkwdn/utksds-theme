@@ -7,9 +7,9 @@
  * @package UT_DS
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '0.0.3' );
+	define( 'UTKDS_VERSION', '0.0.4' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -172,8 +172,8 @@ function ut_designsystem_scripts() {
     }
 
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    get_stylesheet_uri(), array(), _S_VERSION );
-   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  get_template_directory_uri() . '/js/utk.js', array( 'jquery' ), _S_VERSION, true );
+    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    get_stylesheet_uri(), array(), UTKDS_VERSION );
+   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  get_template_directory_uri() . '/js/utk.js', array( 'jquery' ), UTKDS_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
 

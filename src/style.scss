@@ -51,14 +51,7 @@ Version: 0.1
 @import "./../design-system-build-files/node_modules/bootstrap/scss/print";
 
 
-// Custom Texture
 
-@import "./../design-system-build-files/src/scss/texture/chrome";
-@import "./../design-system-build-files/src/scss/texture/logos";
-
-
-
-// UT Layouts
 
 // UT Regions
 
@@ -82,7 +75,7 @@ Version: 0.1
 @import "./../design-system-build-files/src/scss/components/profiles";
 @import "./../design-system-build-files/src/scss/components/promos";
 @import "./../design-system-build-files/src/scss/components/forms";
-//@import "./../design-system-build-files/src/scss/components/sliders";
+@import "./../design-system-build-files/src/scss/components/jumbotron";
 
 
 // UT Styles
@@ -99,11 +92,5 @@ Version: 0.1
 @import "./../design-system-build-files/src/scss/styles/background";
 @import "./../design-system-build-files/src/scss/styles/textcolors";
 @import "./../design-system-build-files/src/scss/styles/pagination";
+@import "./../design-system-build-files/src/scss/styles/logos";
 
-
-// Main Site
-
-@import "./../design-system-build-files/src/scss/main-specific/regions";
-
-
-// @import "./../design-system-build-files/src/scss/covid-specific/home";
