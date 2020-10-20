@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="navbar-navigation_unit">
+<nav class="navbar navbar-expand-md navbar-light bg-smokey sticky-top" id="site-navigation">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation_unit" aria-controls="navigation_unit" aria-expanded="false" aria-label="Toggle navigation">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="open_menu"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="close_menu"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"></path></svg>
@@ -14,25 +14,34 @@
   <div class="collapse navbar-collapse order-md-1" id="navigation_unit">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link text-decoration-none{% if page.title=="Template Documentation" %} active{% endif %}" href="/">Home</a>
+        <a class="nav-link  text-white text-decoration-none{% if page.title=="Theme Documentation" %} active{% endif %}" href="/">Home</a>
       </li>
-      <li class="nav-item">
+      {% comment %}
+      <li class="nav-item"> text-white 
         <a  class="nav-link text-decoration-none{% if page.section=="documentation" %} active{% endif %}" href="{{ site.baseurl }}documentation/">Documentation</a>
       </li>
       <li class="nav-item">
-        <a  class="nav-link text-decoration-none{% if page.title=="User Interface Components" or page.type=="Components" %} active{% endif %}" href="{{ site.baseurl }}components/component-accordion/">Components</a>
+        <a  class="nav-link text-white  text-decoration-none{% if page.title=="User Interface Components" or page.type=="Components" %} active{% endif %}" href="{{ site.baseurl }}components/component-accordion/">Components</a>
       </li>
       <li class="nav-item">
-        <a  class="nav-link text-decoration-none{% if page.title=="User Interface Components" or page.type=="Regions" %} active{% endif %}" href="{{ site.baseurl }}components/regions-alert/">Regions</a>
+        <a  class="nav-link text-white  text-decoration-none{% if page.title=="User Interface Components" or page.type=="Regions" %} active{% endif %}" href="{{ site.baseurl }}components/regions-alert/">Regions</a>
       </li>
       <li class="nav-item">
-        <a  class="nav-link text-decoration-none{% if page.title=="User Interface Components" or page.type=="Styles" %} active{% endif %}" href="{{ site.baseurl }}components/styles-blockquote/">Styles</a>
+        <a  class="nav-link  text-white text-decoration-none{% if page.title=="User Interface Components" or page.type=="Styles" %} active{% endif %}" href="{{ site.baseurl }}components/styles-blockquote/">Styles</a>
+      </li>
+  {% endcomment %}
+      <li class="nav-item">
+        <a class="nav-link  text-white text-decoration-none{% if page.title=="About"  %} active{% endif %}" href="{{ site.baseurl }}about/">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-decoration-none{% if page.section=="templates"  %} active{% endif %}" href="{{ site.baseurl }}templates/">Examples</a>
+        <a class="nav-link  text-white text-decoration-none{% if page.title=="Examples"  %} active{% endif %}" href="{{ site.baseurl }}examples/">Examples</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link  text-white text-decoration-none{% if page.title=="Road Map"  %} active{% endif %}" href="{{ site.baseurl }}roadmap/">Road Map</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-decoration-none{% if page.section=="accessibility"  %} active{% endif %}" href="{{ site.baseurl }}accessibility/">Accessibility</a>
+        <a class="nav-link text-white text-decoration-none{% if page.section=="Blog"  %} active{% endif %}" href="{{ site.baseurl }}blog/">Blog</a>
       </li>
     </ul>
   </div>

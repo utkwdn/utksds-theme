@@ -15,25 +15,31 @@ title: general
   <a class="sr-only sr-only-focusable" href="#mainnav" title="Skip to  main navigation">Skip to main navigation</a>
   <a class="sr-only sr-only-focusable" href="https://oed.utk.edu/ada/campus-accessibility/" title="Report an accessibility issue">Report an accessibility issue</a>
 
-  <div class="container" id="ut_identifier">
-    <div class="row justify-content-start pt-2 pb-4 align-items-center">
-      <a href="https://www.utk.edu/" class="col-auto">
+<div class="container">
+  <header id="masthead" class="site-header container py-3 bg-light">
+    <div class="row align-items-center bg-light">
+      <div class="col-1">
         {% include utk_logo_header.html %}
-      </a>
-      <div class="col-auto align-items-center">
-        <h1 class="site-title mt-1">UT Design System Theme</h1>
+      </div>
+      <div class="col-10">
+        <h1 class="h3"><a class="text-reset text-decoration-none" href="http://spinupprocedure-dev.utk.edu/" rel="home"> UT Design System Theme</a></h1>
       </div>
     </div>
+	</header>
+
+  <div class="row">
+    <div class="col">
+      {% include nav_horizontal.html %}
+    </div>
   </div>
+</div>
 
 
-{% include nav_horizontal.html %}
-
-<div class="container">
+<div class="container mt-5">
   <div class="row">
     <main id="content"  class="col-12">
-      {% if page.title!="Template Documentation"  %}
-        <h1 class="page-title orange-mark">{{ page.title }}
+      {% if page.title=="Template Documentation"  %}
+        <h1 class="page-title">{{ page.title }}
           {% if page.type=="Components" or page.type=="Regions" or page.type=="Styles"  %}
               {% if page.status=="production"  %}
                 <span class="badge badge-success">Production</span> 

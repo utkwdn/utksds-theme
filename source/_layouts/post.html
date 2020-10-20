@@ -1,5 +1,6 @@
 ---
 layout: default
+section: Blog
 ---
 
 
@@ -7,11 +8,11 @@ layout: default
     <article class="post">
 
         <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%M-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+            <h1 class="post-title mt-5">{{ page.title }}</h1>
+            <p class="small"><time class="post-date" datetime="{{ page.date | date:"%Y-%M-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
 
         </header>
-
+        <hr>
         <section class="post-content">
             {{content}}
         </section>
@@ -20,8 +21,8 @@ layout: default
 
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
-
-              <p class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%M-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+            <hr>
+              <p class="post-date small"><time class="post-date" datetime="{{ page.date | date:"%Y-%M-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
 
         </footer>
 
