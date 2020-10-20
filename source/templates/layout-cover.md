@@ -1,0 +1,62 @@
+---
+layout: null
+title: Full Width Template
+section: templates
+---
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//images.utk.edu/stylesheets/templates/2020/style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6831932/7665612/css/fonts.css" />
+
+      <title>University of Tennessee</title>
+  
+  </head>
+<body class="text-center" style="background-image: url(../../assets/i/template.jpg);background-repeat: no-repeat; background-size: cover;">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner text-white">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#"><img src="../../assets/i/bootstrap-outline.svg" width="45" height="45" alt=""></a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover text-white">
+    <h1 class="cover-heading">Cover your page.</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-light">Learn more</a>
+    </p>
+  </main>
+
+  <footer class="mastfoot mt-auto text-white">
+    <address>
+      <p><strong>The University of Tennessee, Knoxville</strong><br>865-974-1000</p>
+    </address>
+    <p class="text-sm-center"><br>The flagship campus of the <a class="text-white" href="http://tennessee.edu/"> University of Tennessee System</a> and partner in the <a class="text-white" href="http://www.tntransferpathway.org/">Tennessee Transfer Pathway</a>.</p>
+  </footer>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+          $('[data-toggle="popover"]').popover();
+      })
+    </script>
+  </body>
+</html>
+
+
