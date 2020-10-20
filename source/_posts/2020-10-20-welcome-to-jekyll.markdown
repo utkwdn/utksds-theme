@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The UT Design System"
+title:  "Introducing he UT Design System Blog"
 date:   2020-10-20 10:53:42 -0400
 categories: jekyll update
 ---
