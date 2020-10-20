@@ -53,8 +53,8 @@ plugins:
 
 
 
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://pages.github.utk.edu/ocm/utk-ds/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/ocm/utk-ds/" # the subpath of your site, e.g. /blog
+url: "https://pages.github.utk.edu" # the base hostname & protocol for your site, e.g. http://example.com
 root: /
 permalink: /:year/:month/:day/:title/
 
