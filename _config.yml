@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: UT Design System Wordpress Theme Documentation
+title: UT Shared Design System Wordpress Theme Documentation
 email: webteam@utk.com
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation for using the official Design System Wordpress theme here at UT.
