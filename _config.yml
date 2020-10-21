@@ -20,14 +20,14 @@
 
 title: UT Shared Design System Wordpress Theme Documentation
 email: webteam@utk.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: # this means to ignore newlines until "baseurl:"
   Documentation for using the official Design System Wordpress theme here at UT.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: utknoxville
 # github_username:  ocm
 
 # Build settings
-theme: null
+theme: nil
 plugins:
   - jekyll-feed
 
