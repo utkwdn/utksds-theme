@@ -27,7 +27,7 @@ twitter_username: utknoxville
 # github_username:  ocm
 
 # Build settings
-theme: cayman
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
