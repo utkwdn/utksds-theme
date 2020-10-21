@@ -1,7 +1,7 @@
 ---
 layout: default.html
 title: "Theme Documentation"
-url: /
+permalink: /
 ---
 
 # Theme Documentation
