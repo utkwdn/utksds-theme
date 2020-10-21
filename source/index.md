@@ -4,11 +4,10 @@
 
 layout: default
 title: "Theme Documentation"
+permalink: /
 ---
 
 # Theme Documentation
-
-
 
 
 Exercitationem voluptatem alias minus at ut. Velit eum dolor quasi. Harum vel voluptas incidunt.
