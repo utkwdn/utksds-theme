@@ -17,7 +17,7 @@ section: Blog
     {% endif %}
 
     <li class="archive-item">
-      <a href="{{ post.url }}"> <span>{{ post.title }}</span></a><br>
+      <a href="{{ site.baseurl }}{{ post.url }}"> <span>{{ post.title }}</span></a><br>
       <small><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string}}</time></small>
 
     </li>

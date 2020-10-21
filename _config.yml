@@ -27,7 +27,7 @@ twitter_username: utknoxville
 # github_username:  ocm
 
 # Build settings
-# theme: minima
+theme: null
 plugins:
   - jekyll-feed
 
@@ -53,7 +53,7 @@ plugins:
 
 
 
-baseurl: "/ocm/utk-ds/" # the subpath of your site, e.g. /blog
+baseurl: "/ocm/utk-ds" # the subpath of your site, e.g. /blog
 url: "https://pages.github.utk.edu" # the base hostname & protocol for your site, e.g. http://example.com
 root: /
 permalink: /:year/:month/:day/:title/

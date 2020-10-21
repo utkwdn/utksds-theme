@@ -1,129 +1,5 @@
-<!DOCTYPE html>
-
-<html lang="en-US">
-<head>
-  	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Introducing the UT Design System Blog - UT Design System Wordpress Theme Documentation</title>
-  <!--[if lt IE 10]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script></script><![endif]-->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//images.utk.edu/styles/thehill/interface/icon-114x114.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//images.utk.edu/styles/thehill/interface/icon-72x72.png">
-  <link rel="shortcut icon" href="//images.utk.edu/styles/thehill/interface/icon-114x114.png">
-  <link rel="shortcut icon" href="//images.utk.edu/styles/thehill/interface/favicon.gif">	
-  <link rel='stylesheet' id='utthehill-style-css'  href='//images.utk.edu/designsystem/2020/assets/css/style.css' type='text/css' media='all' />
-
-
-
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6831932/7665612/css/fonts.css" />
-</head>
-
-<body>
-
-
-  <a class="sr-only sr-only-focusable" href="#content" title="Skip to content">Skip to content</a>
-  <a class="sr-only sr-only-focusable" href="#mainnav" title="Skip to  main navigation">Skip to main navigation</a>
-  <a class="sr-only sr-only-focusable" href="https://oed.utk.edu/ada/campus-accessibility/" title="Report an accessibility issue">Report an accessibility issue</a>
-
-<div class="container">
-  <header id="masthead" class="site-header container py-3 bg-light">
-    <div class="row align-items-center bg-light">
-      <div class="col-1">
-        
-      				<svg version="1.1" id="power-t" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20.74 20.74" style="enable-background:new 0 0 20.74 20.74;" xml:space="preserve"><style type="text/css">.powert-orange{fill:#FF8200;}.powert-white{fill:#FFFFFF;}</style>
-                <polygon class="powert-orange" points="20.74,20.74 20.74,0 0,0 0,20.74 20.74,20.74 "></polygon><path class="powert-white" d="M18.12,2.62v5.23h-1.94c0-0.96-0.95-1.74-2.13-1.74c-0.86,0-1.6,0.42-1.94,1.02v6.54
-	c0,1.39,1.08,2.52,2.42,2.52h0.01v1.94H6.2v-1.94h0.01c1.34,0,2.42-1.13,2.42-2.52V7.12C8.29,6.52,7.55,6.1,6.69,6.1
-	c-1.18,0-2.13,0.78-2.13,1.74H2.62V2.62H18.12L18.12,2.62z"></path>
-              </svg>
-      </div>
-      <div class="col-10">
-        <h1 class="h3"><a class="text-reset text-decoration-none" href="/ocm/utk-ds" rel="home"> UT Design System Theme</a></h1>
-      </div>
-    </div>
-	</header>
-
-  <div class="row">
-    <div class="col">
-      <nav class="navbar navbar-expand-md navbar-light bg-smokey sticky-top" id="site-navigation">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation_unit" aria-controls="navigation_unit" aria-expanded="false" aria-label="Toggle navigation">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="open_menu"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="close_menu"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"></path></svg>
-    <span class="small text-uppercase">Menu</span>
-  </button>
-  
-
-  <div class="collapse navbar-collapse order-md-1" id="navigation_unit">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link  text-white text-decoration-none" href="/ocm/utk-ds/">Home</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link  text-white text-decoration-none" href="/ocm/utk-ds/about/">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  text-white text-decoration-none" href="/ocm/utk-ds/examples/">Examples</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link  text-white text-decoration-none" href="/ocm/utk-ds/roadmap/">Road Map</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white text-decoration-none" href="/ocm/utk-ds/blog/">Blog</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    </div>
-  </div>
-</div>
-
-
-<div class="container mt-5">
-  <div class="row">
-    <main id="content"  class="col-12">
-      
-      
-
-          <article class="post">
-
-        <header class="post-header">
-            <h1 class="post-title mt-5">Introducing the UT Design System Blog</h1>
-            <p class="small"><time class="post-date" datetime="2020-53-20">October 20, 2020</time></p>
-
-        </header>
-        <hr>
-        <section class="post-content">
-            <p>Totam nihil quo quia id hic odio voluptatem excepturi. Consequatur dolor quasi labore similique et veritatis. Minima laboriosam aut minus saepe. Optio dicta voluptatem quia illo in ut sequi eius.</p>
-
-<p>Quas qui eos nihil amet qui. Animi veniam dolorum voluptatem distinctio impedit officiis consequatur. Esse necessitatibus quas recusandae rerum optio culpa. Debitis enim itaque aut ullam. Eos nostrum quasi sunt cumque porro. Dolor cupiditate voluptatum cumque et accusamus.</p>
-
-<p>Sequi ut architecto et est. Rerum vitae nihil distinctio laboriosam. Voluptatem dolorem unde ipsum quis labore porro et omnis. Soluta quia expedita tempora commodi dolorum repudiandae nobis quia.</p>
-
-<p>Quos veniam cumque veniam. Culpa explicabo doloribus sunt. Ut fugiat autem sed amet quo aut eum nisi. Eveniet iure ea similique placeat adipisci deleniti.</p>
-
-<p>Ex distinctio et qui possimus quia ad at. Est et hic hic quia nam. Ut nulla repellendus asperiores dicta nihil in autem. Similique ut quia dolorem minus nisi aut molestiae sit. At accusamus consequatur eaque possimus explicabo. Facilis rerum eum at ipsam nostrum labore.</p>
-
-        </section>
-
-
-
-        <footer class="post-footer">
-            <!-- If we want to display author's name and bio -->
-            <hr>
-              <p class="post-date small"><time class="post-date" datetime="2020-53-20">October 20, 2020</time></p>
-
-        </footer>
-
-    </article>
-    </main>
-  </div><!-- .row -->
-</div><!-- .container-fluid -->
-
-
-<div class="container-fluid">
-  <div class="row bg-smokey pt-3">
-    <div class="container">    <div class="col-12 col-md-6">
-    <svg version="1.1" id="utk_footer_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 209.63 46.83" style="enable-background:new 0 0 209.63 46.83;" xml:space="preserve">
+<svg version="1.1" id="utk_footer_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 209.63 46.83" style="enable-background:new 0 0 209.63 46.83;" xml:space="preserve">
 <style type="text/css">
 	.ft_st0{fill:#FFFFFF;}
 	.ft_st1{fill:#F58220;}
@@ -233,7 +109,7 @@
 	c0-0.09-0.01-0.22-0.03-0.41c-0.06-0.57-0.09-1.15-0.09-1.73c0-0.76,0.04-1.61,0.13-2.53c0.01-0.14,0.02-0.25,0.02-0.31
 	c0-0.25-0.09-0.38-0.28-0.39c-0.2-0.01-0.32,0.11-0.37,0.34c-0.12,0.63-0.26,1.03-0.42,1.2c-0.15,0.17-0.49,0.31-1,0.42
 	c-0.58,0.11-1.38,0.17-2.38,0.17h-2.21c-0.41,0-0.66-0.05-0.74-0.14c-0.08-0.09-0.12-0.36-0.12-0.8v-5.79
-	C199.16,14.95,199.25,14.62,199.42,14.47L199.42,14.47z"></path>
+	C199.16,14.95,199.25,14.62,199.42,14.47L199.42,14.47z"/>
 <path class="ft_st0" d="M58.86,1.07c0.16-0.1,0.56-0.15,1.21-0.15c0.48,0,0.85,0.09,1.1,0.26c0.25,0.18,0.43,0.46,0.51,0.86
 	c0.04,0.16,0.11,0.24,0.2,0.24c0.12,0,0.17-0.07,0.17-0.21c0-0.14-0.01-0.32-0.04-0.54c-0.04-0.27-0.06-0.45-0.06-0.52l-0.03-0.46
 	c-0.01-0.2-0.14-0.29-0.37-0.29c-0.06,0-0.21,0-0.43,0.01C60,0.33,58.94,0.35,57.94,0.35l-1.55-0.02l-1.3-0.01
@@ -391,7 +267,8 @@
 	c0.1-0.08,0.47-0.12,1.11-0.12c0.5,0,0.85,0.08,1.05,0.23c0.2,0.15,0.34,0.45,0.43,0.9c0.02,0.12,0.07,0.18,0.15,0.17
 	c0.12-0.01,0.17-0.06,0.17-0.15c0-0.06,0-0.15-0.01-0.27l-0.1-1.21c-0.03-0.33-0.04-0.62-0.04-0.87c0-0.08,0-0.14,0.01-0.2
 	c0.01-0.08,0.01-0.14,0.01-0.17c0-0.11-0.06-0.17-0.19-0.17c-0.06,0-0.1,0.05-0.14,0.15c-0.16,0.4-0.32,0.66-0.48,0.8
-	c-0.16,0.14-0.4,0.2-0.72,0.2l-0.7,0.01l-0.24,0.01c-0.18,0-0.3-0.04-0.36-0.12c-0.06-0.08-0.09-0.24-0.09-0.48V1.43L204.53,1.43z"></path>
+	c-0.16,0.14-0.4,0.2-0.72,0.2l-0.7,0.01l-0.24,0.01c-0.18,0-0.3-0.04-0.36-0.12c-0.06-0.08-0.09-0.24-0.09-0.48V1.43L204.53,1.43z"
+	/>
 <path class="ft_st0" d="M57.32,39.56c0-0.49,0.04-0.82,0.13-0.96c0.09-0.15,0.32-0.27,0.68-0.37c0.11-0.03,0.16-0.08,0.16-0.16
 	c0-0.12-0.06-0.17-0.19-0.17c-0.08,0-0.17,0.01-0.28,0.03c-0.4,0.04-0.85,0.06-1.35,0.06c-0.58,0-1.1-0.02-1.54-0.07
 	c-0.11-0.01-0.21-0.02-0.32-0.02c-0.12,0-0.18,0.05-0.18,0.15c0,0.1,0.01,0.16,0.04,0.19c0.02,0.03,0.09,0.05,0.19,0.06
@@ -485,27 +362,9 @@
 	c0.2,0.19,0.33,0.46,0.38,0.82c0.03,0.17,0.09,0.25,0.2,0.24c0.05,0,0.09-0.02,0.1-0.04c0.01-0.02,0.02-0.06,0.02-0.12l-0.01-0.33
 	c0-0.24-0.01-0.53-0.04-0.86c-0.04-0.5-0.06-0.82-0.06-0.96c0-0.08,0-0.17,0.01-0.28c0.01-0.15,0.02-0.25,0.02-0.28
 	c0-0.12-0.05-0.18-0.14-0.17c-0.09,0-0.15,0.04-0.19,0.12l-0.15,0.31c-0.23,0.46-0.56,0.7-0.98,0.7h-0.54L136,41.68l-0.19,0.01
-	c-0.22,0-0.36-0.05-0.42-0.16c-0.06-0.11-0.09-0.36-0.09-0.75v-1.39L135.31,39.12L135.31,39.12z"></path>
-<polygon class="ft_st1" points="46.58,46.58 46.58,0 0,0 0,46.58 46.58,46.58 "></polygon>
+	c-0.22,0-0.36-0.05-0.42-0.16c-0.06-0.11-0.09-0.36-0.09-0.75v-1.39L135.31,39.12L135.31,39.12z"/>
+<polygon class="ft_st1" points="46.58,46.58 46.58,0 0,0 0,46.58 46.58,46.58 "/>
 <path class="ft_st0" d="M40.7,5.88v11.75h-4.35c0-2.16-2.14-3.92-4.79-3.92c-1.93,0-3.6,0.94-4.35,2.29v14.69
 	c0,3.12,2.43,5.65,5.43,5.66h0.01v4.35H13.93v-4.35h0.01c3-0.01,5.43-2.54,5.43-5.66V16c-0.76-1.35-2.42-2.29-4.35-2.29
-	c-2.64,0-4.79,1.75-4.79,3.92H5.88V5.88H40.7L40.7,5.88z"></path>
+	c-2.64,0-4.79,1.75-4.79,3.92H5.88V5.88H40.7L40.7,5.88z"/>
 </svg>
-    </div>
-    <div class="col-12 col-md-6">
-      <p class="text-white small">The University of Tennessee, Knoxville<br>Knoxville, Tennessee 37996, 865-974-1000</p>
-      <p class="text-white small">The flagship campus of the University of Tennessee System and partner in the Tennessee Transfer Pathway.</p>
-      <p class="text-white small"><a class="text-white" href="https://www.utk.edu">EEO</a>. <a class="text-white" href="https://www.utk.edu">Legal</a>. <a class="text-white" href="https://www.utk.edu">Privacy</a>. <a class="text-white" href="https://www.utk.edu">Accessibility</a>.</p>
-    </div>
-    </div> 
-  </div>
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-		</body>
-</html>
