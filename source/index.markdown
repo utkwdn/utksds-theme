@@ -1,5 +1,4 @@
 ---
-layout: default.html
 title: "Theme Documentation"
 permalink: /
 ---
