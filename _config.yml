@@ -24,6 +24,7 @@ description:
   Documentation for using the official Design System Wordpress theme here at UT.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: utknoxville
+repo: https://github.utk.edu/ocm/utk-ds/
 # github_username:  ocm
 
 # Build settings
