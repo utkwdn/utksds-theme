@@ -1,29 +1,17 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "First Blog Article"
 date:   2020-10-23 15:05:30 -0400
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Laboriosam pariatur saepe et ut autem sit sint. Omnis qui et tempora similique nam porro. Eum eius aut assumenda tenetur temporibus. Maxime provident quaerat quidem consequuntur et et. Dignissimos vero ab nihil et saepe. Voluptates vel in doloribus repudiandae est sed et.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Dolores perspiciatis tempore aut repudiandae corrupti cum rerum. Necessitatibus molestiae incidunt error eum est. Excepturi autem numquam enim architecto est. Dolore totam minus tenetur quia vel doloremque ut quis.
 
-Jekyll also offers powerful support for code snippets:
+Et autem dolor asperiores doloribus. Reprehenderit rerum incidunt in. Qui vitae tempore dolore iusto.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Doloribus saepe maxime nemo id. Corrupti animi est error ut magnam quia dolorum quia. Rem illum nulla provident quam doloremque quis et. Ut aspernatur consequatur commodi dolore dolor.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Eaque laborum vel ea dolor molestiae quibusdam. Perferendis voluptas iusto ratione ut id vero. Consequatur laborum reiciendis exercitationem autem nemo dicta asperiores eligendi. Itaque alias reprehenderit aut saepe omnis sed reprehenderit.

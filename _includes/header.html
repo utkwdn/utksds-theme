@@ -1,31 +1,56 @@
-<header class="site-header">
+<nav id="universal-header" class="bg-smokey">
+    <div class="container">
+    <ul class="row justify-content-between list-inline mb-0">
+      <li class="col-12 col-lg-6 list-inline-item mr-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
+      <li class="col-auto"><small><a href="https://giveto.utk.edu" class="nav-link px-0 text-light text-uppercase">Give</a></small></li>
+      <li class="col-auto"><small><a href="https://my.utk.edu" class="nav-link px-0 text-light text-uppercase">myUTK</a></small></li>
+      <li class="col-auto"><small><a href="https://apply.utk.edu" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>
+      <li class="col-auto">
+        <button class="navbar-toggler" type="button" id="mobile-menu-open" data-toggle="site-navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path></svg><span class="sr-only">Menu</span></button>
+      </li>
+    </ul>
+    </div>
+  </nav>
+  
+  
+  
+<header class="container" id="masthead">
 
-  <div class="wrapper">
+
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div class="row mt-4 mb-4 align-items-center">
+      <div class="col-1">
+        <svg version="1.1" c  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20.74 20.74" style="enable-background:new 0 0 20.74 20.74;" xml:space="preserve">
+<style type="text/css">
+     .powert_st0{fill:#FF8200;}
+     .powert_st1{fill:#FFFFFF;}
+</style>
+<polygon class="powert_st0" points="20.74,20.74 20.74,0 0,0 0,20.74 20.74,20.74 "></polygon>
+<path class="powert_st1" d="M18.12,2.62v5.23h-1.94c0-0.96-0.95-1.74-2.13-1.74c-0.86,0-1.6,0.42-1.94,1.02v6.54
+     c0,1.39,1.08,2.52,2.42,2.52h0.01v1.94H6.2v-1.94h0.01c1.34,0,2.42-1.13,2.42-2.52V7.12C8.29,6.52,7.55,6.1,6.69,6.1
+     c-1.18,0-2.13,0.78-2.13,1.74H2.62V2.62H18.12L18.12,2.62z"></path>
+</svg>
+      </div>
+      <div class="col-auto">
+        <a class="h3  text-decoration-none" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      </div>
+    </div>
 
     {%- if titles_size > 0 -%}
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+      <nav id="site-navigation" class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <div class="trigger">
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mr-auto">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <li class="nav-item"><a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
             {%- endif -%}
           {%- endfor -%}
+          </ul>
         </div>
       </nav>
     {%- endif -%}
-  </div>
 </header>

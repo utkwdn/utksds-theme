@@ -4,13 +4,14 @@
   {%- include head.html -%}
 
   <body>
-    DEFAULT
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <main class="container pt-5 pb-5" aria-label="Content">
+      <div class="row">
+        <div class="col">
         {{ content }}
+        </div>
       </div>
     </main>
 
