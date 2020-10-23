@@ -27,10 +27,7 @@ twitter_username: utknoxville
 # github_username:  ocm
 
 # Build settings
-theme: null
-## repository: github.utk.edu
-# remote_theme: mpurdy1/docs-theme/jekyll-theme-utkdocs
-
+theme: minima
 plugins:
   - jekyll-feed
 
@@ -54,15 +51,12 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-
-
 baseurl: "/ocm/utk-ds" # the subpath of your site, e.g. /blog
 url: "https://pages.github.utk.edu" # the base hostname & protocol for your site, e.g. http://example.com
 root: /
 permalink: /:year/:month/:day/:title/
 
-source: source
-destination: public
+
 plugins_dir: plugins
 code_dir: downloads/code
 category_dir: blog/categories
