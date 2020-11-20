@@ -173,7 +173,7 @@ function ut_designsystem_scripts() {
 
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'http://images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    get_stylesheet_uri(), array(), UTKDS_VERSION );
+    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    '//images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  get_template_directory_uri() . '/js/utk.js', array( 'jquery' ), UTKDS_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
@@ -234,6 +234,3 @@ function register_navwalker(){
 	require_once ( get_template_directory() . '/inc/functions/class-wp-bootstrap-navwalker.php' );
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
-
-
-
