@@ -19,7 +19,7 @@
     University of Tennessee, Knoxville</a>
 -->
     <ul class="row justify-content-between list-inline mb-0">
-      <li class="col-12 col-lg-6 list-inline-item mr-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
+      <li class="col-12 col-md-auto list-inline-item mr-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
       <li class="col-auto"><small><a href="https://giveto.utk.edu" class="nav-link px-0 text-light text-uppercase">Give</a></small></li>
       <li class="col-auto"><small><a href="https://my.utk.edu" class="nav-link px-0 text-light text-uppercase">myUTK</a></small></li>
       <li class="col-auto"><small><a href="https://apply.utk.edu" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>
@@ -31,13 +31,10 @@
       </li>
     </ul>
     </div>
-  </nav>
-
-
 
   <div class="collapse container<?php if ($site_width != "max-width") { ?>-fluid<?php }; ?>" id="searchHeader">
     <div class="row bg-smokey py-2">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 offset-md-3">
         <form method="GET" action="//google.tennessee.edu/search" class="form-inline hidden-print">
           <div class="form-group col-12">
           <label class="sr-only" for="q">Search UT</label>
@@ -56,15 +53,7 @@
           </div>
         </form>
       </div>
-      <div class="col-12 col-md-6">
-          <form  class="form-inline hidden-print" name="utk_seek_site" method="post" accept-charset="iso-8859-1" action="//www.utk.edu/masthead/query.php">
-            <div class="form-group col-12">
-              <input type="text" name="qt"  class="form-control col-8 col-lg-9 col-xl-10"   onfocus="if(this.value == 'Search <?php bloginfo( 'name' ); ?>') { this.value = ''; }" placeholder="Search <?php bloginfo( 'name' ); ?>" title="search">
-              <input type="hidden" name="qtype" value="site_utk:<?php echo esc_url( home_url( '/' ) ); ?>">
-              <input type="hidden" name="col" value="utk">
-              <input name="go" type="submit" title="Submit" class="btn btn-light col-4 col-lg-3 col-xl-2" value="Search">
-            </div>
-          </form>
-      </div>
     </div>
   </div>
+
+  </nav>

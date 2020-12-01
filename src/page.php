@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-  	<div class="row pt-5">
+  	<div class="row pt-lg-5">
     <?php
       $menu_type = get_theme_mod( 'menu_type' );
       if ($menu_type == "horizontal") {
