@@ -9,7 +9,7 @@
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.0.19' );
+	define( 'UTKDS_VERSION', '0.0.10' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -217,7 +217,7 @@ function ut_designsystem_scripts() {
 
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'http://images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'http://localhost/design-system-build-files/build/assets/css/style.css', array(), UTKDS_VERSION );
+    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  get_template_directory_uri() . '/js/utk.js', array( 'jquery' ), UTKDS_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
