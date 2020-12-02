@@ -18,6 +18,8 @@ get_header();
 
   	<div class="row pt-5">
     <?php
+      $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
+      $site_width = get_theme_mod( 'site_width' );
       $menu_type = get_theme_mod( 'menu_type' );
       if ($menu_type == "horizontal") {
       } elseif ($menu_type == "bootstrap")  {
@@ -29,7 +31,11 @@ get_header();
 				?>
     	</div>
     <?php } ?> 
-	   <main id="content" class="col-12 col-md-8 <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
+
+
+
+
+	   <main id="content" class="col-12 <?php if ($single_show_sidebar != "hide") { ?> col-md-8 <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } }; ?>">
      <?php get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 		<?php
 		if ( have_posts() ) :
@@ -65,9 +71,16 @@ get_header();
 		?>
 
   	 </main><!-- #main -->
-     <div class="col-12 col-md-4 col-xl-3">
+      <?php 
+        $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
+			  if ($single_show_sidebar != "hide") { 
+  		?>
+      <div class="col-12 col-md-4 col-xl-3">
         <?php get_sidebar();		?>
-     </div>
+      </div>
+      <?php
+  	    };
+  	  ?>
   </div>
 <?php
 get_footer();

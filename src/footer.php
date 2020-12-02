@@ -13,9 +13,22 @@
   $site_parentunit_show = get_theme_mod( 'site_parentunit_show' );
   $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
-  ?>
-	<footer id="colophon" class="site-footer container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?> mt-5 pb-4">
-  	<div class="row">
+?>
+
+
+</div><!-- #page -->
+<?php   get_template_part( 'template-parts/region-extendedfooter' ); ?>
+
+<?php if ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) ||	is_active_sidebar( 'sidebar-4' ) ||	is_active_sidebar( 'sidebar-5' )	) { ?>
+	<footer id="colophon" class="site-footer pb-4">
+<?php } else { ?>
+	<footer id="colophon" class="site-footer mt-5 pb-4">
+<?php }; ?>
+
+
+
+  	<?php if ($site_width != "full-width") { ?><div class="container "><?php }; ?>
+  	<div class="row mx-0">
   		<div class="site-info col-12 col-md-4">
   				<p class="h5"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
     		  <?php if ($site_parentunit_show == "show") { ?>
@@ -24,9 +37,9 @@
   		</div>
     <?php   get_template_part( 'template-parts/region-contact' ); ?>
   	</div>
+  	<?php if ($site_width != "full-width") { ?></div><?php }; ?>
 	</footer><!-- #colophon -->
   </div><!-- .site-info -->
-</div><!-- #page -->
 
 <div class="container-fluid">
   <div class="row bg-smokey pt-3">

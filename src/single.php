@@ -58,7 +58,7 @@ get_header();
 
       <?php 
         $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
-			  if ($single_show_sidebar != "hide") { 
+			  if ($single_show_sidebar == "hide") { 
   		?>
       <div class="col-12 col-md-4 col-xl-3">
         <?php get_sidebar();		?>

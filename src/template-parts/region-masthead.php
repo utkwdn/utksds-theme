@@ -10,7 +10,8 @@
               </a>
           </div>
       <?php endif; ?>
-	<header id="masthead" class="site-header container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?> py-3">
+	<header id="masthead" class="site-header py-3">
+  	<?php if ($site_width != "full-width") { ?><div class="container"><?php }; ?>
 			<?php
 			
 			
@@ -49,8 +50,8 @@
 				</div>
 				<?php
 			    else : ?>
-			    				<div class="row align-items-center">
-  				<div class=" col-12 col-lg-8">
+			    				<div class="row align-items-center mx-0">
+  				<div class="col-12 col-lg-8 align-items-center row mx-0">
 <!--     				<a href="https://www.utk.edu"> -->
       				
       				<svg version="1.1" id="power-t" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20.74 20.74" style="enable-background:new 0 0 20.74 20.74;" xml:space="preserve"><style type="text/css">.powert-orange{fill:#FF8200;}.powert-white{fill:#FFFFFF;}</style>
@@ -74,7 +75,7 @@
 
          <form  class="form-inline hidden-print col-12 col-lg-4 mt-3 mt-lg-0" name="utk_seek_site" method="post" accept-charset="iso-8859-1" action="//www.utk.edu/masthead/query.php">
             <div class="form-group col-12 row no-gutters p-0">
-              <input type="text" name="qt"  class="form-control col-8"   onfocus="if(this.value == 'Search <?php bloginfo( 'name' ); ?>') { this.value = ''; }" placeholder="Search <?php bloginfo( 'name' ); ?>" title="search">
+              <input type="text" name="qt"  class="form-control col-8 pl-2"   onfocus="if(this.value == 'Search this site') { this.value = ''; }" placeholder="Search this site" title="search">
               <input type="hidden" name="qtype" value="site_utk:<?php echo esc_url( home_url( '/' ) ); ?>">
               <input type="hidden" name="col" value="utk">
               <input name="go" type="submit" title="Submit" class="btn btn-primary col-4" value="Search">
@@ -90,6 +91,7 @@
     
     
  
-    
+      	<?php if ($site_width != "full-width") { ?></div><?php }; ?>
+
    <!-- #site-navigation -->
 	</header><!-- #masthead -->

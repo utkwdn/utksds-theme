@@ -9,7 +9,7 @@
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.0.7' );
+	define( 'UTKDS_VERSION', '0.0.19' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -132,6 +132,50 @@ function ut_ds_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'ut-ds' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s card p-3">',
 			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title h6 text-uppercase orange-mark">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Extended Footer 1', 'ut-ds' ),
+			'id'            => 'sidebar-2',
+			'description'   => esc_html__( 'Add widgets here.', 'ut-ds' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title h6 text-uppercase">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Extended Footer 2', 'ut-ds' ),
+			'id'            => 'sidebar-3',
+			'description'   => esc_html__( 'Add widgets here.', 'ut-ds' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title h6 text-uppercase">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Extended Footer 3', 'ut-ds' ),
+			'id'            => 'sidebar-4',
+			'description'   => esc_html__( 'Add widgets here.', 'ut-ds' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title h6 text-uppercase">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Extended Footer 4', 'ut-ds' ),
+			'id'            => 'sidebar-5',
+			'description'   => esc_html__( 'Add widgets here.', 'ut-ds' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
 			'before_title'  => '<h3 class="widget-title h6 text-uppercase">',
 			'after_title'   => '</h3>',
 		)
@@ -173,7 +217,7 @@ function ut_designsystem_scripts() {
 
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'http://images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
+    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'http://localhost/design-system-build-files/build/assets/css/style.css', array(), UTKDS_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  get_template_directory_uri() . '/js/utk.js', array( 'jquery' ), UTKDS_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
