@@ -23,8 +23,7 @@
   get_template_part( 'template-parts/region-headsearch' );
 ?>
 
-  	<div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
-	   <main id="content" class="row">
+	   <main id="content">
   		<?php
   		while ( have_posts() ) :
   			the_post();
@@ -34,6 +33,5 @@
   		endwhile; // End of the loop.
   		?>
   	 </main><!-- #main -->
-  </div>
 <?php
 get_footer();

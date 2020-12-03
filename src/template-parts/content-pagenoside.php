@@ -16,7 +16,7 @@
 
 
 
-
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     	<div class="entry-content">
     		<?php
     		the_content();
@@ -31,7 +31,7 @@
     	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
+		<footer class="entry-footer">
 			<?php
 			edit_post_link(
 				sprintf(
@@ -52,3 +52,4 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
+</article><!-- #post-<?php the_ID(); ?> -->

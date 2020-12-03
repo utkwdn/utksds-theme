@@ -8,30 +8,26 @@
  */
 
 get_header();
+$site_width = get_theme_mod( 'site_width' );
+$menu_type = get_theme_mod( 'menu_type' );
 ?>
-
-
-  	<div class="row pt-5">
-    <?php
-      $menu_type = get_theme_mod( 'menu_type' );
-      if ($menu_type == "horizontal") {
-      } elseif ($menu_type == "bootstrap")  {
-      } else {       
-    ?>
-      <div class="col-12 col-xl-3">
-				<?php
-					get_template_part( 'template-parts/nav-left-rail' );
-				?>
-    	</div>
-    <?php } ?> 
-	   <main id="content" class="col-12 col-md-8 <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
-  	        <?php get_template_part( 'template-parts/inc-breadcrumb' ); ?>
+<main id="content">
 
 		<section class="error-404 not-found">
-			<header class="page-header">
+      <div class="row bg-light no-gutters mb-3 pb-3">
+        <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+       <header class="page-header">
+         <?php get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'ut-ds' ); ?></h1>
 			</header><!-- .page-header -->
-
+        </div>
+      </div>
+  <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+    <div class="row">
+      <?php get_template_part( 'template-parts/nav-left-rail' ); ?>
+      <div class="col-12  <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
+        
+        
 			<div class="page-content">
 				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'ut-ds' ); ?></p>
 
@@ -67,13 +63,16 @@ get_header();
 					?>
 
 			</div><!-- .page-content -->
+      </div>
+           <div class="col-12 col-md-4 col-xl-3">
+    <?php get_sidebar();		?>
+     </div>
+      
+      </div>
 		</section><!-- .error-404 -->
 
   	 </main><!-- #main -->
-     <div class="col-12 col-md-4 col-xl-3">
-    <?php get_sidebar();		?>
-     </div>
-  </div>
+
 <?php
 get_footer();
 

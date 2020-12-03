@@ -50,7 +50,7 @@
 				</div>
 				<?php
 			    else : ?>
-			    				<div class="row align-items-center mx-0">
+			    				<div class="row align-items-center mx-0 no-gutters">
   				<div class="col-12 col-lg-8 align-items-center row mx-0">
 <!--     				<a href="https://www.utk.edu"> -->
       				

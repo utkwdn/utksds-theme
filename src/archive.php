@@ -11,22 +11,16 @@ get_header();
 ?>
 
 
-  	<div class="row pt-5">
     <?php
-         $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
-     $menu_type = get_theme_mod( 'menu_type' );
-      if ($menu_type == "horizontal") {
-      } elseif ($menu_type == "bootstrap")  {
-      } else {       
+      $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
+      $site_width = get_theme_mod( 'site_width' );
+      $menu_type = get_theme_mod( 'menu_type' );      
     ?>
-      <div class="col-12 col-xl-3">
-				<?php
-					get_template_part( 'template-parts/nav-left-rail' );
-				?>
-    	</div>
-    <?php } ?> 
-	   <main id="content" class="col-12 <?php if ($single_show_sidebar != "hide") { ?> col-md-8 <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } }; ?>">
-     <?php get_template_part( 'template-parts/inc-breadcrumb' ); ?>
+  
+	   <main id="content">
+        <div class="row bg-light pb-3 mb-3 no-gutters">
+          <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+            <?php get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -36,7 +30,13 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+      </div></div>
+      <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+        <div class="row">
+          <?php
+					  get_template_part( 'template-parts/nav-left-rail' );
+				   ?>
+          <div class="col-12  <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -51,17 +51,22 @@ get_header();
 
 			endwhile;
 
+		?>
+		<div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+      <?php 
 			the_posts_navigation();
-
+		?>
+		</div>
+      <?php 
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
 		?>
-
-  	 </main><!-- #main -->
+          </div>
       <?php 
+        $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
 			  if ($single_show_sidebar != "hide") { 
   		?>
       <div class="col-12 col-md-4 col-xl-3">
@@ -70,7 +75,9 @@ get_header();
       <?php
   	    };
   	  ?>
-  </div>
+        </div>
+      </div>
+  	 </main><!-- #main -->
 <?php
 get_footer();
 

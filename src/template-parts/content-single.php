@@ -6,39 +6,12 @@
  *
  * @package UT_DS
  */
+  $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
+  $menu_type = get_theme_mod( 'menu_type' );
+  $site_width = get_theme_mod( 'site_width' );
+    $single_tax = get_theme_mod( 'single_tax' );
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" class="text-reset" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-
-    $single_show_pubdate = get_theme_mod( 'single_show_pubdate' );
-    $single_show_byline = get_theme_mod( 'single_show_byline' );
-    $single_tax = get_theme_mod( 'single_tax' );
-    $single_show_pager = get_theme_mod( 'single_show_pager' );
-			?>
-			<div class="entry-meta small mb-5">
-				<?php
-  				if ($single_show_pubdate != "hide") { 
-	    			ut_ds_posted_on();
-	    	  };
-  				if ($single_show_byline != "hide") { 
-    				ut_ds_posted_by();
-    		  };
-				?>
-			</div><!-- .entry-meta -->
-		<?php	 endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php ut_ds_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -62,12 +35,27 @@
 				'after'  => '</div>',
 			)
 		);
+
+
+
 		?>
 	</div><!-- .entry-content -->
   <?php if ($single_tax != "hide") { ?>
 	  <footer class="entry-footer small">
 		  <?php ut_ds_entry_footer(); ?>
 	  </footer><!-- .entry-footer -->
-	 <?php }; ?>
-</article><!-- #post-<?php the_ID(); ?> -->
+	 <?php };
+  	 
+      $single_show_pager = get_theme_mod( 'single_show_pager' );
+			if ($single_show_pager != "hide") { 
+  			the_post_navigation(
+  				array(
+  					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'ut-ds' ) . '</span> <span class="nav-title">%title</span>',
+  					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'ut-ds' ) . '</span> <span class="nav-title">%title</span>',
+  				)
+  			);
+  	  };
+
+  	 
+  	  ?>
 <hr>

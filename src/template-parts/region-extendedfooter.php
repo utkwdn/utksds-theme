@@ -2,8 +2,9 @@
   $site_width = get_theme_mod( 'site_width' );
   if ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) ||	is_active_sidebar( 'sidebar-4' ) ||	is_active_sidebar( 'sidebar-5' )	) : ?>
 
-<div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>"> 
-<div id="extended-footer" class="row">
+<div id="extended-footer">
+  <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>"> 
+    <div class="row">
 
   <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
     <div id="second" class="col-lg" role="complementary">
@@ -35,6 +36,7 @@
     <!-- #third .widget-area -->
   <?php endif; ?>
 
+</div>
 </div>
 </div>
 <!-- #linkdrawer -->
