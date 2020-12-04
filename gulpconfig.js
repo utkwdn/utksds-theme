@@ -1,7 +1,7 @@
 // ==== CONFIGURATION ==== //
 
 // Project paths
-var project     = 'utds',                // The directory name for your theme; change this at the very least!
+var project     = 'utkds-theme',                // The directory name for your theme; change this at the very least!
     src         = './src/',               // The raw material of your theme: custom scripts, SCSS source files, PHP files, images, etc.; do not delete this folder!
     build       = './build/',             // A temporary directory containing a development version of your theme; delete it anytime
     dist        = './dist/'+project+'/',  // The distribution package that you'll be uploading to your server; delete it anytime
@@ -51,8 +51,8 @@ module.exports = {
     chunks: { // Chunks are arrays of paths or globs matching a set of source files; this way you can organize a bunch of scripts that go together into pieces that can then be bundled (above)
       // The core footer chunk is loaded no matter what; put essential scripts that you want loaded by your theme in here
       utk: [
-        '../design-system-build-files/node_modules/bootstrap/dist/js/bootstrap.min.js',
-        '../design-system-build-files/src/js/utk.js',
+        '../utkds-framework/node_modules/bootstrap/dist/js/bootstrap.min.js',
+        '../utkds-framework/src/js/utk.js',
         src+'js/utk.js'
       ]
       // The pageloader chunk provides an example of how you would add a user-configurable feature to your theme; you can delete this if you wish
