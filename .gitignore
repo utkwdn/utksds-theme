@@ -5,6 +5,7 @@
 *.bak
 *.log
 *.swp
+package-lock.json
 
 ## Windows
 Desktop.ini
