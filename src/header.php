@@ -71,3 +71,4 @@
 
 
 <div id="page">
+  <main id="content">

@@ -41,16 +41,18 @@
 
   				</div>
   				<div class="ml-xl-4 col-auto">
+    				<div>
     				<?php
       				if ($site_parentunit_show == "show") { ?>
-			          <p class="site-description mb-0"><?php if ($site_parentunit_link != "") { ?><a class="small text-reset text-decoration-none text-uppercase" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
+			          <p class="site-description mb-0"><?php if ($site_parentunit_link != "") { ?><a class="small text-reset text-decoration-none text-uppercase" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a></<?php } ?></p>
 			      <?php } ?>
-     				<h1 class="h3"><a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a></h1>
+     				<dev class="h3"><a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a></div>
+  				</div>
   				</div>
 				</div>
 				<?php
 			    else : ?>
-			    				<div class="row align-items-center mx-0 no-gutters">
+			    				<div class="row align-items-center mx-0<?php if ($site_width != "full-width") { ?> no-gutters<?php }; ?>">
   				<div class="col-12 col-lg-8 align-items-center row mx-0">
 <!--     				<a href="https://www.utk.edu"> -->
       				
@@ -59,26 +61,22 @@
 	c0,1.39,1.08,2.52,2.42,2.52h0.01v1.94H6.2v-1.94h0.01c1.34,0,2.42-1.13,2.42-2.52V7.12C8.29,6.52,7.55,6.1,6.69,6.1
 	c-1.18,0-2.13,0.78-2.13,1.74H2.62V2.62H18.12L18.12,2.62z"/>
               </svg>
+              <div class="">
 
-<!--       				<img class="utk-header-logo mb-4 mb-md-0" src="<?php echo get_template_directory_uri(); ?>/assets/logo-header.svg" width="" height="" alt="The University of Tennessee, Knoxville"> -->
-<!--       				</a> -->
-<!--
-  				</div>
-  				<div class="ml-xl-4 col-auto">
--->
     				<?php
       				if ($site_parentunit_show == "show") { ?>
 			          <p class="site-description mb-0"><?php if ($site_parentunit_link != "") { ?><a class="small text-reset text-decoration-none text-uppercase" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
 			      <?php } ?>
-     				<h1 class="h3"><a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a></h1>
+     				<div class="h3"><a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo( 'name' ); ?></a></div>
+  				</div>
   				</div>
 
-         <form  class="form-inline hidden-print col-12 col-lg-4 mt-3 mt-lg-0" name="utk_seek_site" method="post" accept-charset="iso-8859-1" action="//www.utk.edu/masthead/query.php">
+         <form  class="form-inline hidden-print col-12 col-lg-4 mt-3 mt-lg-0" name="utk_seek_site" method="post" accept-charset="utf-8" action="//www.utk.edu/masthead/query.php">
             <div class="form-group col-12 row no-gutters p-0">
-              <input type="text" name="qt"  class="form-control col-8 pl-2"   onfocus="if(this.value == 'Search this site') { this.value = ''; }" placeholder="Search this site" title="search">
+              <input type="text" name="qt"  class="form-control col pl-2 border-light"   onfocus="if(this.value == 'Search this site') { this.value = ''; }" placeholder="Search this site" title="search">
               <input type="hidden" name="qtype" value="site_utk:<?php echo esc_url( home_url( '/' ) ); ?>">
               <input type="hidden" name="col" value="utk">
-              <input name="go" type="submit" title="Submit" class="btn btn-primary col-4" value="Search">
+              <input name="go" type="submit" title="Submit" class="btn btn-light col-3" value="Search">
             </div>
           </form>    
     

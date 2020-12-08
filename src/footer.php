@@ -15,7 +15,13 @@
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
 ?>
 
+<?php 
+  if (is_singular() ) {
+    ?> </article>
+ <?php
+} ?>
 
+  	 </main><!-- #main -->
 </div><!-- #page -->
 <?php   get_template_part( 'template-parts/region-extendedfooter' ); ?>
 
@@ -39,7 +45,7 @@
   	</div>
   	<?php if ($site_width != "full-width") { ?></div><?php }; ?>
 	</footer><!-- #colophon -->
-  </div><!-- .site-info -->
+  <!-- .site-info -->
 
 <div class="container-fluid">
   <div class="row bg-smokey pt-3">
