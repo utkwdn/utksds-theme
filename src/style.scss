@@ -10,87 +10,86 @@ Version: 0.2
 //@import "scss/style";
 
 
-
-@import "./../utkds-framework/node_modules/bootstrap/scss/functions";
-@import "./../utkds-framework/src/scss/custom_variables";
-@import "./../utkds-framework/node_modules/bootstrap/scss/variables";
-@import "./../utkds-framework/node_modules/bootstrap/scss/mixins";
-@import "./../utkds-framework/node_modules/bootstrap/scss/root";
-@import "./../utkds-framework/node_modules/bootstrap/scss/reboot";
-@import "./../utkds-framework/node_modules/bootstrap/scss/type";
-@import "./../utkds-framework/node_modules/bootstrap/scss/images";
-@import "./../utkds-framework/node_modules/bootstrap/scss/code";
-@import "./../utkds-framework/node_modules/bootstrap/scss/grid";
-@import "./../utkds-framework/node_modules/bootstrap/scss/tables";
-@import "./../utkds-framework/node_modules/bootstrap/scss/forms";
-@import "./../utkds-framework/node_modules/bootstrap/scss/buttons";
-@import "./../utkds-framework/node_modules/bootstrap/scss/transitions";
-@import "./../utkds-framework/node_modules/bootstrap/scss/dropdown";
-@import "./../utkds-framework/node_modules/bootstrap/scss/button-group";
-@import "./../utkds-framework/node_modules/bootstrap/scss/input-group";
-@import "./../utkds-framework/node_modules/bootstrap/scss/custom-forms";
-@import "./../utkds-framework/node_modules/bootstrap/scss/nav";
-@import "./../utkds-framework/node_modules/bootstrap/scss/navbar";
-@import "./../utkds-framework/node_modules/bootstrap/scss/card";
-@import "./../utkds-framework/node_modules/bootstrap/scss/breadcrumb";
-@import "./../utkds-framework/node_modules/bootstrap/scss/pagination";
-@import "./../utkds-framework/node_modules/bootstrap/scss/badge";
-@import "./../utkds-framework/node_modules/bootstrap/scss/jumbotron";
-@import "./../utkds-framework/node_modules/bootstrap/scss/alert";
-@import "./../utkds-framework/node_modules/bootstrap/scss/progress";
-@import "./../utkds-framework/node_modules/bootstrap/scss/media";
-@import "./../utkds-framework/node_modules/bootstrap/scss/list-group";
-@import "./../utkds-framework/node_modules/bootstrap/scss/close";
-// @import "./../utkds-framework/node_modules/bootstrap/scss/toasts";
-@import "./../utkds-framework/node_modules/bootstrap/scss/modal";
-@import "./../utkds-framework/node_modules/bootstrap/scss/tooltip";
-// @import "./../utkds-framework/node_modules/bootstrap/scss/popover";
-// @import "./../utkds-framework/node_modules/bootstrap/scss/carousel";
-@import "./../utkds-framework/node_modules/bootstrap/scss/spinners";
-@import "./../utkds-framework/node_modules/bootstrap/scss/utilities";
-@import "./../utkds-framework/node_modules/bootstrap/scss/print";
+@import "./../utksds-framework/node_modules/bootstrap/scss/functions";
+@import "./../utksds-framework/src/scss/custom_variables";
+@import "./../utksds-framework/node_modules/bootstrap/scss/variables";
+@import "./../utksds-framework/node_modules/bootstrap/scss/mixins";
+@import "./../utksds-framework/node_modules/bootstrap/scss/root";
+@import "./../utksds-framework/node_modules/bootstrap/scss/reboot";
+@import "./../utksds-framework/node_modules/bootstrap/scss/type";
+@import "./../utksds-framework/node_modules/bootstrap/scss/images";
+@import "./../utksds-framework/node_modules/bootstrap/scss/code";
+@import "./../utksds-framework/node_modules/bootstrap/scss/grid";
+@import "./../utksds-framework/node_modules/bootstrap/scss/tables";
+@import "./../utksds-framework/node_modules/bootstrap/scss/forms";
+@import "./../utksds-framework/node_modules/bootstrap/scss/buttons";
+@import "./../utksds-framework/node_modules/bootstrap/scss/transitions";
+@import "./../utksds-framework/node_modules/bootstrap/scss/dropdown";
+@import "./../utksds-framework/node_modules/bootstrap/scss/button-group";
+@import "./../utksds-framework/node_modules/bootstrap/scss/input-group";
+@import "./../utksds-framework/node_modules/bootstrap/scss/custom-forms";
+@import "./../utksds-framework/node_modules/bootstrap/scss/nav";
+@import "./../utksds-framework/node_modules/bootstrap/scss/navbar";
+@import "./../utksds-framework/node_modules/bootstrap/scss/card";
+@import "./../utksds-framework/node_modules/bootstrap/scss/breadcrumb";
+@import "./../utksds-framework/node_modules/bootstrap/scss/pagination";
+@import "./../utksds-framework/node_modules/bootstrap/scss/badge";
+@import "./../utksds-framework/node_modules/bootstrap/scss/jumbotron";
+@import "./../utksds-framework/node_modules/bootstrap/scss/alert";
+@import "./../utksds-framework/node_modules/bootstrap/scss/progress";
+@import "./../utksds-framework/node_modules/bootstrap/scss/media";
+@import "./../utksds-framework/node_modules/bootstrap/scss/list-group";
+@import "./../utksds-framework/node_modules/bootstrap/scss/close";
+// @import "./../utksds-framework/node_modules/bootstrap/scss/toasts";
+@import "./../utksds-framework/node_modules/bootstrap/scss/modal";
+@import "./../utksds-framework/node_modules/bootstrap/scss/tooltip";
+// @import "./../utksds-framework/node_modules/bootstrap/scss/popover";
+// @import "./../utksds-framework/node_modules/bootstrap/scss/carousel";
+@import "./../utksds-framework/node_modules/bootstrap/scss/spinners";
+@import "./../utksds-framework/node_modules/bootstrap/scss/utilities";
+@import "./../utksds-framework/node_modules/bootstrap/scss/print";
 
 
 
 
 // UT Regions
 
-@import "./../utkds-framework/src/scss/regions/extended_footer";
-@import "./../utkds-framework/src/scss/regions/footers";
-@import "./../utkds-framework/src/scss/regions/headers";
-@import "./../utkds-framework/src/scss/regions/navigation_horizontal";
-@import "./../utkds-framework/src/scss/regions/navigation_leftrail";
-@import "./../utkds-framework/src/scss/regions/navigation_megamenu";
-@import "./../utkds-framework/src/scss/regions/navigation_offcanvas";
-@import "./../utkds-framework/src/scss/regions/navigation_unit";
-@import "./../utkds-framework/src/scss/regions/navigation_universal";
-@import "./../utkds-framework/src/scss/regions/search_area";
-@import "./../utkds-framework/src/scss/regions/sidebar";
+@import "./../utksds-framework/src/scss/regions/extended_footer";
+@import "./../utksds-framework/src/scss/regions/footers";
+@import "./../utksds-framework/src/scss/regions/headers";
+@import "./../utksds-framework/src/scss/regions/navigation_horizontal";
+@import "./../utksds-framework/src/scss/regions/navigation_leftrail";
+@import "./../utksds-framework/src/scss/regions/navigation_megamenu";
+@import "./../utksds-framework/src/scss/regions/navigation_offcanvas";
+@import "./../utksds-framework/src/scss/regions/navigation_unit";
+@import "./../utksds-framework/src/scss/regions/navigation_universal";
+@import "./../utksds-framework/src/scss/regions/search_area";
+@import "./../utksds-framework/src/scss/regions/sidebar";
 
 
 // UT Components
 
-@import "./../utkds-framework/src/scss/components/accordion_folds";
-@import "./../utkds-framework/src/scss/components/calendars";
-@import "./../utkds-framework/src/scss/components/profiles";
-@import "./../utkds-framework/src/scss/components/promos";
-@import "./../utkds-framework/src/scss/components/forms";
-@import "./../utkds-framework/src/scss/components/jumbotron";
+@import "./../utksds-framework/src/scss/components/accordion_folds";
+@import "./../utksds-framework/src/scss/components/calendars";
+@import "./../utksds-framework/src/scss/components/profiles";
+@import "./../utksds-framework/src/scss/components/promos";
+@import "./../utksds-framework/src/scss/components/forms";
+@import "./../utksds-framework/src/scss/components/jumbotron";
 
 
 // UT Styles
-@import "./../utkds-framework/src/scss/styles/breadcrumbs";
-@import "./../utkds-framework/src/scss/styles/blockquote";
-@import "./../utkds-framework/src/scss/styles/buttons";
-@import "./../utkds-framework/src/scss/styles/highlight_boxes";
-@import "./../utkds-framework/src/scss/styles/frame";
-@import "./../utkds-framework/src/scss/styles/images";
-@import "./../utkds-framework/src/scss/styles/orange_hr";
-@import "./../utkds-framework/src/scss/styles/orange_mark";
-@import "./../utkds-framework/src/scss/styles/search_forms";
-@import "./../utkds-framework/src/scss/styles/typography";
-@import "./../utkds-framework/src/scss/styles/background";
-@import "./../utkds-framework/src/scss/styles/textcolors";
-@import "./../utkds-framework/src/scss/styles/pagination";
-@import "./../utkds-framework/src/scss/styles/logos";
+@import "./../utksds-framework/src/scss/styles/breadcrumbs";
+@import "./../utksds-framework/src/scss/styles/blockquote";
+@import "./../utksds-framework/src/scss/styles/buttons";
+@import "./../utksds-framework/src/scss/styles/highlight_boxes";
+@import "./../utksds-framework/src/scss/styles/frame";
+@import "./../utksds-framework/src/scss/styles/images";
+@import "./../utksds-framework/src/scss/styles/orange_hr";
+@import "./../utksds-framework/src/scss/styles/orange_mark";
+@import "./../utksds-framework/src/scss/styles/search_forms";
+@import "./../utksds-framework/src/scss/styles/typography";
+@import "./../utksds-framework/src/scss/styles/background";
+@import "./../utksds-framework/src/scss/styles/textcolors";
+@import "./../utksds-framework/src/scss/styles/pagination";
+@import "./../utksds-framework/src/scss/styles/logos";
 
