@@ -1,3 +1,5 @@
+![Power T](https://images.utk.edu/designsystem/2020/assets/i/icon-114x114.png)
+
 #  University of Tennessee, Knoxville Design System WordPress Theme
 
 
