@@ -21,13 +21,63 @@ if ($menu_type == "horizontal") {
     </button>
     <div id="bellows">
       <?php
-      wp_nav_menu(
-      array(
-      'theme_location' => 'menu-1',
-      'menu_id'        => 'primary-menu',
-      'menu_class'        => 'list-unstyled',
-      )
-      );
+        
+        //            $header_menu_defaults = array(
+        //        'theme_location'  => 'menu-1',
+        //        'menu'            => 'primary-menu',
+        //        'container'       => '',
+        //        'container_class' => '',
+        //        'container_id'    => '',
+        //        'menu_class'      => '',
+        //        'menu_id'         => '',
+        //        'echo'            => true,
+        //        'fallback_cb'     => 'wp_page_menu',
+        //        'before'          => '',
+        //        'after'           => '',
+        //        'link_before'     => '',
+        //        'link_after'      => '',
+        //        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        //        'depth'           => 0,
+        //        'walker'         => new Add_button_of_Sublevel_Walker
+        //    );
+        //    wp_nav_menu( $header_menu_defaults );
+            
+            ?>
+
+
+  <nav>
+     <?php
+     wp_nav_menu([
+     'theme_location'  => 'menu-1',
+     'echo'            => true,
+     'container'       => false,
+     'container_class' => '',
+     'container_id'    => '',
+     'menu_class'      => 'w-auto', //example
+     'menu_id'         => 'shop_menu_nav', //example
+     'fallback_cb'     => 'wp_page_menu',
+     'before'          => '',
+     'after'           => '',
+     'link_before'     => '',
+     'link_after'      => '',
+     'items_wrap'      => '<ul id="%1$s" class="%2$s" aria-labelledby="shop_menu_nav">%3$s</ul>',
+     'depth'           => 0,
+     'walker'          => new Bootstrap_Collapse_NavWalker()
+   ]); ?>
+  </nav>
+
+
+
+
+      <?php
+//      wp_nav_menu(
+//      array(
+//      'theme_location' => 'menu-1',
+//      'menu_id'        => 'primary-menu',
+//      'menu_class'        => 'list-unstyled accordion',
+//     	'walker'          => new CSS_Menu_Maker_Walker(),
+//      )
+//      );
       ?>
     </div>
   </nav>
