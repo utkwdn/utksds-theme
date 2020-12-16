@@ -9,7 +9,7 @@
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.0.11' );
+	define( 'UTKDS_VERSION', '0.0.12' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -218,7 +218,7 @@ function ut_designsystem_scripts() {
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
 
     wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/2020/assets/css/style.css', array(), UTKDS_VERSION );
-   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  get_template_directory_uri() . '/js/utk.js', array( 'jquery' ), UTKDS_VERSION, true );
+   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/2020/assets/js/utk.js', array( 'jquery' ), UTKDS_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
 
@@ -268,13 +268,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * UTK Custom stuff
  */
+
 require get_template_directory() . '/inc/custom-logo.php';
 require_once ( get_template_directory() . '/inc/functions/utk-postsnavigation.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-color-palette.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-menus.php' );
 
-
 function register_navwalker(){
-	require_once ( get_template_directory() . '/inc/functions/class-wp-bootstrap-navwalker.php' );
+  require_once ( get_template_directory() . '/inc/functions/utk-nav-leftrail.php' );
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+function register_navwalker2(){
+	require_once ( get_template_directory() . '/inc/functions/class-wp-bootstrap-navwalker.php' );
+}
+add_action( 'after_setup_theme', 'register_navwalker2' );
