@@ -9,7 +9,9 @@
     ?> <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  <?php
 } ?>
-  <div class="row bg-light no-gutters mb-3 pb-3">
-    <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+
+<div class="bg-light">
+<div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+  <div class="row no-gutters mb-3 pb-3">
       
       
