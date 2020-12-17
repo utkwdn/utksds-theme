@@ -73,7 +73,8 @@
 
          <form  class="form-inline hidden-print col-12 col-lg-4 mt-3 mt-lg-0" name="utk_seek_site" method="post" accept-charset="utf-8" action="//www.utk.edu/masthead/query.php">
             <div class="form-group col-12 row no-gutters p-0">
-              <input type="text" name="qt"  class="form-control col pl-2 border-light"   onfocus="if(this.value == 'Search this site') { this.value = ''; }" placeholder="Search this site" title="search">
+                <label for="searchThissite" class="form-label sr-only">Search this site</label>
+                <input type="text" name="qt"  class="form-control col pl-2 border-light"   onfocus="if(this.value == 'Search this site') { this.value = ''; }" placeholder="Search this site" id="searchThissite" title="search">
               <input type="hidden" name="qtype" value="site_utk:<?php echo esc_url( home_url( '/' ) ); ?>">
               <input type="hidden" name="col" value="utk">
               <input name="go" type="submit" title="Submit" class="btn btn-light col-3" value="Search">
