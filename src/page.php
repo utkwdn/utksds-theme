@@ -24,7 +24,7 @@ ut_ds_post_thumbnail();
 // Is this the front page? And is this the switch to show the home page headline flipped?
 if (is_front_page() && $site_homeheadline=="hide"){
 } else {
-  the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header>' );
+  the_title( '<header class="entry-header col-12"><h1 class="entry-title">', '</h1></header>' );
   get_template_part( 'template-parts/part-endheader' );
 }
 ?>

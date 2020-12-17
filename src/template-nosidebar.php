@@ -21,7 +21,7 @@ get_template_part( 'template-parts/inc-breadcrumb' );
 if (is_front_page() && $site_homeheadline=="hide"){
 
 } else {
-  the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header>' );
+  the_title( '<header class="entry-header col-12"><h1 class="entry-title">', '</h1></header>' );
 }
 ?>
 <!-- .entry-header -->

@@ -43,11 +43,9 @@ if ($menu_type == "horizontal") {
     </div>
   </nav>
 </div>
-<?php }  if ( is_page_template( 'template-nosidebar.php' ) ) {
-  ?>
-    <div class="col-12  <?php if ($menu_type == "horizontal") {  ?> col-xl-12<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-12<?php } else { ?> col-xl-9<?php } ?>">
-    <?php
-      } else {
-    ?>
-      <div class="col-12  <?php if ($menu_type == "horizontal") {  ?> col-xl-9<?php } elseif ($menu_type == "bootstrap")  { ?> col-xl-9<?php } else { ?> col-xl-6<?php } ?>">
-    <?php }?>
+
+
+
+<?php } ?>
+
+<div class="col">
