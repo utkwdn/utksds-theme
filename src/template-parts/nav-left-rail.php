@@ -10,7 +10,7 @@ $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
 <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
 <div class="row">
 <?php
-if ($menu_type == "horizontal") {
+if ($menu_type == "horizontal" OR $menu_type == "megamenu") {
 } elseif ($menu_type == "bootstrap")  {
 } else {       
 ?>

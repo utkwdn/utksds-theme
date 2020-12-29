@@ -32,6 +32,8 @@
 
   <?php  if ($menu_type == "bootstrap") { 
       get_template_part( 'template-parts/nav-bootstrap' );
+     } elseif  ($menu_type == "megamenu") { 
+         get_template_part( 'template-parts/nav-megamenu' );
      } elseif  ($menu_type == "horizontal") { 
          get_template_part( 'template-parts/nav-horizontal' );
      }; ?>
