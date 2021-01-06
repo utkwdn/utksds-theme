@@ -128,12 +128,12 @@ if ( ! function_exists( 'ut_ds_post_thumbnail' ) ) :
 			?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('full'); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
 
-			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<a class="post-thumbnail rounded mr-3 float-left col-4 col-sm-3 col-md-2 col-xl-3" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 					the_post_thumbnail(
 						'post-thumbnail',

@@ -9,7 +9,7 @@
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.0.13' );
+	define( 'UTKDS_VERSION', '0.0.13a' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :

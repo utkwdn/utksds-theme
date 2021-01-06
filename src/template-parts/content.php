@@ -37,10 +37,11 @@
 			</div><!-- .entry-meta -->
 		<?php	 endif; ?>
 	</header><!-- .entry-header -->
+	<div class="row mt-1">
 
 	<?php ut_ds_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content col">
 		<?php
 		if ( is_singular() ) :
   		the_content(
@@ -98,7 +99,9 @@
 			)
 		);
 		?>
-	</div><!-- .entry-content -->
+	</div>
+	</div>
+	<!-- .entry-content -->
   <?php if ($meta_tax != "hide") { ?>
 	  <footer class="entry-footer small">
 		  <?php ut_ds_entry_footer(); ?>
