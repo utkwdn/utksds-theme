@@ -1,16 +1,12 @@
 <?php
 /**
-* The template for displaying all pages
-*
-* This is the template that displays all pages by default.
-* Please note that this is the WordPress construct of pages
-* and that other 'pages' on your WordPress site may use a
-* different template.
-*
-* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-*
-* @package UT_DS
-*/
+ * Template Name: Strips
+ * Description: Full-width, breaks out of the grid (no max-width) for using with the Strips block.
+ *
+ * @package WordPress
+ * @subpackage utresponsive
+ */
+
 
 get_header();
 $site_width = get_theme_mod( 'site_width' );
@@ -31,15 +27,13 @@ if (is_front_page() && $site_homeheadline=="hide"){
 <!-- .entry-header -->
 <?php
   get_template_part( 'template-parts/part-endheader' );
-  get_template_part( 'template-parts/nav-left-rail' );
+ // get_template_part( 'template-parts/nav-left-rail' );
 
 while ( have_posts() ) :
   the_post();
   get_template_part( 'template-parts/content', 'pagenoside' );
 endwhile; // End of the loop.
 ?>
-</div>
-</div>
-</div>
+
 <?php
 get_footer();

@@ -20,7 +20,7 @@ get_template_part( 'template-parts/part-startheader' );
 ut_ds_post_thumbnail(); 
 get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 
-<header class="entry-header">
+<header class="entry-header col-12">
   <?php
     if ( is_singular() ) :
       the_title( '<h1 class="entry-title">', '</h1>' );
