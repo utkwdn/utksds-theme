@@ -10,7 +10,7 @@
  <?php
 } ?>
 
-<div class="bg-light">
+<div class="bg-light pt-5">
 <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
   <div class="row no-gutters mb-3 pb-3">
       

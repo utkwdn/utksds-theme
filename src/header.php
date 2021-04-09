@@ -30,13 +30,40 @@
 ?>
 
 
-  <?php  if ($menu_type == "bootstrap") { 
-      get_template_part( 'template-parts/nav-bootstrap' );
-     } elseif  ($menu_type == "megamenu") { 
-         get_template_part( 'template-parts/nav-megamenu' );
-     } elseif  ($menu_type == "horizontal") { 
-         get_template_part( 'template-parts/nav-horizontal' );
-     }; ?>
+  <?php
+ //   if ($menu_type == "bootstrap") { 
+ //     get_template_part( 'template-parts/nav-bootstrap' );
+ //    } elseif  ($menu_type == "megamenu") { 
+ //        get_template_part( 'template-parts/nav-megamenu' );
+ //    } elseif  ($menu_type == "horizontal") { 
+ //        get_template_part( 'template-parts/nav-horizontal' );
+ //    };
+     
+     ?>
+
+
+
+<nav class="navbar-horizontal col-auto">
+  	<?php if ($site_width != "full-width") { ?><div class="container"><?php }; ?>
+  	<?php
+      wp_nav_menu( array(
+      'theme_location' => 'menu-1',
+//      'container'            => 'nav',
+//      'container_class'      => 'nav',
+      'sub_menu' => true,
+     	'depth'	          => 1, // 1 = no dropdowns, 2 = with dropdowns.
+      'menu_id'        => 'secondary-menu',
+      'menu_class'        => 'nav justify-content-center',
+      ) );
+    ?> 
+
+
+  	<?php if ($site_width != "full-width") { ?></div><?php }; ?>
+</nav>
+
+
+
+
 
 
 <div id="page">
