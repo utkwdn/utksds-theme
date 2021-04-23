@@ -16,7 +16,6 @@
 <?php
   wp_body_open();
   $menu_type = get_theme_mod( 'menu_type' );
-  $site_width = get_theme_mod( 'site_width' );
   ?>
   <a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
   <?php

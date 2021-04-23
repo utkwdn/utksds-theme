@@ -19,21 +19,21 @@ function ukds_customizesite_register( $wp_customize ) {
     ),
   ));
   // Site Width.
-  $wp_customize->add_setting('site_width', array(
-    'default'   => 'max-width',
-    'transport' => 'refresh'
-  ));
-  $wp_customize->add_control('site_width', array(
-    'label'      => __('How wide should the site be?', 'utthehill'),
-    'section'    => 'site-settings',
-    'settings'   => 'site_width',
-    'default'    => 'max-width',
-    'type'       => 'radio',
-    'choices'    => array(
-      'full-width'   => 'Full Width',
-      'max-width'  => 'Max Width',
-    ),
-  ));
+//  $wp_customize->add_setting('site_width', array(
+//    'default'   => 'max-width',
+//    'transport' => 'refresh'
+//  ));
+//  $wp_customize->add_control('site_width', array(
+//    'label'      => __('How wide should the site be?', 'utthehill'),
+//    'section'    => 'site-settings',
+//    'settings'   => 'site_width',
+//    'default'    => 'max-width',
+//    'type'       => 'radio',
+//    'choices'    => array(
+//      'full-width'   => 'Full Width',
+//      'max-width'  => 'Max Width',
+//    ),
+//  ));
   // Homepage Headline
   $wp_customize->add_setting('site_homeheadline', array(
     'default'   => 'show',
@@ -51,22 +51,22 @@ function ukds_customizesite_register( $wp_customize ) {
     ),
   ));
 
-  // Show the Parent in Header
-  $wp_customize->add_setting('site_parentunit_show', array(
-    'default'   => 'hide',
-    'transport' => 'refresh'
-  ));
-  $wp_customize->add_control('site_parentunit_show', array(
-    'label'      => __('Show Parent Unit in Header', 'utthehill'),
-    'section'    => 'site-settings',
-    'settings'   => 'site_parentunit_show',
-    'default'    => 'show',
-    'type'       => 'radio',
-    'choices'    => array(
-      'show'   => 'Show',
-      'hide'  => 'Hide',
-    ),
-  ));
+//  // Show the Parent in Header
+//  $wp_customize->add_setting('site_parentunit_show', array(
+//    'default'   => 'hide',
+//    'transport' => 'refresh'
+//  ));
+//  $wp_customize->add_control('site_parentunit_show', array(
+//    'label'      => __('Show Parent Unit in Header', 'utthehill'),
+//    'section'    => 'site-settings',
+//    'settings'   => 'site_parentunit_show',
+//    'default'    => 'show',
+//    'type'       => 'radio',
+//    'choices'    => array(
+//      'show'   => 'Show',
+//      'hide'  => 'Hide',
+//    ),
+//  ));
 
   // Parent Unit
   $wp_customize->add_setting('site_parentunit_name', array());

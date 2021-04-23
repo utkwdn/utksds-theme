@@ -62,25 +62,25 @@
   // Phone And Email Section
 
 	if($contactinfo_email1label != "") {
-		echo '<small>'.$contactinfo_email1label.':&nbsp;<a href="mailto:'. $contactinfo_email1address. '">' . $contactinfo_email1address . '</a></small><br>'; 
+		echo '<small class="text-white">'.$contactinfo_email1label.':&nbsp;<a href="mailto:'. $contactinfo_email1address. '">' . $contactinfo_email1address . '</a></small><br>'; 
   } 
 
   if($contactinfo_phone1label != "") {
-  	echo '<small>'.$contactinfo_phone1label.':&nbsp;';
+  	echo '<small class="text-white">'.$contactinfo_phone1label.':&nbsp;';
   }
   if($contactinfo_phone1number != "") {
   	echo '<a href="tel:+1'.$contactinfo_phone1numberStripped.'" class="tel">'.$contactinfo_phone1number.'</a></small>';
   }
   
   if($contactinfo_phone2label != "") {
-  	echo '<br><small>'.$contactinfo_phone2label.':&nbsp;';
+  	echo '<br><small class="text-white">'.$contactinfo_phone2label.':&nbsp;';
   }
   if($contactinfo_phone2number != "") {
   	echo '<a href="tel:+1'.$contactinfo_phone2numberStripped.'" class="tel">'.$contactinfo_phone2number.'</a></small>';
   }
   
   if($contactinfo_phone3label != "") {
-  	echo '<br><small>'.$contactinfo_phone3label.':&nbsp;';
+  	echo '<br><small class="text-white">'.$contactinfo_phone3label.':&nbsp;';
   }
   if($contactinfo_phone3number != "") {
   	echo '<a href="tel:+1'.$contactinfo_phone3numberStripped.'" class="tel">'.$contactinfo_phone3numberStripped.'</a></small>';

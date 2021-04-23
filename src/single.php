@@ -14,10 +14,9 @@ $single_show_byline = get_theme_mod( 'single_show_byline' );
 $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
 $single_tax = get_theme_mod( 'single_tax' );
 $single_show_pager = get_theme_mod( 'single_show_pager' );
-$site_width = get_theme_mod( 'site_width' );
 
-get_template_part( 'template-parts/part-startheader' ); 
 ut_ds_post_thumbnail(); 
+get_template_part( 'template-parts/part-startheader' ); 
 get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 
 <header class="entry-header col-12">

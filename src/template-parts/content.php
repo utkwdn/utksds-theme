@@ -6,7 +6,6 @@
  *
  * @package UT_DS
  */
-  $site_width = get_theme_mod( 'site_width' );
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

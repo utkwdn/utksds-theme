@@ -21,6 +21,7 @@ function ut_ds_body_classes( $classes ) {
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
 	}
+	$classes[] = 'd-flex flex-column h-100';
 
 	return $classes;
 }

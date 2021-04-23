@@ -9,7 +9,7 @@
  * @package UT_DS
  */
 
-  $site_width = get_theme_mod( 'site_width' );
+//  $site_width = get_theme_mod( 'site_width' );
   $site_parentunit_show = get_theme_mod( 'site_parentunit_show' );
   $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
@@ -26,16 +26,16 @@
 <?php   get_template_part( 'template-parts/region-extendedfooter' ); ?>
 
 <?php if ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) ||	is_active_sidebar( 'sidebar-4' ) ||	is_active_sidebar( 'sidebar-5' )	) { ?>
-	<footer id="colophon" class="site-footer mt-5">
+	<footer id="colophon" class="site-footer  mt-auto">
 <?php } else { ?>
-	<footer id="colophon" class="site-footer mt-5">
+	<footer id="colophon" class="site-footer mt-auto">
 <?php }; ?>
 
 
   <!-- .site-info -->
 
 <div class="container-fluid" id="universal-footer">
-    <?php if ($site_width != "full-width") { ?><div class="container"><?php }; ?>
+    <div class="container">
       <div class="row pt-3">
 
     <div class="site-info col-12 col-md-6">
@@ -53,7 +53,7 @@
       <p class="text-white small">The flagship campus of the University of Tennessee System and partner in the Tennessee Transfer Pathway.</p>
       <p class="text-white small"><a class="text-white" href="https://www.utk.edu">EEO</a>. <a class="text-white"  href="https://www.utk.edu">Legal</a>. <a class="text-white"  href="https://www.utk.edu">Privacy</a>. <a  class="text-white" href="https://www.utk.edu">Accessibility</a>.</p>
     </div>
-    <?php if ($site_width != "full-width") { ?></div><?php }; ?> 
+    </div> 
   </div>
 </div>
 	</footer><!-- #colophon -->

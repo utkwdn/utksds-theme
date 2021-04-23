@@ -11,14 +11,14 @@
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="h-100">
 <?php  get_template_part( 'template-parts/part-head' ); ?>
 
 <body <?php body_class(); ?>>
 <?php
   wp_body_open();
   $menu_type = get_theme_mod( 'menu_type' );
-  $site_width = get_theme_mod( 'site_width' );
+//  $site_width = get_theme_mod( 'site_width' );
   $site_parentunit_show = get_theme_mod( 'site_parentunit_show' );
   $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
@@ -44,7 +44,7 @@
 
 
 <nav class="navbar-horizontal col-auto">
-  	<?php if ($site_width != "full-width") { ?><div class="container"><?php }; ?>
+  	<div class="container">
   	<?php
       wp_nav_menu( array(
       'theme_location' => 'menu-1',
@@ -58,7 +58,7 @@
     ?> 
 
 
-  	<?php if ($site_width != "full-width") { ?></div><?php }; ?>
+  	</div>
 </nav>
 
 
