@@ -10,7 +10,6 @@
 
   $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
   $menu_type = get_theme_mod( 'menu_type' );
-  $site_width = get_theme_mod( 'site_width' );
 
 ?>
 

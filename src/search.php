@@ -8,7 +8,6 @@
 */
 
 get_header();
-$site_width = get_theme_mod( 'site_width' );
 $menu_type = get_theme_mod( 'menu_type' );
 
 get_template_part( 'template-parts/part-startheader' );

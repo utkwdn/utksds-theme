@@ -13,12 +13,11 @@
 */
 
 get_header();
-$site_width = get_theme_mod( 'site_width' );
 $menu_type = get_theme_mod( 'menu_type' );
 $site_homeheadline = get_theme_mod( 'site_homeheadline' );
 
-get_template_part( 'template-parts/part-startheader' );
 ut_ds_post_thumbnail();
+get_template_part( 'template-parts/part-startheader' );
 get_template_part( 'template-parts/inc-breadcrumb' ); 
 
 // Is this the front page? And is this the switch to show the home page headline flipped?

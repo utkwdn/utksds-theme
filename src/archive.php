@@ -9,7 +9,7 @@
 
 get_header();
 $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
-$site_width = get_theme_mod( 'site_width' );
+// $site_width = get_theme_mod( 'site_width' );
 $menu_type = get_theme_mod( 'menu_type' );      
 
 get_template_part( 'template-parts/part-startheader' );
@@ -42,7 +42,7 @@ if ( have_posts() ) : ?>
 
   endwhile;
   ?>
-  <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
+  <div class="container">
     <?php 
       the_posts_navigation();
     ?>
