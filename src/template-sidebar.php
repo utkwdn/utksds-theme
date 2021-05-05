@@ -24,7 +24,7 @@ if (is_front_page() && $site_homeheadline=="hide"){
 }
 ?>
 <!-- .entry-header -->
-<?php get_template_part( 'template-parts/nav-left-rail' );    		
+<?php   		
 
 while ( have_posts() ) :
   the_post();
