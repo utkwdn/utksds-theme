@@ -11,8 +11,15 @@
     $single_tax = get_theme_mod( 'single_tax' );
 
 ?>
+<div class="container">
 
-	<div class="entry-content">
+<?php   if ($single_show_sidebar != "hide") { ?>
+  <div class="row">
+    <div class="col-9">
+<?php }; ?>
+
+
+
 		<?php
   		the_content(
   			sprintf(
@@ -38,7 +45,6 @@
 
 
 		?>
-	</div><!-- .entry-content -->
   <?php if ($single_tax != "hide") { ?>
 	  <footer class="entry-footer small">
 		  <?php ut_ds_entry_footer(); ?>
@@ -57,4 +63,16 @@
 
   	 
   	  ?>
-<hr>
+
+  
+  <?php 
+    if ($single_show_sidebar != "hide") { 
+  ?> 
+    </div>
+    <div class="col-12 col-md-4 col-xl-3">
+      <?php get_sidebar(); ?>
+    </div>
+  </div>
+<?php
+}; ?>
+</div>

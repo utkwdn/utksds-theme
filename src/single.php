@@ -44,7 +44,6 @@ get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 
 <?php
   get_template_part( 'template-parts/part-endheader' );
-  get_template_part( 'template-parts/nav-left-rail' );
 
   while ( have_posts() ) :
     the_post();
@@ -56,12 +55,4 @@ get_template_part( 'template-parts/inc-breadcrumb' ); ?>
   endwhile; // End of the loop.
 ?>
 </div>
-<?php 
-  if ($single_show_sidebar != "hide") { 
-?>
-  <div class="col-12 col-md-4 col-xl-3">
-    <?php get_sidebar(); ?>
-  </div>
-<?php
-};
-get_footer();
+<?php get_footer();
