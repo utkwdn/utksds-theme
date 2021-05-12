@@ -275,12 +275,13 @@ require_once ( get_template_directory() . '/inc/functions/utk-postsnavigation.ph
 require_once ( get_template_directory() . '/inc/functions/utk-color-palette.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-menus.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-nav-default.php' );
+require_once ( get_template_directory() . '/inc/functions/utk-pagesettings.php' );
 
-function register_navwalker(){
-  require_once ( get_template_directory() . '/inc/functions/utk-nav-leftrail.php' );
-}
-add_action( 'after_setup_theme', 'register_navwalker' );
-function register_navwalker2(){
-	require_once ( get_template_directory() . '/inc/functions/class-wp-bootstrap-navwalker.php' );
-}
-add_action( 'after_setup_theme', 'register_navwalker2' );
+// function register_navwalker(){
+//   require_once ( get_template_directory() . '/inc/functions/utk-nav-leftrail.php' );
+// }
+// add_action( 'after_setup_theme', 'register_navwalker' );
+// function register_navwalker2(){
+// 	require_once ( get_template_directory() . '/inc/functions/class-wp-bootstrap-navwalker.php' );
+// }
+// add_action( 'after_setup_theme', 'register_navwalker2' );
