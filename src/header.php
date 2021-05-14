@@ -44,7 +44,6 @@
 
 
 <nav class="navbar-horizontal col-auto">
-  	<div class="container">
   	<?php
       wp_nav_menu( array(
       'theme_location' => 'menu-1',
@@ -55,10 +54,7 @@
       'menu_id'        => 'secondary-menu',
       'menu_class'        => 'nav justify-content-center',
       ) );
-    ?> 
-
-
-  	</div>
+    ?>
 </nav>
 
 
