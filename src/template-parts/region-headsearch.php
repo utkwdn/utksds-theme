@@ -5,90 +5,80 @@
     <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
     <ul class="row justify-content-between list-inline mb-0">
       <li class="col-auto col-md-auto list-inline-item mr-md-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
+      <li class="col-auto"><small><a href="https://apply.utk.edu" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>
+      <li class="col-auto"><small><a href="https://visit.utk.edu" class="nav-link px-0 text-light text-uppercase">Visit</a></small></li>
       <li class="col-auto"><small><a href="https://giveto.utk.edu" class="nav-link px-0 text-light text-uppercase">Give</a></small></li>
       <li class="col-auto"><small><a href="https://my.utk.edu" class="nav-link px-0 text-light text-uppercase">myUTK</a></small></li>
-      <li class="col-auto"><small><a href="https://apply.utk.edu" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>
     </ul>
     </div>
   </nav>
-  
-  
-  
+
 
 <!-- Modal -->
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content bg-transparent border-0">
-            <div class="modal-body bg-white">
-              <div class="row mb-3">
-                <div class="col-12">
-                  <button type="button" class="close btn btn-smokey bg-transparent border-0 ml-auto" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span><span class="small text-uppercase">Close</span>
-                  </button>
-                </div>
-              </div>
-              <div class="row py-4 mb-5">
-                <div class="col-12">
-              <form method="GET" action="//google.tennessee.edu/search" class="form-inline hidden-print">
-                <div class="form-group col-12">
-                <label class="sr-only visually-hidden" for="q">Search UT</label>
-                <input type="text" class="form-control col bg-light" title="Search utk.edu" placeholder="Search utk.edu" name="q" id="q" maxlength="256" onfocus="if(this.value == 'Search utk.edu') { this.value = ''; }">
-                <input type="submit" name="btnG" class="btn btn-light col-auto" value="Search">
-                <input type="hidden" name="output" value="xml_no_dtd">
-                <input type="hidden" name="oe" value="UTF-8">
-                <input type="hidden" name="ie" value="UTF-8">
-                <input type="hidden" name="ud" value="1">
-                <input type="hidden" name="site" value="Knoxville">
-                <input type="hidden" name="client" value="utk_translate_docpreview_sc_frontend">
-                <input type="hidden" name="entqr" value="3">
-                <!--    <input type="hidden" name="sitesearch" value="utk.edu" /> -->
-                <input type="hidden" name="qtype" class="searchtext" value="utk" title="search type">
-                <input type="hidden" name="proxystylesheet" value="utk_translate_docpreview_sc_frontend">
-                </div>
-              </form>
-                </div>
-                </div>
+  <div class="modal-dialog  modal-lg modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form method="GET" action="//google.tennessee.edu/search" class="form-inline hidden-print">
+          <div class="mb-3 input-group">
+            <label class="sr-only visually-hidden" for="q">Search</label>
+            <input type="text" class="form-control" title="Search utk.edu" placeholder="Search utk.edu" name="q" id="q">
+            <button type="submit" name="btnG" class="btn btn-outline-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg><span class="visually-hidden">Submit</span></button>
+          </div>
+          <input type="hidden" name="output" value="xml_no_dtd">
+          <input type="hidden" name="oe" value="UTF-8">
+          <input type="hidden" name="ie" value="UTF-8">
+          <input type="hidden" name="ud" value="1">
+          <input type="hidden" name="site" value="Knoxville">
+          <input type="hidden" name="client" value="utk_translate_docpreview_sc_frontend">
+          <input type="hidden" name="entqr" value="3">
+          <!--    <input type="hidden" name="sitesearch" value="utk.edu" /> -->
+          <input type="hidden" name="qtype" class="searchtext" value="utk" title="search type">
+          <input type="hidden" name="proxystylesheet" value="utk_translate_docpreview_sc_frontend">
+        </form>
 
 
-<ul class="nav nav-tabs" id="resultsTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="siteTab" data-toggle="tab" href="#siteResults" role="tab" aria-controls="siteResults" aria-selected="true">This Site</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="utkTab" data-toggle="tab" href="#utkResults" role="tab" aria-controls="utkResults" aria-selected="false">All of utk.edu</a>
-  </li>
-</ul>
-<div class="tab-content" id="resultsTabContent">
-  <div class="tab-pane fade show active" id="siteResults" role="tabpanel" aria-labelledby="siteTab">
-      
-      <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-      <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-      <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-      <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-      <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-      <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-      <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-      <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-      <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-      <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
 
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">This Site</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">All of UTK.edu</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+      </div>
 
-  </div>
-  <div class="tab-pane fade" id="utkResults" role="tabpanel" aria-labelledby="utkTab">
-    
-      <p class="h6"><a href="#">Testing, screening, and contact tracing / Guides / COVID-19 ...</a></p>
-      <p>To monitor the prevalence of the virus on campus and identify asymptomatic students who may need diagnostic testing, the university conducts community saliva ...</p> 
-      <p class="h6"><a href="#">Testing, screening, and contact tracing / Guides / COVID-19 ...</a></p>
-      <p>To monitor the prevalence of the virus on campus and identify asymptomatic students who may need diagnostic testing, the university conducts community saliva ...</p> 
-      <p class="h6"><a href="#">Testing, screening, and contact tracing / Guides / COVID-19 ...</a></p>
-      <p>To monitor the prevalence of the virus on campus and identify asymptomatic students who may need diagnostic testing, the university conducts community saliva ...</p> 
-      <p class="h6"><a href="#">Testing, screening, and contact tracing / Guides / COVID-19 ...</a></p>
-      <p>To monitor the prevalence of the virus on campus and identify asymptomatic students who may need diagnostic testing, the university conducts community saliva ...</p> 
-      <p class="h6"><a href="#">Testing, screening, and contact tracing / Guides / COVID-19 ...</a></p>
-      <p>To monitor the prevalence of the virus on campus and identify asymptomatic students who may need diagnostic testing, the university conducts community saliva ...</p> 
-    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
+
+
+
 
 
 

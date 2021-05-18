@@ -23,7 +23,7 @@
   $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
 ?>
-<a class="sr-only sr-only-focusable position-absolute visually-hidden visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
+<a class="position-absolute visually-hidden visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'ut-ds' ); ?></a>
 <?php
   get_template_part( 'template-parts/region-headsearch' );
   get_template_part( 'template-parts/region-masthead' );
