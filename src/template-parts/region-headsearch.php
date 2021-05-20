@@ -1,10 +1,14 @@
 <?php
     $site_width = get_theme_mod( 'site_width' );
 ?>
+
+
+
+
   <nav id="universal-header">
     <div class="container<?php if ($site_width == "full-width") { ?>-fluid<?php }; ?>">
     <ul class="row justify-content-between list-inline mb-0">
-      <li class="col-auto col-md-auto list-inline-item mr-md-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
+      <li class="col-auto list-inline-item me-md-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
       <li class="col-auto"><small><a href="https://apply.utk.edu" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>
       <li class="col-auto"><small><a href="https://visit.utk.edu" class="nav-link px-0 text-light text-uppercase">Visit</a></small></li>
       <li class="col-auto"><small><a href="https://giveto.utk.edu" class="nav-link px-0 text-light text-uppercase">Give</a></small></li>
@@ -12,6 +16,7 @@
     </ul>
     </div>
   </nav>
+
 
 
 <!-- Modal -->
@@ -44,7 +49,30 @@
         </form>
 
 
+<form id="search_form" role="search" method="get" class="search-form" action="">
+	  <div class="input-group cse_search_form">
+		 		<!--<input id="search_input" type="search" class="search-field form-control" placeholder="Enter search ..."
+			   value=""
+			   name="q" aria-describedby="search-form" autofocus>-->
+          <input id="search_input" type="search" class="search-field form-control" placeholder="Enter search ..." value="" aria-describedby="search-form" autofocus="">
+          <input id="search_input_hidden" name="q" style="display: none">
+		  <span class="input-group-btn">
+			<button type="submit" class="btn btn-orange" id="search-form">Search
+			</button>
+		  </span>
+	  </div>  
+		<small class="cse_sub_filter">Limit to:&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter0" value="" checked=""> Any</small> 
+		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter1" value=" site:utk.edu"> utk.edu</small> 
+		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter2" value=" site:tennessee.edu"> tennessee.edu</small> 
+		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter3" value=" site:ag.tennessee.edu"> UTIA</small>
+		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter4" value=" site:ips.tennessee.edu"> IPS</small>
+		
+</form>
 
+
+<script async src="https://cse.google.com/cse.js?cx=a9f8a625f3ab4bbd8"></script>
+<div class="gcse-search"></div>	
+	
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">This Site</button>
