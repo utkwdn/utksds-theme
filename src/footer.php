@@ -47,7 +47,7 @@
 
   		</div>
 
-    <div id="utk-identifier" class="col-12 col-md-6 col-lg-5 ml-lg-auto mt-md-n5 pt-4">
+    <div id="utk-identifier" class="col-12 col-md-6 col-lg-5 ms-lg-auto mt-md-n5 pt-4">
       <?php   get_template_part( 'template-parts/style-footer-logo' ); ?>
       <p class="text-white small">The University of Tennessee, Knoxville<br>Knoxville, Tennessee 37996, 865-974-1000</p>
       <p class="text-white small">The flagship campus of the University of Tennessee System and partner in the Tennessee Transfer Pathway.</p>
