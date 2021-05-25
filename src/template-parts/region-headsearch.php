@@ -21,20 +21,19 @@
 
 <!-- Modal -->
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-  <div class="modal-dialog  modal-lg modal-fullscreen-sm-down">
+  <div class="modal-dialog modal-fullscreen-sm-down modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="searchModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-
         <form method="GET" action="//google.tennessee.edu/search" class="form-inline hidden-print">
           <div class="mb-3 input-group">
             <label class="sr-only visually-hidden" for="q">Search</label>
             <input type="text" class="form-control" title="Search utk.edu" placeholder="Search utk.edu" name="q" id="q">
             <button type="submit" name="btnG" class="btn btn-outline-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg><span class="visually-hidden">Submit</span></button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg><span class="visually-hidden">Submit</span></button>
           </div>
           <input type="hidden" name="output" value="xml_no_dtd">
           <input type="hidden" name="oe" value="UTF-8">
@@ -47,55 +46,30 @@
           <input type="hidden" name="qtype" class="searchtext" value="utk" title="search type">
           <input type="hidden" name="proxystylesheet" value="utk_translate_docpreview_sc_frontend">
         </form>
-
-
-<form id="search_form" role="search" method="get" class="search-form" action="">
-	  <div class="input-group cse_search_form">
-		 		<!--<input id="search_input" type="search" class="search-field form-control" placeholder="Enter search ..."
-			   value=""
-			   name="q" aria-describedby="search-form" autofocus>-->
-          <input id="search_input" type="search" class="search-field form-control" placeholder="Enter search ..." value="" aria-describedby="search-form" autofocus="">
-          <input id="search_input_hidden" name="q" style="display: none">
-		  <span class="input-group-btn">
-			<button type="submit" class="btn btn-orange" id="search-form">Search
-			</button>
-		  </span>
-	  </div>  
-		<small class="cse_sub_filter">Limit to:&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter0" value="" checked=""> Any</small> 
-		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter1" value=" site:utk.edu"> utk.edu</small> 
-		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter2" value=" site:tennessee.edu"> tennessee.edu</small> 
-		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter3" value=" site:ag.tennessee.edu"> UTIA</small>
-		<small class="cse_sub_filter"><input class="form-check-input" type="radio" name="subfilter" id="cse_sub_filter4" value=" site:ips.tennessee.edu"> IPS</small>
-		
-</form>
-
-
-<script async src="https://cse.google.com/cse.js?cx=a9f8a625f3ab4bbd8"></script>
-<div class="gcse-search"></div>	
-	
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">This Site</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">All of UTK.edu</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
-          <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
-          <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+        
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">This Site</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">All of UTK.edu</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+            <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+            <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+            <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+            <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+            <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+            <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+            <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+            <p class="h6"><a href="#">Test Score Policy | Undergraduate Admissions</a></p>
+            <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-      </div>
 
       </div>
       <div class="modal-footer">
@@ -104,6 +78,10 @@
     </div>
   </div>
 </div>
+
+
+
+
 
 
 

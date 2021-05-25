@@ -1,4 +1,4 @@
-<svg version="1.1" id="utk_footer_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<a href="https://www.utk.edu/"><svg version="1.1" id="utk_footer_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 209.63 46.83" style="enable-background:new 0 0 209.63 46.83;" xml:space="preserve">
 <style type="text/css">
 	.ft_st0{fill:#FFFFFF;}
@@ -368,3 +368,4 @@
 	c0,3.12,2.43,5.65,5.43,5.66h0.01v4.35H13.93v-4.35h0.01c3-0.01,5.43-2.54,5.43-5.66V16c-0.76-1.35-2.42-2.29-4.35-2.29
 	c-2.64,0-4.79,1.75-4.79,3.92H5.88V5.88H40.7L40.7,5.88z"/>
 </svg>
+</a>
