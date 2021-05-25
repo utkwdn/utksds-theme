@@ -38,16 +38,16 @@
     <div class="container">
       <div class="row pt-3">
 
-    <div class="site-info col-12 col-md-6">
+        <div class="site-info col-12 col-md-6">
   				<p class="h5 text-white"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-    		  <?php if ($site_parentunit_show == "show") { ?>
-			      <p class="small text-white"><?php if ($site_parentunit_link != "") { ?><a class="text-reset" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
+    		  <?php if ($site_parentunit_link != "") { ?>
+			      <p class="small text-white mb-5"><?php if ($site_parentunit_link != "") { ?><a class="text-reset" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
 			    <?php } ?>
-    <?php   get_template_part( 'template-parts/region-contact' ); ?>
 
-  		</div>
+          <?php   get_template_part( 'template-parts/region-contact' ); ?>
+  		  </div>
 
-    <div id="utk-identifier" class="col-12 col-md-6 col-lg-5 ms-lg-auto mt-md-n5 pt-4">
+    <div id="utk-identifier" class="col-12 col-md-6 col-lg-5 ms-lg-auto mt-md-n5 p-4">
       <?php   get_template_part( 'template-parts/style-footer-logo' ); ?>
       <p class="text-white small">The University of Tennessee, Knoxville<br>Knoxville, Tennessee 37996, 865-974-1000</p>
       <p class="text-white small">The flagship campus of the University of Tennessee System and partner in the Tennessee Transfer Pathway.</p>
