@@ -86,6 +86,23 @@ function ukds_customizesite_register( $wp_customize ) {
     'type'       => 'url'
   ));
 
+  // Long title
+    $wp_customize->add_setting('site_bigheader', array(
+      'default'   => 'one',
+      'transport' => 'refresh'
+    ));
+    $wp_customize->add_control('site_bigheader', array(
+    'label'      => __('Header Style', 'utthehill'),
+    'section'    => 'site-settings',
+    'settings'   => 'site_bigheader',
+    'default'    => 'one',
+    'type'       => 'radio',
+    'choices'    => array(
+      'two'      => 'Two Rows',
+      'one'         => 'One Row',
+    ),
+  ));
+
   // Show Comments
     $wp_customize->add_setting('site_comments', array(
       'default'   => 'no',

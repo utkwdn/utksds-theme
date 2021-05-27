@@ -3,6 +3,7 @@
   $site_parentunit_show = get_theme_mod( 'site_parentunit_show' );
   $site_parentunit_name = get_theme_mod( 'site_parentunit_name' );
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
+  $site_header = get_theme_mod( 'site_bigheader' );
   if ( get_header_image() ) : ?>
           <div id="site-header">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -19,6 +20,7 @@
           <button class="navbar-toggler col-auto mr-auto" type="button" id="mobile-menu-open" data-toggle="#site-navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg><span class="visually-hidden">Menu</span></button>
 
 
+
 			<?php
 			
 			
@@ -28,19 +30,26 @@
       $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             if ( has_custom_logo() ) { ?>
 
-  				<div class="col-5 mx-auto mx-md-0 col-sm-7 col-md-10 col-lg-3 col-xl-4 d-flex justify-content-center">
+  				<div class="mx-auto mx-md-0 d-flex justify-content-center col-5 col-sm-7 <?php if ($site_header == "two") { ?>col-md-12<?php } else { ?>col-md-10 col-lg-3 col-xl-4<?php }; ?>">
      				<a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img  src="<?php echo esc_url( $logo[0]  ); ?>" width="" height="" alt="<?php bloginfo( 'name' ); ?>"  rel="home"></a>
   				</div>
+
+
         <?php } elseif ( is_front_page() && is_home() ) { ?>
-    				<a class="text-reset text-decoration-none text-uppercase align-self-center font-weight-light" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-     				  <h1 class="h6 site-title d-none d-md-inline fw-light"><?php bloginfo( 'name' ); ?></a></h1>
+    				<a class="text-reset d-flex text-decoration-none text-uppercase align-self-center font-weight-light col-1 col-lg-3<?php if ($site_header == "two") { ?> col-lg-12 ms-3 my-3<?php }; ?>" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+     				    <h1 class="h6 site-title d-none d-md-inline fw-light align-self-center"><?php bloginfo( 'name' ); ?></a></h1>
   				  </a>
-				<?php  } else { ?>
-  
-    				<a class="text-reset text-decoration-none text-uppercase align-self-center font-weight-light" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-     				  <span class="h6 site-title font-weight-light d-none d-md-inline fw-light"><?php bloginfo( 'name' ); ?></a></span>
+
+				<?php  } else { ?>  
+    				<a class="text-reset d-flex text-decoration-none text-uppercase align-self-center font-weight-light col-1 col-lg-3<?php if ($site_header == "two") { ?> col-lg-12 ms-3 my-3<?php }; ?>" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+     				  <span class="h6 site-title d-none d-md-inline fw-light align-self-center"><?php bloginfo( 'name' ); ?></a></span>
   		  		</a>
     				<?php  }; ?>
+
+
+
+
+
 
             <?php get_template_part( 'template-parts/nav-default' ); ?>
  
