@@ -27,8 +27,12 @@ if ( have_posts() ) : ?>
 
   <?php
     get_template_part( 'template-parts/part-endheader' );
-    get_template_part( 'template-parts/nav-left-rail' );
-  
+ ?>
+ 
+<div class="container">
+  <div class="row">
+      <div class="col-9 col-md-9 col-xl-9">
+        <?php   
   /* Start the Loop */
   while ( have_posts() ) :
     the_post();
@@ -42,30 +46,29 @@ if ( have_posts() ) : ?>
 
   endwhile;
   ?>
-  <div class="container">
     <?php 
       the_posts_navigation();
     ?>
-  </div>
   <?php 
-else :
+  else :
 
   get_template_part( 'template-parts/content', 'none' );
 
 endif;
 ?>
-</div>
   <?php 
     $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
     if ($single_show_sidebar != "hide") { 
-  ?>
-    <div class="col-12 col-md-4 col-xl-3">
-      <?php get_sidebar();		?>
-    </div>
-  <?php
+    ?>
+      </div>
+      <div class="col-12 col-md-4 col-xl-3">
+          <?php get_sidebar(); ?>
+      </div>
+    <?php
     };
-  ?>
-</div>
+    ?>
+    </div>
+  </div>
 </div>
 <?php
 get_footer();

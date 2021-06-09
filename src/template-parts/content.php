@@ -31,6 +31,7 @@
 	    	  };
   				if ($meta_byline != "hide") { 
     				ut_ds_posted_by();
+    				
     		  };
 				?>
 			</div><!-- .entry-meta -->
