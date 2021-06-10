@@ -17,7 +17,11 @@ $single_show_pager = get_theme_mod( 'single_show_pager' );
 
 ut_ds_post_thumbnail(); 
 get_template_part( 'template-parts/part-startheader' ); 
-get_template_part( 'template-parts/inc-breadcrumb' ); ?>
+get_template_part( 'template-parts/inc-breadcrumb' ); 
+while ( have_posts() ) :
+the_post();
+
+?>
 
 <header class="entry-header col-12">
   <?php
@@ -43,16 +47,16 @@ get_template_part( 'template-parts/inc-breadcrumb' ); ?>
 </header><!-- .entry-header -->
 
 <?php
-  get_template_part( 'template-parts/part-endheader' );
+    get_template_part( 'template-parts/part-endheader' );
 
-  while ( have_posts() ) :
-    the_post();
     get_template_part( 'template-parts/content', 'single' );
 // If comments are open or we have at least one comment, load up the comment template.
     if ( comments_open() || get_comments_number() ) :
       comments_template();
     endif;
-  endwhile; // End of the loop.
 ?>
 </div>
-<?php get_footer();
+<?php 
+
+endwhile; // End of the loop.
+get_footer();

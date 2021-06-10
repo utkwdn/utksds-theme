@@ -35,14 +35,14 @@
   				</div>
 
 
-        <?php } elseif ( is_front_page() && is_home() ) { ?>
+        <?php } elseif ( is_front_page() || is_home() ) { ?>
     				<a class="text-reset d-flex text-decoration-none text-uppercase align-self-center font-weight-light col-1 col-lg-3<?php if ($site_header == "two") { ?> col-lg-12 ms-3 my-3<?php }; ?>" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-     				    <h1 class="h6 site-title d-none d-md-inline fw-light align-self-center"><?php bloginfo( 'name' ); ?></a></h1>
+     				    <h1 class="site-title d-none d-md-inline fw-light align-self-center"><?php bloginfo( 'name' ); ?></h1>
   				  </a>
 
 				<?php  } else { ?>  
     				<a class="text-reset d-flex text-decoration-none text-uppercase align-self-center font-weight-light col-1 col-lg-3<?php if ($site_header == "two") { ?> col-lg-12 ms-3 my-3<?php }; ?>" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-     				  <span class="h6 site-title d-none d-md-inline fw-light align-self-center"><?php bloginfo( 'name' ); ?></a></span>
+     				  <span class="site-title d-none d-md-inline fw-light align-self-center"><?php bloginfo( 'name' ); ?></a></span>
   		  		</a>
     				<?php  }; ?>
 
