@@ -30,8 +30,8 @@
       $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             if ( has_custom_logo() ) { ?>
 
-  				<div class="mx-auto mx-md-0 d-flex justify-content-center col-5 col-sm-7 <?php if ($site_header == "two") { ?>col-md-12<?php } else { ?>col-md-10 col-lg-3 col-xl-4<?php }; ?>">
-     				<a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img  src="<?php echo esc_url( $logo[0]  ); ?>" width="" height="" alt="<?php bloginfo( 'name' ); ?>"  rel="home"></a>
+  				<div class="mx-auto mx-md-0 d-flex justify-content-center justify-content-lg-start col-5 col-sm-7 <?php if ($site_header == "two") { ?>col-md-12<?php } else { ?>col-md-10 col-lg-3 col-xl-4<?php }; ?>">
+     				<a class="text-reset text-decoration-none d-flex" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="site-logo align-self-center" src="<?php echo esc_url( $logo[0]  ); ?>" width="" height="" alt="<?php bloginfo( 'name' ); ?>"  rel="home"></a>
   				</div>
 
 
