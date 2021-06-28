@@ -1,8 +1,46 @@
 <?php
 function ukds_customizecontact_register( $wp_customize ) {
 
+	//experimental contact info
+	$wp_customize->add_setting('contactinfo_phone_exp_label', array());
+	$wp_customize->add_setting('contactinfo_phone_exp_number', array());
+	
+	class WP_Customize_Phone_Fields_Control extends WP_Customize_Control {
 
+    	public $type = 'exp_phone_fields';
 
+    	public function render_content() {
+        	?>
+        	<label>
+            	<?php if (!empty($this->label)){ ?>
+                	<span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
+            	<?php } ?>
+            	<input type="<?php echo esc_attr($this->type); ?>" value="<?php echo esc_attr($this->value('phone_label')); ?>" <?php $this->link('phone_label'); ?> placeholder="Label" />
+				<input type="<?php echo esc_attr($this->type); ?>" value="<?php echo esc_attr($this->value('phone_number')); ?>" <?php $this->link('phone_number'); ?> placeholder="(555) 555-5555"/>
+        	</label>
+
+        	<?php if (!empty($this->description)){ ?>
+        	<span class="description customize-control-description"><?php echo $this->description; ?></span>
+    		<?php }
+    	}
+	}
+	
+	$wp_customize->add_control(new WP_Customize_Phone_Fields_Control(
+    	$wp_customize,
+    	'exp_phone_fields',
+    	array(
+        	'label' => __('Experimental Phone Listing'),
+        	'section' => 'contact-settings',
+        	'settings' => [
+            	'phone_label' => 'contactinfo_phone_exp_label',
+            	'phone_number' => 'contactinfo_phone_exp_number'
+        	],
+        	// specify the kind of input field
+        	'type' => 'text',
+        	'description' => __('Enter a phone label and phone number in the same place.'),
+        	'priority' => 80
+    	)
+	));
 
   // Contact Info
   // ===================================================================
