@@ -28,11 +28,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form method="GET" action="//google.tennessee.edu/search" class="form-inline hidden-print">
+		  
+        <!--<form method="GET" action="//google.tennessee.edu/search" class="form-inline hidden-print">-->
+		<form class="form-inline hidden-print">
           <div class="mb-3 input-group">
             <label class="sr-only visually-hidden" for="q">Search</label>
             <input type="text" class="form-control" title="Search utk.edu" placeholder="Search utk.edu" name="q" id="q">
-            <button type="submit" name="btnG" class="btn btn-outline-secondary">
+            <!--<button type="submit" name="btnG" class="btn btn-outline-secondary">-->
+			<button type="button" name="btnG" class="btn btn-outline-secondary" onClick="search_submission()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg><span class="visually-hidden">Submit</span></button>
           </div>
           <input type="hidden" name="output" value="xml_no_dtd">
@@ -46,8 +49,8 @@
           <input type="hidden" name="qtype" class="searchtext" value="utk" title="search type">
           <input type="hidden" name="proxystylesheet" value="utk_translate_docpreview_sc_frontend">
         </form>
-        
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+		  <div id="gs_results"></div>
+        <!--<ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">This Site</button>
           </li>
@@ -69,7 +72,7 @@
             <p>The University of Tennessee has decided to make standardized test scores optional for the 2021 application. Students* can select to include or not include their ...</p> 
           </div>
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-        </div>
+        </div>-->
 
       </div>
       <div class="modal-footer">
