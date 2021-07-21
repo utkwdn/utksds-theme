@@ -221,8 +221,6 @@ function ut_designsystem_scripts() {
 		function search_submission(){
 			var site = window.location.hostname;
 			var q = document.getElementById("q");
-			
-			console.log(q.value);
 
 			var request = new XMLHttpRequest();
 			request.open("GET", "/wordpress/wp-content/themes/build/inc/search-api.php?q=" + q.value + "&site=" +site, true);
@@ -231,7 +229,6 @@ function ut_designsystem_scripts() {
   				if (this.status >= 200 && this.status < 400) {
 
     				var resp = this.response;
-					console.log(resp);
 					document.getElementById("gs_results").innerHTML = resp;
   				} else {
 
@@ -241,6 +238,30 @@ function ut_designsystem_scripts() {
 
 			request.onerror = function() {
 
+			};
+
+			request.send();
+		}
+		
+		function search_pager(start, q, panel){
+		
+			var request = new XMLHttpRequest();
+			request.open("GET", "/wordpress/wp-content/themes/build/inc/search-api.php?q=" + q + "&start=" + start + "&panel=" + panel, true);
+
+			request.onload = function() {
+  				if (this.status >= 200 && this.status < 400) {
+
+    				var resp = this.response;
+					console.log(resp);
+					document.getElementById(panel).innerHTML = resp;
+  				} else {
+
+
+  				}
+			};
+
+			request.onerror = function() {
+				console.log("The search request had an error.");
 			};
 
 			request.send();
