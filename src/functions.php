@@ -291,12 +291,6 @@ function ut_designsystem_scripts() {
   		}
 
   		document.getElementById("cse-searchbox-form").addEventListener("submit", executeQuery);
-		
-		var tabEl = document.querySelector(\'button[data-bs-toggle="tab"]\')
-		tabEl.addEventListener("shown.bs.tab", function (event) {
-  			executeQuery();
-		})
-
 
 	' );
 
