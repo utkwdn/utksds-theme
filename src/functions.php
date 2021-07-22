@@ -216,6 +216,8 @@ function ut_designsystem_scripts() {
 
     wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/latest/assets/js/utk.js', array(), UTKDS_VERSION, true );
+	
+	wp_enqueue_script( 'utk-googlecse-script',  'https://cse.google.com/cse.js?cx=a9f8a625f3ab4bbd8', array(), null, true );
 
 	wp_add_inline_script( 'utk-bootstrap-designsytemscripts', '
 		function search_submission(){
@@ -266,6 +268,36 @@ function ut_designsystem_scripts() {
 
 			request.send();
 		}
+		
+		
+  		function executeQuery(evt) {
+    		evt.preventDefault();
+    		var input = document.getElementById("q");
+    		var element1 = google.search.cse.element.getElement("this-site-results");
+			var element2 = google.search.cse.element.getElement("all-utk-results");
+			var element3 = google.search.cse.element.getElement("faculty-results");
+			var element4 = google.search.cse.element.getElement("events-results");
+    		if (input.value == "") {
+      			element1.clearAllResults();
+				element2.clearAllResults();
+				element3.clearAllResults();
+    		} else {
+      			element1.execute(input.value + "+site:" + window.location.hostname);
+				element2.execute(input.value + "+site:utk.edu");
+				element3.execute(input.value + "+site:faculty.utk.edu");
+				element4.execute(input.value + "+site:calendar.utk.edu/event");
+    		}
+    		return false;
+  		}
+
+  		document.getElementById("cse-searchbox-form").addEventListener("submit", executeQuery);
+		
+		var tabEl = document.querySelector(\'button[data-bs-toggle="tab"]\')
+		tabEl.addEventListener("shown.bs.tab", function (event) {
+  			executeQuery();
+		})
+
+
 	' );
 
 }
