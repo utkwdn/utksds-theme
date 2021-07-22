@@ -74,30 +74,30 @@
 		<!-- CSE results in tabs -->
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
   			<li class="nav-item" role="presentation">
-    			<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">This Site</button>
+    			<button class="nav-link active" id="this-site-tab" data-bs-toggle="tab" data-bs-target="#this-site" type="button" role="tab" aria-controls="this-site" aria-selected="true">This Site</button>
   			</li>
   			<li class="nav-item" role="presentation">
-    			<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">All of UTK.edu</button>
+    			<button class="nav-link" id="all-utk-tab" data-bs-toggle="tab" data-bs-target="#all-utk" type="button" role="tab" aria-controls="all-utk" aria-selected="false">All of UTK.edu</button>
   			</li>
   			<li class="nav-item" role="presentation">
-    			<button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Faculty</button>
+    			<button class="nav-link" id="faculty-tab" data-bs-toggle="tab" data-bs-target="#faculty" type="button" role="tab" aria-controls="faculty" aria-selected="false">Faculty</button>
   			</li>
   			<li class="nav-item" role="presentation">
-    			<button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Events</button>
+    			<button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events</button>
   			</li>
 		</ul>
 
 		<div class="tab-content">
-  			<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  			<div class="tab-pane active" id="this-site" role="tabpanel" aria-labelledby="this-site-tab">
 				<div class="gcse-searchresults-only" data-gname="this-site-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
-  			<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  			<div class="tab-pane" id="all-utk" role="tabpanel" aria-labelledby="all-utk-tab">
 				<div class="gcse-searchresults-only" data-gname="all-utk-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
-  			<div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+  			<div class="tab-pane" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
 				<div class="gcse-searchresults-only" data-gname="faculty-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
-  			<div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+  			<div class="tab-pane" id="events" role="tabpanel" aria-labelledby="events-tab">
 				<div class="gcse-searchresults-only" data-gname="events-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
 		</div>
