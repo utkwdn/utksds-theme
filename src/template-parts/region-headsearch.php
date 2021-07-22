@@ -89,16 +89,16 @@
 
 		<div class="tab-content">
   			<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-				<div class="gcse-searchresults-only" data-gname="this-site-results"></div>
+				<div class="gcse-searchresults-only" data-gname="this-site-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
   			<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-				<div class="gcse-searchresults-only" data-gname="all-utk-results"></div>
+				<div class="gcse-searchresults-only" data-gname="all-utk-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
   			<div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-				<div class="gcse-searchresults-only" data-gname="faculty-results"></div>
+				<div class="gcse-searchresults-only" data-gname="faculty-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
   			<div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-				<div class="gcse-searchresults-only" data-gname="events-results"></div>
+				<div class="gcse-searchresults-only" data-gname="events-results" data-enableImageSearch="false" data-enableOrderBy="false"></div>
 			</div>
 		</div>
 		  
