@@ -281,6 +281,7 @@ function ut_designsystem_scripts() {
       			element1.clearAllResults();
 				element2.clearAllResults();
 				element3.clearAllResults();
+				element4.clearAllResults();
     		} else {
       			element1.execute(input.value + "+site:" + window.location.hostname);
 				element2.execute(input.value + "+site:utk.edu");
