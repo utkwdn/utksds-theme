@@ -219,6 +219,41 @@ function ut_designsystem_scripts() {
 
     wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/latest/assets/js/utk.js', array(), UTKDS_VERSION, true );
+	
+	wp_enqueue_script( 'utk-googlecse-script',  'https://cse.google.com/cse.js?cx=da48cf0836de1c946', array(), null, true );
+
+	wp_add_inline_script( 'utk-bootstrap-designsytemscripts', '
+  		function executeQuery(evt) {
+    		evt.preventDefault();
+    		var input = document.getElementById("q");
+    		var element1 = google.search.cse.element.getElement("this-site-results");
+    		if (input.value == "") {
+        		element1.clearAllResults();
+    		} else {
+        		element1.execute(input.value);
+    		}
+    		return false;
+		}
+
+		document.getElementById("cse-searchbox-form").addEventListener("submit", executeQuery);
+
+		function eventSearch(evt){
+			evt.preventDefault();
+    		var input = document.getElementById("q-events");
+    		window.location.href = "https://calendar.utk.edu/search/events?search=" + input.value;
+		}
+
+		document.getElementById("events-searchbox-form").addEventListener("submit", eventSearch);
+
+		function newsSearch(evt){
+			evt.preventDefault();
+    		var input = document.getElementById("q-news");
+    		window.location.href = "https://news.utk.edu/?s=" + input.value;
+		}
+
+		document.getElementById("news-searchbox-form").addEventListener("submit", newsSearch);
+	' );
+	
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
 
