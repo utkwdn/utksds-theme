@@ -47,7 +47,7 @@
   	<?php
       wp_nav_menu( array(
       'theme_location' => 'menu-1',
-//      'container'            => 'nav',
+      'container'            => 'ul',
 //      'container_class'      => 'nav',
       'sub_menu' => true,
      	'depth'	          => 1, // 1 = no dropdowns, 2 = with dropdowns.
