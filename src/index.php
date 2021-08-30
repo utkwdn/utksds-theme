@@ -31,7 +31,7 @@ if ( have_posts() ) :
   endif;
  ?>
  
-<div class="container">
+<div class="container-xxl">
   <div class="row">
       <div class="col-9 col-md-9 col-xl-9">
         <?php 

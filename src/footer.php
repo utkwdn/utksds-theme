@@ -31,9 +31,8 @@
   <!-- .site-info -->
 
 <div class="container-fluid universal-footer" id="universal-footer">
-    <div class="container">
+    <div class="container-xxl">
       <div class="row pt-3">
-
         <div class="site-info col-12 col-md-6">
   				<p class="h5 text-white"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
     		  <?php if ($site_parentunit_link != "") { ?>

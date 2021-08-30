@@ -11,7 +11,7 @@
     $single_tax = get_theme_mod( 'single_tax' );
 
 ?>
-<div class="container">
+<div class="container-xxl">
 
 <?php   if ($single_show_sidebar != "hide") { ?>
   <div class="row">

@@ -56,7 +56,7 @@ the_post();
     endif;
 ?>
 </div>
-<?php 
-
+<?php
+  
 endwhile; // End of the loop.
 get_footer();

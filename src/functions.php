@@ -271,7 +271,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * UTK Custom stuff
  */
-
+add_theme_support( 'block-templates' );
 require get_template_directory() . '/inc/custom-logo.php';
 require_once ( get_template_directory() . '/inc/functions/utk-postsnavigation.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-color-palette.php' );
