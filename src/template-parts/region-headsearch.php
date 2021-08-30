@@ -8,7 +8,7 @@
   <nav id="universal-header">
     <div class="container-xxl">
       <ul class="row justify-content-end list-inline mb-0">
-        <li class="col-auto list-inline-item me-md-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li>
+<!--         <li class="col-auto list-inline-item me-md-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li> -->
         <li class="col-auto"><small><a href="https://www.utk.edu/requestinfo/" class="nav-link px-0 text-light text-uppercase">Request Info</a></small></li>
         <li class="col-auto"><small><a href="https://www.utk.edu/visit/" class="nav-link px-0 text-light text-uppercase">Visit</a></small></li>
         <li class="col-auto"><small><a href="https://www.utk.edu/apply/" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>

@@ -3,7 +3,7 @@
   if ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) ||	is_active_sidebar( 'sidebar-4' ) ||	is_active_sidebar( 'sidebar-5' )	) : ?>
 
 <div id="extended-footer">
-  <div class="container-xxl"> 
+  <div class="container-xxl border-top pt-3"> 
     <div class="row">
 
   <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>

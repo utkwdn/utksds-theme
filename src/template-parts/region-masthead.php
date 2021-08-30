@@ -16,7 +16,7 @@
 
  	<div class="container-xxl">
 				<div class="row  justify-content-between py-2  py-lg-0">
-  				<div class="col-10<?php if ($site_header == "two") { ?> col-md-12<?php } else { ?> col-md-10 col-lg-3 col-xl-4<?php }; ?>">
+  				<div class="col-10<?php if ($site_header == "two") { ?> col-md-12<?php } else { ?> col-md-10 col-lg-3 col-xl-4<?php }; ?> d-flex">
 			<?php
 			// Here is the function that puts a logo on the site. 
 			// Regular UT logo by default, but if they upload a custom logo via the customizer, it'll display.
