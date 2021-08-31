@@ -16,5 +16,5 @@
 	
 	<?php
   	$site_typography = get_theme_mod( 'site_typography' );
-  	if ($site_typography == "gotham") { ?><link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6831932/7665612/css/fonts.css" /><?php }; ?>
+  	if ($site_typography == "gotham") { ?><link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6831932/6125612/css/fonts.css" /><?php }; ?>
 </head>
