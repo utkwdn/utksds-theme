@@ -25,19 +25,14 @@
 </div><!-- #page -->
 <?php   get_template_part( 'template-parts/region-extendedfooter' ); ?>
 
-<?php if ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) ||	is_active_sidebar( 'sidebar-4' ) ||	is_active_sidebar( 'sidebar-5' )	) { ?>
 	<footer id="colophon" class="site-footer  mt-auto">
-<?php } else { ?>
-	<footer id="colophon" class="site-footer mt-auto">
-<?php }; ?>
 
 
   <!-- .site-info -->
 
-<div class="container-fluid" id="universal-footer">
-    <div class="container">
+<div class="container-fluid universal-footer" id="universal-footer">
+    <div class="container-xxl">
       <div class="row pt-3">
-
         <div class="site-info col-12 col-md-6">
   				<p class="h5 text-white"><a  class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
     		  <?php if ($site_parentunit_link != "") { ?>
@@ -47,11 +42,11 @@
           <?php   get_template_part( 'template-parts/region-contact' ); ?>
   		  </div>
 
-    <div id="utk-identifier" class="col-12 col-md-6 col-lg-5 ms-lg-auto mt-md-n5 p-4">
+    <div id="utk-identifier" class="col-12 col-md-6 col-lg-5 ms-lg-auto mt-md-n5 p-4 utk-identifier">
       <?php   get_template_part( 'template-parts/style-footer-logo' ); ?>
-      <p class="text-white small">The University of Tennessee, Knoxville<br>Knoxville, Tennessee 37996, 865-974-1000</p>
-      <p class="text-white small">The flagship campus of the University of Tennessee System and partner in the Tennessee Transfer Pathway.</p>
-      <p class="text-white small"><a class="text-white" href="https://www.utk.edu">EEO</a>. <a class="text-white"  href="https://www.utk.edu">Legal</a>. <a class="text-white"  href="https://www.utk.edu">Privacy</a>. <a  class="text-white" href="https://www.utk.edu">Accessibility</a>.</p>
+      <p class="text-white small">The University of Tennessee, Knoxville<br>Knoxville, Tennessee 37996<br>865-974-1000</p>
+      <p class="text-white small">The flagship campus of the <a href="https://tennessee.edu/" target="_blank" class="text-white footer-links">University of Tennessee System</a> and partner in the <a href="https://www.tntransferpathway.org/" target="_blank" class="text-white footer-links">Tennessee Transfer Pathway</a>.</p>
+      <p class="text-white small"><a class="text-white me-3 footer-links" href="https://oed.utk.edu/ada/">ADA</a> <a class="text-white me-3 footer-links" href="https://www.utk.edu/aboutut/privacy/">Privacy</a> <a class="text-white me-3 footer-links" href="https://safety.utk.edu/">Safety</a> <a class="text-white footer-links" href="https://titleix.utk.edu/">Title&nbsp;IX</a></p>
     </div>
     </div> 
   </div>

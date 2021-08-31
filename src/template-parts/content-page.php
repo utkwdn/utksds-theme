@@ -17,7 +17,7 @@
 
 
 
-    	<div class="entry-content container">
+    	<div class="entry-content container-xxl">
     		<?php
     		the_content();
     
