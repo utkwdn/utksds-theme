@@ -26,19 +26,19 @@
 <!-- Modal -->
 <div class="modal fade" id="searchModal" tabindex="-1"  aria-hidden="true">
   <div class="modal-dialog modal-fullscreen modal-dialog-scrollable modal-dialog-centered">
-    <div class="modal-content"> 
-      
-      <!-- Need to rethink this method. We're repeating the universal header in order to make it appear in the modal. --> 
+    <div class="modal-content">
+
+      <!-- Need to rethink this method. We're repeating the universal header in order to make it appear in the modal. -->
       <!-- =========================================================================================================  -->
-      
-      <nav id="universal-header">
+
+      <nav class="universal-header">
         <div class="container">
           <ul class="row justify-content-end list-inline mb-0">
             <!--       <li class="col-auto list-inline-item me-md-auto"><small><a href="https://www.utk.edu" class="nav-link text-light text-uppercase text-center text-lg-left">www.utk.edu</a></small></li> -->
             <li class="col-auto"><small><a href="https://www.utk.edu/requestinfo/" class="nav-link px-0 text-light text-uppercase text-small text-white btn-request">Request Info</a></small></li>
             <li class="col-auto"><small><a href="https://www.utk.edu/visit/" class="nav-link px-0 text-light text-uppercase">Visit</a></small></li>
             <li class="col-auto"><small><a href="https://www.utk.edu/apply/" class="nav-link px-0 text-light text-uppercase">Apply</a></small></li>
-            <li class="col-auto"><small><a href="https://www.utk.edu/give/" class="nav-link px-0 text-light text-uppercase">Give</a></small></li>            
+            <li class="col-auto"><small><a href="https://www.utk.edu/give/" class="nav-link px-0 text-light text-uppercase">Give</a></small></li>
             <li class="col-auto">
               <button type="button" class="btn btn-search text-uppercase text-light navbar-toggler col-auto collapsed" id="btn-searchclose" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Toggle search">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" id="searchHeader-close">
@@ -81,7 +81,7 @@
 
 
 
-    
+
               <div class="tab-content">
                 <div class="tab-pane active" id="this-site" role="tabpanel" aria-labelledby="this-site-tab">
 
@@ -134,7 +134,7 @@
 
                   <form class="form-inline hidden-print mt-4" id="dir-searchbox-form" method="post" action="https://directory.utk.edu/search">
                     <div class="mb-3 input-group">
-                      <label class="sr-only visually-hidden" for="query">Search</label>
+                      <label class="sr-only visually-hidden" for="search-bar">Search</label>
                       <input type="search" class="form-control" title="Search directory" placeholder="Example: Jane Doe, NetID, email@utk.edu" name="query" id="search-bar">
                       <button type="submit" name="btnG" class="btn btn-secondary">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -151,10 +151,10 @@
           </div>
         </div>
       </div>
-      <footer  class="site-footer  mt-auto"> 
-        
+      <footer  class="site-footer  mt-auto">
+
         <!-- .site-info -->
-        
+
         <div class="container-fluid universal-footer">
           <div class="container">
             <div class="row py-3 pt-md-3 pb-md-0 justify-content-center">
@@ -453,17 +453,4 @@
       </footer>
     </div>
   </div>
-</div>
-
-
-
-
-
-
-
-
-
-          </div>
-        </div>
-    </div>
 </div>

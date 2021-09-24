@@ -26,12 +26,12 @@
 			?>
 			<div class="entry-meta small">
 				<?php
-  				if ($meta_publisheddate != "hide") { 
+  				if ($meta_publisheddate != "hide") {
 	    			ut_ds_posted_on();
 	    	  };
-  				if ($meta_byline != "hide") { 
+  				if ($meta_byline != "hide") {
     				ut_ds_posted_by();
-    				
+
     		  };
 				?>
 			</div><!-- .entry-meta -->
@@ -59,8 +59,8 @@
   			)
   		);
 		else :
-      if ($meta_excerpt != "content") : 
-  		
+      if ($meta_excerpt != "content") :
+
     		the_excerpt(
     			sprintf(
     				wp_kses(
@@ -100,7 +100,7 @@
 		);
 		?>
 	</div>
-	</div>
+
 	<!-- .entry-content -->
   <?php if ($meta_tax != "hide") { ?>
 	  <footer class="entry-footer small">

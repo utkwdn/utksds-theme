@@ -13,10 +13,10 @@
 ?>
 <div class="container-xxl">
 
-<?php   if ($single_show_sidebar != "hide") { ?>
-  <div class="row">
-    <div class="col-9">
-<?php }; ?>
+  <?php   if ($single_show_sidebar != "hide") { ?>
+    <div class="row">
+      <div class="col-9">
+  <?php }; ?>
 
 
 
@@ -50,9 +50,9 @@
 		  <?php ut_ds_entry_footer(); ?>
 	  </footer><!-- .entry-footer -->
 	 <?php };
-  	 
+
       $single_show_pager = get_theme_mod( 'single_show_pager' );
-			if ($single_show_pager != "hide") { 
+			if ($single_show_pager != "hide") {
   			the_post_navigation(
   				array(
   					'prev_text' => '<span class="nav-subtitle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/></svg>' . esc_html__( 'Previous', 'ut-ds' ) . '</span> <span class="nav-title visually-hidden">%title</span>',
@@ -61,13 +61,13 @@
   			);
   	  };
 
-  	 
+
   	  ?>
 
-  
-  <?php 
-    if ($single_show_sidebar != "hide") { 
-  ?> 
+
+  <?php
+    if ($single_show_sidebar != "hide") {
+  ?>
     </div>
     <div class="col-12 col-md-4 col-xl-3">
       <?php get_sidebar(); ?>

@@ -10,10 +10,10 @@
 get_header();
 $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
 // $site_width = get_theme_mod( 'site_width' );
-$menu_type = get_theme_mod( 'menu_type' );      
+$menu_type = get_theme_mod( 'menu_type' );
 
 get_template_part( 'template-parts/part-startheader' );
-get_template_part( 'template-parts/inc-breadcrumb' ); 
+get_template_part( 'template-parts/inc-breadcrumb' );
 
 
 if ( have_posts() ) : ?>
@@ -28,37 +28,35 @@ if ( have_posts() ) : ?>
   <?php
     get_template_part( 'template-parts/part-endheader' );
  ?>
- 
+
 <div class="container-xxl">
   <div class="row">
       <div class="col-9 col-md-9 col-xl-9">
-        <?php   
-  /* Start the Loop */
-  while ( have_posts() ) :
-    the_post();
-    
-    /*
-    * Include the Post-Type-specific template for the content.
-    * If you want to override this in a child theme, then include a file
-    * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-    */
-    get_template_part( 'template-parts/content', get_post_type() );
+        <?php
+          /* Start the Loop */
+          while ( have_posts() ) :
+            the_post();
 
-  endwhile;
-  ?>
-    <?php 
-      the_posts_navigation();
-    ?>
-  <?php 
-  else :
+            /*
+            * Include the Post-Type-specific template for the content.
+            * If you want to override this in a child theme, then include a file
+            * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+            */
+            get_template_part( 'template-parts/content', get_post_type() );
 
-  get_template_part( 'template-parts/content', 'none' );
-
-endif;
-?>
-  <?php 
+          endwhile;
+          ?>
+          <?php
+            the_posts_navigation();
+          ?>
+        <?php
+        else :
+        get_template_part( 'template-parts/content', 'none' );
+        endif;
+      ?>
+  <?php
     $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
-    if ($single_show_sidebar != "hide") { 
+    if ($single_show_sidebar != "hide") {
     ?>
       </div>
       <div class="col-12 col-md-4 col-xl-3">
@@ -67,7 +65,6 @@ endif;
     <?php
     };
     ?>
-    </div>
   </div>
 </div>
 <?php

@@ -18,7 +18,7 @@
 				<div class="row  justify-content-between py-2  py-lg-0">
   				<div class="col-10<?php if ($site_header == "two") { ?> col-md-12<?php } else { ?> col-md-10 col-lg-3 col-xl-4<?php }; ?> d-flex">
 			<?php
-			// Here is the function that puts a logo on the site. 
+			// Here is the function that puts a logo on the site.
 			// Regular UT logo by default, but if they upload a custom logo via the customizer, it'll display.
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
       $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -32,9 +32,9 @@
      				    <h1 class="site-title fw-light align-self-center mb-0"><?php bloginfo( 'name' ); ?></h1>
   				  </a>
 
-				<?php  } else { ?>  
+				<?php  } else { ?>
     				<a class="text-reset d-flex text-decoration-none text-uppercase align-self-center font-weight-light my-md-2" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-     				  <span class="site-title fw-light align-self-center mb-0"><?php bloginfo( 'name' ); ?></a></span>
+     				  <span class="site-title fw-light align-self-center mb-0"><?php bloginfo( 'name' ); ?></span>
   		  		</a>
     				<?php  }; ?>
 
