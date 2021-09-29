@@ -15,11 +15,8 @@
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
 ?>
 
-<?php 
-  if (is_singular() ) {
-    ?> </article>
- <?php
-} ?>
+<?php if (is_singular() ) {   ?> </article>
+ <?php } ?>
 
   	 </main><!-- #main -->
 </div><!-- #page -->
@@ -48,7 +45,7 @@
       <p class="text-white small">The flagship campus of the <a href="https://tennessee.edu/" target="_blank" class="text-white footer-links">University of Tennessee System</a> and partner in the <a href="https://www.tntransferpathway.org/" target="_blank" class="text-white footer-links">Tennessee Transfer Pathway</a>.</p>
       <p class="text-white small"><a class="text-white me-3 footer-links" href="https://oed.utk.edu/ada/">ADA</a> <a class="text-white me-3 footer-links" href="https://www.utk.edu/aboutut/privacy/">Privacy</a> <a class="text-white me-3 footer-links" href="https://safety.utk.edu/">Safety</a> <a class="text-white footer-links" href="https://titleix.utk.edu/">Title&nbsp;IX</a></p>
     </div>
-    </div> 
+    </div>
   </div>
 </div>
 	</footer><!-- #colophon -->

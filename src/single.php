@@ -15,9 +15,9 @@ $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
 $single_tax = get_theme_mod( 'single_tax' );
 $single_show_pager = get_theme_mod( 'single_show_pager' );
 
-ut_ds_post_thumbnail(); 
-get_template_part( 'template-parts/part-startheader' ); 
-get_template_part( 'template-parts/inc-breadcrumb' ); 
+ut_ds_post_thumbnail();
+get_template_part( 'template-parts/part-startheader' );
+get_template_part( 'template-parts/inc-breadcrumb' );
 while ( have_posts() ) :
 the_post();
 
@@ -30,15 +30,15 @@ the_post();
     else :
       the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" class="text-reset" rel="bookmark">', '</a></h2>' );
     endif;
-    
+
     if ( 'post' === get_post_type() ) :
   ?>
   <div class="entry-meta small mb-5">
     <?php
-      if ($single_show_pubdate != "hide") { 
+      if ($single_show_pubdate != "hide") {
         ut_ds_posted_on();
       };
-      if ($single_show_byline != "hide") { 
+      if ($single_show_byline != "hide") {
         ut_ds_posted_by();
       };
     ?>
@@ -55,8 +55,8 @@ the_post();
       comments_template();
     endif;
 ?>
-</div>
+
 <?php
-  
+
 endwhile; // End of the loop.
 get_footer();

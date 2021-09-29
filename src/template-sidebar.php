@@ -12,9 +12,9 @@ $site_width = get_theme_mod( 'site_width' );
 $menu_type = get_theme_mod( 'menu_type' );
 $site_homeheadline = get_theme_mod( 'site_homeheadline' );
 
-ut_ds_post_thumbnail(); 
+ut_ds_post_thumbnail();
 get_template_part( 'template-parts/part-startheader' );
-get_template_part( 'template-parts/inc-breadcrumb' ); 
+get_template_part( 'template-parts/inc-breadcrumb' );
 
 // Is this the front page? And is this the switch to show the home page headline flipped?
 if (is_front_page() && $site_homeheadline=="hide"){
@@ -24,7 +24,7 @@ if (is_front_page() && $site_homeheadline=="hide"){
 }
 ?>
 <!-- .entry-header -->
-<?php   		
+<?php
 
 while ( have_posts() ) :
   the_post();
@@ -32,9 +32,9 @@ while ( have_posts() ) :
 endwhile; // End of the loop.
 ?>
 </div>
-<div class="col-12 col-xl-3">
-  <?php get_sidebar();		?>
-</div>
+  <div class="col-12 col-xl-3">
+    <?php get_sidebar();		?>
+  </div>
 </div>
 </div>
 <?php

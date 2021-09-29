@@ -18,7 +18,7 @@ $site_homeheadline = get_theme_mod( 'site_homeheadline' );
 
 ut_ds_post_thumbnail();
 get_template_part( 'template-parts/part-startheader' );
-get_template_part( 'template-parts/inc-breadcrumb' ); 
+get_template_part( 'template-parts/inc-breadcrumb' );
 the_title( '<header class="entry-header col-12"><h1 class="entry-title">', '</h1></header>' );
 get_template_part( 'template-parts/part-endheader' );
 
@@ -27,8 +27,6 @@ while ( have_posts() ) :
   get_template_part( 'template-parts/content', 'pagenoside' );
 endwhile; // End of the loop.
 ?>
-</div>
-</div>
 </div>
 <?php
 get_footer();
