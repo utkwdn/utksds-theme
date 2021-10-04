@@ -180,6 +180,17 @@ function ut_ds_widgets_init() {
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'ut-ds' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets here.', 'ut-ds' ),
+			'before_widget' => '<section id="%1$s" class="contact %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title h6 text-uppercase">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
 add_action( 'widgets_init', 'ut_ds_widgets_init' );
 
@@ -220,7 +231,7 @@ function ut_designsystem_scripts() {
     wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/latest/assets/js/utk.js', array(), UTKDS_VERSION, true );
   	wp_enqueue_script( 'utk-googlecse-script',  'https://cse.google.com/cse.js?cx=da48cf0836de1c946', array(), null, true );
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
 
