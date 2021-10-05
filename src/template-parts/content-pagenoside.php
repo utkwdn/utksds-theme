@@ -6,27 +6,21 @@
  *
  * @package UT_DS
  */
-
-
-  $single_show_sidebar = get_theme_mod( 'single_show_sidebar' );
-  $menu_type = get_theme_mod( 'menu_type' );
-
 ?>
 
 
 
-    	<div class="entry-content container-xxl">
-    		<?php
-    		the_content();
-    
-    		wp_link_pages(
-    			array(
-    				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ut-ds' ),
-    				'after'  => '</div>',
-    			)
-    		);
-    		?>
+<div class="entry-content container-xxl">
+	<?php
+	the_content();
 
+	wp_link_pages(
+		array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ut-ds' ),
+			'after'  => '</div>',
+		)
+	);
+	?>
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
@@ -50,7 +44,6 @@
 				'</span>'
 			);
 			?>
-			    	</div><!-- .entry-content -->
-
-		</footer><!-- .entry-footer -->
+    </footer><!-- .entry-footer -->
+</div><!-- .entry-content -->
 	<?php endif; ?>
