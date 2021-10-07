@@ -180,6 +180,17 @@ function ut_ds_widgets_init() {
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'ut-ds' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets here.', 'ut-ds' ),
+			'before_widget' => '<section id="%1$s" class="contact %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title h6 text-uppercase">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
 add_action( 'widgets_init', 'ut_ds_widgets_init' );
 

@@ -15,8 +15,11 @@
   $site_parentunit_link = get_theme_mod( 'site_parentunit_link' );
 ?>
 
-<?php if (is_singular() ) {   ?> </article>
- <?php } ?>
+<?php
+  if (is_singular() ) {
+    ?> </article>
+ <?php
+} ?>
 
   	 </main><!-- #main -->
 </div><!-- #page -->
@@ -35,8 +38,12 @@
     		  <?php if ($site_parentunit_link != "") { ?>
 			      <p class="small text-white mb-5"><?php if ($site_parentunit_link != "") { ?><a class="text-reset" href="<?php echo $site_parentunit_link; ?>"><?php } echo $site_parentunit_name; ?><?php if ($site_parentunit_link != "") { ?></a><?php } ?></p>
 			    <?php } ?>
-
-          <?php   get_template_part( 'template-parts/region-contact' ); ?>
+          <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+            <div class="contact-info mt-5 text-white">
+              <?php dynamic_sidebar( 'footer-1' ); ?>
+            </div>
+          <?php endif; ?>
+          <?php  // get_template_part( 'template-parts/region-contact' ); ?>
   		  </div>
 
     <div id="utk-identifier" class="col-12 col-md-6 col-lg-5 ms-lg-auto mt-md-n5 p-4 utk-identifier">
