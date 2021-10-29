@@ -23,6 +23,7 @@
     "merge-stream": "^2.0.0",
     "require-dir": "^1.2.0",
     "svg4everybody": "^2.1.9",
+    "utksds-framework": "^0.0.5",
     "webpack": "^5.61.0",
     "webpack-stream": "^7.0.0"
   },
