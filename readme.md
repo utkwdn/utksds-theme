@@ -33,7 +33,7 @@ The UTKSDS uses Node and Gulp to compile and compress Javascript and CSS from so
 4. Type `npm install` to install dependencies.
 
 
-### Step 3, Dvelopment configuration
+### Step 3, Development configuration
 
 To test or develop this project locally, install WordPress locally, but do not install this theme. Instead, create symlink to the `build` directory in this project and place that symlink in your WordPress installation's theme directory.
 
