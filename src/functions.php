@@ -7,6 +7,17 @@
  * @package UT_DS
  */
 
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/utkwdn/utksds-theme',
+	__FILE__,
+	'utksds-theme'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( 'UTKDS_VERSION', '0.0.19' );
