@@ -8,8 +8,6 @@
 
 ---
 
-**Version 0.0.7**
-
 The Official UT Digital Design System Theme (UTKSDS) was made to help UT web developers build interfaces that match UT's visual identity and make consistent the user interface of a variety of digital products.
 
 ---
