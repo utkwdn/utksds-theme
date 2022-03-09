@@ -89,7 +89,7 @@
                     <div class="mb-3 input-group">
                       <label class="sr-only visually-hidden" for="q">Search</label>
                       <input type="search" class="form-control" title="Search utk.edu" placeholder="Example: Apply, Payroll, Provost, English Department"  name="q" id="q">
-                      <button type="submit" name="btnG" class="btn btn-secondary">
+                      <button type="submit" name="btnG" class="btn btn-utlink">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" aria-hidden="true" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                       </svg> <span class="visually-hidden">Search</span></button>
@@ -104,7 +104,7 @@
                     <div class="mb-3 input-group">
                       <label class="sr-only visually-hidden" for="q-events">Search</label>
                       <input type="search" class="form-control" title="Search events"  placeholder="Example: Orientation, Art Show, Yoga Session"  name="q-events" id="q-events">
-                      <button type="submit" name="btnG" class="btn btn-secondary">
+                      <button type="submit" name="btnG" class="btn btn-utlink">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" aria-hidden="true" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                       </svg> <span class="visually-hidden">Search</span></button>
@@ -119,7 +119,7 @@
                     <div class="mb-3 input-group">
                       <label class="sr-only visually-hidden" for="q-news">Search</label>
                       <input type="search" class="form-control" title="Search news" placeholder="Example: Dean's List, ORNL, Capstone Project" name="q-news" id="q-news">
-                      <button type="submit" name="btnG" class="btn btn-secondary">
+                      <button type="submit" name="btnG" class="btn btn-utlink">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                       </svg> <span class="visually-hidden">Search</span></button>
@@ -136,7 +136,7 @@
                     <div class="mb-3 input-group">
                       <label class="sr-only visually-hidden" for="search-bar">Search</label>
                       <input type="search" class="form-control" title="Search directory" placeholder="Example: Jane Doe, NetID, email@utk.edu" name="query" id="search-bar">
-                      <button type="submit" name="btnG" class="btn btn-secondary">
+                      <button type="submit" name="btnG" class="btn btn-utlink">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                       </svg> <span class="visually-hidden">Search</span></button>
