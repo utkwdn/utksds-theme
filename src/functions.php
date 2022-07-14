@@ -220,6 +220,17 @@ function ut_ds_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ut_ds_scripts' );
 
+/**
+ * Enqueue Gotham font in the editor if it's selected in customizer.
+ */
+function ut_sds_editor_gotham(){
+	wp_enqueue_style( 'gotham-editor-font', '//cloud.typography.com/6831932/6125612/css/fonts.css');
+}
+
+ if(get_theme_mod( 'site_typography' ) == "gotham"){
+	add_action( 'enqueue_block_editor_assets', 'ut_sds_editor_gotham' );
+ }
+
 
 
 
