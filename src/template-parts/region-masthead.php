@@ -39,11 +39,13 @@
     				<?php  }; ?>
 
   				</div>
-            <button class="navbar-toggler col" type="button" id="mobile-menu-open" data-toggle="#site-navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path></svg><span class="visually-hidden">Menu</span></button>
-
-            <?php get_template_part( 'template-parts/nav-default' ); ?>
+				  <button class="btn btn-primary d-lg-none align-self-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-label="Toggle Navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="btn-hambuger"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path></svg>
+     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg btn-close" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg> -->
+    </button>
 				</div>
  	</div>
+	 <?php get_template_part( 'template-parts/nav-default' ); ?>
 
 
 

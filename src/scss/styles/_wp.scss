@@ -1,0 +1,59 @@
+// This file is for wordpress's odd css naming compatiblitiy.
+// Note: Do this sparingly, and ONLY if necessary. Our goal should be to make the theme output HTML that is compatible with the framework.
+
+.alignright {
+  float: right;
+  margin-left: $spacer;
+  margin-bottom: $spacer;
+  &.framed {
+    margin-left: $spacer * 2;
+    margin-bottom: $spacer * 2;
+  }
+}
+.alignleft {
+  float: left;
+  margin-right: $spacer;
+  margin-bottom: $spacer;
+  &.framed {
+    margin-right: $spacer * 2;
+    margin-bottom: $spacer * 2;
+  }
+}
+.aligncenter img {
+  display: block;
+  float: none;
+  @extend .mx-auto;
+}
+.has-text-align-center {
+  @extend .text-center;
+}
+.has-text-align-right {
+  @extend .text-end;
+}
+//.wp-block-image {
+//  @extend .d-flex;
+//}
+
+.wp-has-aspect-ratio .wp-block-embed__wrapper {
+  @extend .ratio;
+}
+.wp-embed-aspect-1-1 .wp-block-embed__wrapper {
+  @extend .ratio-1x1;
+}
+.wp-embed-aspect-4-3 .wp-block-embed__wrapper {
+  @extend .ratio-4x3;
+}
+.wp-embed-aspect-16-9 .wp-block-embed__wrapper {
+  @extend .ratio-16x9;
+}
+.wp-embed-aspect-21-9 .wp-block-embed__wrapper {
+  @extend .ratio-21x9;
+}
+
+// this is because WP will add an extra DIV if you float the image.
+// .framed div {
+//   @extend .framed;
+//   &.aligncenter {
+//     margin-bottom: 2rem;
+//   }
+// }
