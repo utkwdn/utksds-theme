@@ -222,26 +222,14 @@ function ut_ds_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ut_ds_scripts' );
 
-/**
- * Enqueue Gotham font in the editor if it's selected in customizer.
- */
-function ut_sds_editor_gotham(){
-	wp_enqueue_style( 'gotham-editor-font', '//cloud.typography.com/6831932/6125612/css/fonts.css');
-}
-
- if(get_theme_mod( 'site_typography' ) == "gotham"){
-	add_action( 'enqueue_block_editor_assets', 'ut_sds_editor_gotham' );
- }
 
 
 
 
 /**
- * Design system File
+ * Enqeue the front-end 'view' styles and javascript.
  */
-/**
- * Proper way to enqueue scripts and styles
- */
+
 function ut_designsystem_scripts() {
 
  //   if( !is_admin()){
@@ -261,15 +249,21 @@ add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
 
 
 
-// /**
-//  * Deregister the gutenberg styles
-//  */
-// add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
-// function wps_deregister_styles() {
-//     wp_dequeue_style( 'wp-block-library' );
-// }
+/**
+ * Enqeue the editor styles.
+ */
 
+// Add support for editor styles.
+add_theme_support( 'editor-styles' );
+// Enqueue editor styles.
+add_editor_style( 'editor-style.css' );
 
+// The above code is how you're supposed to add editor styles, 
+// but for some reasoon it was not working. The below function adds it though.
+
+add_action( 'enqueue_block_editor_assets', function() {
+	wp_enqueue_style( 'editor-styles', get_stylesheet_directory_uri() . "/editor-style.css", false, '1.0', 'all' );
+} );
 
 
 
