@@ -18,6 +18,19 @@ function featured_checkbox_callback_function( $post ) {
 <?php
 }
 
+add_action( 'graphql_register_types', function() {
+    
+    register_graphql_field('Page', 'showsHeadline', [
+        'type' => 'Boolean',
+        'description' => __( 'Whether or not to show the title area.', 'wp-graphql' ),
+        'resolve' => function( $post ) {
+            $showsHeadline = get_post_meta( $post->ID, 'shows_headline', true );
+            return ! empty( $showsHeadline) ? false : true;
+        }
+    ] );
+    
+} );
+
 add_action('save_post', 'save_featured_post'); 
 function save_featured_post($post_id){ 
 
