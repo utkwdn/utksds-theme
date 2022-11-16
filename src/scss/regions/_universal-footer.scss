@@ -1,0 +1,20 @@
+.universal-footer {
+  background-color: $utcoolsmokey;
+  border-top: 0.45 * $spacer solid $utorange;
+}
+@include media-breakpoint-up(md) {
+  .utk-identifier {
+    background-color: lighten($utcoolsmokey, 10%);
+    border-top: 0.45 * $spacer solid $utorange;
+    z-index: 1;
+  }
+}
+
+footer#colophon {
+  padding-top: $spacer;
+}
+
+#utk_footer_logo {
+  max-width: 300px;
+  margin-bottom: $spacer * 2;
+}

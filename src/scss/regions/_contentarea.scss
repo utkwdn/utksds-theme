@@ -1,0 +1,45 @@
+// helps control full-width and wide-width blocks
+.site-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+@include media-breakpoint-up(md) {
+  body.sidebar-content,
+  body.content-sidebar {
+    .content-sidebar-wrap {
+      display: flex;
+      justify-items: center;
+      align-items: flex-start;
+      .widget-area {
+        flex: 1 1 0;
+      }
+      main.content {
+        flex: 2 1 0;
+        margin-right: $spacer * 3;
+      }
+    }
+
+    body.sidebar-content {
+      .content-sidebar-wrap {
+        .widget-area {
+          margin-right: 0;
+        }
+        main.content {
+          order: 1;
+          margin-left: $spacer * 3;
+        }
+      }
+    }
+    body.content-sidebar {
+      .content-sidebar-wrap {
+        .widget-area {
+          margin-right: 0;
+        }
+        main.content {
+          margin-left: $spacer * 3;
+        }
+      }
+    }
+  }
+}

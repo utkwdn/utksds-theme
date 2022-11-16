@@ -1,0 +1,255 @@
+.framed-figure {
+  // border: 8px solid blue;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin-left: 2rem;
+  &.alignleft {
+    display: flex;
+    margin-right: 2rem;
+    position: relative;
+    width: auto;
+    // display: inline-block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    .framed {
+      position: relative;
+      padding-left: 0;
+      z-index: 4;
+      margin-bottom: 2rem;
+      display: inline-block;
+      width: auto;
+      flex-basis: 100%;
+    }
+
+    figcaption {
+      // margin-left: 1.2rem;
+      // display: inline-block;
+      // flex: 1 1 100%;
+      max-width: 80ch;
+      flex-basis: 100;
+      margin-left: -$container-padding-x;
+
+      // width: min-content;
+    }
+    &.size-medium {
+      figcaption {
+        // display: inline-block;
+        // flex: 1 1 100%;
+        max-width: 31ch;
+        flex-basis: 100%;
+        // width: min-content;
+      }
+    }
+    &.size-thumbnail {
+      figcaption {
+        // display: inline-block;
+        // flex: 1 1 100%;
+        max-width: 15ch;
+        flex-basis: 100%;
+        // width: min-content;
+      }
+    }
+  }
+  &.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    figcaption {
+      display: inline-block;
+      clear: none;
+      flex-basis: 100%;
+      margin-left: 2rem;
+      @media (min-width: 1060px) {
+        flex-basis: 20%;
+      }
+    }
+  }
+  &.alignright {
+    margin-left: 2rem;
+    display: flex;
+    position: relative;
+    width: auto;
+    // display: inline-block;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    .framed {
+      &::before {
+        position: absolute;
+        content: ' ';
+        width: 60%;
+        height: calc(100% - 2rem);
+        // bottom: -$container-padding-x;
+        left: 1rem !important;
+        border-left: 0 !important;
+        right: -$container-padding-x;
+        margin-left: 41%;
+        border-right: 1.5rem solid $utorange;
+        border-bottom: 1.5rem solid $utorange;
+        z-index: -1;
+        @include media-breakpoint-up(md) {
+          bottom: -1.5rem;
+          right: -1.5rem;
+        }
+      }
+    }
+    figcaption {
+      max-width: 80ch;
+      text-align: right;
+      align-self: flex-end;
+      margin-right: -$container-padding-x;
+    }
+    &.size-medium {
+      figcaption {
+        max-width: 31ch;
+        flex-basis: 100%;
+        margin-right: -$container-padding-x;
+        text-align: right;
+      }
+    }
+    &.size-thumbnail {
+      figcaption {
+        max-width: 15ch;
+        flex-basis: 100%;
+        margin-right: -$container-padding-x;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.framed {
+  position: relative;
+  padding-left: 0;
+  z-index: 4;
+  margin-bottom: 2rem;
+  // display: inline-block;
+
+  width: auto;
+  &::before {
+    position: absolute;
+    content: ' ';
+    width: 60%;
+    height: calc(100% - 2rem);
+    bottom: -$container-padding-x;
+    left: -$container-padding-x;
+    // border-top: 0.6rem solid #FF8200;
+    //border-left: 1.5rem solid #FF8200;
+    //border-bottom: 1.5rem solid #FF8200;
+    //background: $utorange;
+    border-left: 1.25rem solid $utorange;
+    border-bottom: 1.25rem solid $utorange;
+    z-index: -1;
+    @include media-breakpoint-up(md) {
+      bottom: -1.25rem;
+      left: -1.25rem;
+    }
+  }
+}
+
+.framedGray {
+  position: relative;
+  padding-left: 0;
+  z-index: 4;
+  margin-bottom: 2rem;
+  // display: inline-block;
+
+  width: auto;
+  &::before {
+    position: absolute;
+    content: ' ';
+    width: 60%;
+    height: calc(100% - 2rem);
+    bottom: -$container-padding-x;
+    left: -$container-padding-x;
+    // border-top: 0.6rem solid #FF8200;
+    //border-left: 1.5rem solid #FF8200;
+    //border-bottom: 1.5rem solid #FF8200;
+    //background: $utorange;
+    border-left: 1.25rem solid $utgray2;
+    border-bottom: 1.25rem solid $utgray2;
+    z-index: -1;
+    @include media-breakpoint-up(md) {
+      bottom: -1.25rem;
+      left: -1.25rem;
+    }
+  }
+}
+
+// .framed {
+//   //  justify-content: center;
+//   // display: flex;
+//   // border: 6px solid red;
+//   position: relative;
+//   padding-left: 0;
+//   // display: inline-block;
+//   z-index: 4;
+//   margin-bottom: 2rem;
+//   display: inline-block;
+//   width: auto;
+//   &::before {
+//     position: absolute;
+//     content: " ";
+//     width: 60%;
+//     height: calc(100% - 2rem);
+//     bottom: -$container-padding-x;
+//     left: -$container-padding-x;
+//     // border-top: 0.6rem solid #FF8200;
+//     //border-left: 1.5rem solid #FF8200;
+//     //border-bottom: 1.5rem solid #FF8200;
+//     //background: $utorange;
+//     border-left: 1.25rem solid $utorange;
+//     border-bottom: 1.25rem solid $utorange;
+//     z-index: -1;
+//     @include media-breakpoint-up(md) {
+//       bottom: -1.25rem;
+//       left: -1.25rem;
+//     }
+//   }
+// Don't think this is affecting anything – this was here originally. Have commented out for now until know for sure it isn't needed.
+// &.right::after {
+//   //border-right: 1.5rem solid #FF8200;
+//   //border-bottom: 1.5rem solid #FF8200;
+//   border-left: 0;
+//   right: -$container-padding-x;
+//   left: auto;
+//   @include media-breakpoint-up(md) {
+//     right: -1.25rem;
+//   }
+// }
+// &.gingham::after {
+//   background-image: url("https://images.utk.edu/designsystem/v1/latest/assets/i/strip_gingham.gif");
+// }
+// }
+
+/* image-oa-inset */
+// Orange Accent : inset border
+
+.image-oa-inset img {
+  /* inset border inside of images */
+  outline: $border-width solid $utorange;
+  outline-offset: calc(-1 * ($spacer / 2));
+}
+
+/*
+// Potential future use cases with different border thicknesses
+.image-oa-inset-thin img {
+outline: $border-width solid $utorange;
+outline-offset: calc(-1 * ($spacer / 2));
+}
+}
+
+.image-oa-inset-thick img {
+ outline: calc( $border-width * 2.5) solid $utorange;
+ outline-offset: calc(-1 * ($spacer / 2));
+}
+*/

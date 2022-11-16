@@ -7,20 +7,22 @@
  * @package UT_DS
  */
 
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/utkwdn/utksds-theme',
-	__FILE__,
-	'utksds-theme'
-);
+
+ // This is the update checker. It was causing errors, so is commented out temporarily as we troubleshoot.
+//require 'plugin-update-checker/plugin-update-checker.php';
+//$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+//	'https://github.com/utkwdn/utksds-theme',
+//	__FILE__,
+//	'utksds-theme'
+//);
 
 //Set the branch that contains the stable release.
 //$myUpdateChecker->setBranch('main');
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+//$myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.1.2' );
+	define( 'UTKDS_VERSION', '0.1.3' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -220,26 +222,14 @@ function ut_ds_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ut_ds_scripts' );
 
-/**
- * Enqueue Gotham font in the editor if it's selected in customizer.
- */
-function ut_sds_editor_gotham(){
-	wp_enqueue_style( 'gotham-editor-font', '//cloud.typography.com/6831932/6125612/css/fonts.css');
-}
-
- if(get_theme_mod( 'site_typography' ) == "gotham"){
-	add_action( 'enqueue_block_editor_assets', 'ut_sds_editor_gotham' );
- }
 
 
 
 
 /**
- * Design system File
+ * Enqeue the front-end 'view' styles and javascript.
  */
-/**
- * Proper way to enqueue scripts and styles
- */
+
 function ut_designsystem_scripts() {
 
  //   if( !is_admin()){
@@ -250,8 +240,8 @@ function ut_designsystem_scripts() {
 
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION ); http://localhost/utksds-framework/build/assets
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/0.2.0/assets/css/style.css', array(), UTKDS_VERSION );
-   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/0.2.0/assets/js/utk.js', array(), UTKDS_VERSION, true );
+    wp_enqueue_style( 'utk-bootstrap-designsytemstyles', get_template_directory_uri() . '/style.css', array() );
+   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/0.2.0/assets/js/utk.js', array(), true );
   	wp_enqueue_script( 'utk-googlecse-script',  'https://cse.google.com/cse.js?cx=da48cf0836de1c946', array(), null, true );
 
 }
@@ -259,15 +249,21 @@ add_action( 'wp_enqueue_scripts', 'ut_designsystem_scripts' );
 
 
 
-// /**
-//  * Deregister the gutenberg styles
-//  */
-// add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
-// function wps_deregister_styles() {
-//     wp_dequeue_style( 'wp-block-library' );
-// }
+/**
+ * Enqeue the editor styles.
+ */
 
+// Add support for editor styles.
+add_theme_support( 'editor-styles' );
+// Enqueue editor styles.
+add_editor_style( 'editor-style.css' );
 
+// The above code is how you're supposed to add editor styles, 
+// but for some reasoon it was not working. The below function adds it though.
+
+add_action( 'enqueue_block_editor_assets', function() {
+	wp_enqueue_style( 'editor-styles', get_stylesheet_directory_uri() . "/editor-style.css", false, '1.0', 'all' );
+} );
 
 
 

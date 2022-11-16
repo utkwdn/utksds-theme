@@ -14,20 +14,30 @@ var sassOptions = {
 
 // Set variables
 var input         = './src/style.scss';
+var editorcss         = './src/editor-style.scss';
 var inputscripts  = './src/js/';
 var output        = './build/';
 
 
-// // Compile Stylesheets
+// // Compile Front End Stylesheets
 gulp.task('sass', function () {
- return gulp.src(input)
-   .pipe(sass({
-      includePaths: ["./node_modules","./src" ]
-   }).on('error', sass.logError))
-   .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
-   .pipe(gulp.dest(output));
-});
-
+  return gulp.src(input)
+    .pipe(sass({
+       includePaths: ["./node_modules","./src" ]
+    }).on('error', sass.logError))
+    .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(gulp.dest(output));
+ });
+// // Compile Editor Stylesheets
+gulp.task('editorsass', function () {
+  return gulp.src(editorcss)
+    .pipe(sass({
+       includePaths: ["./node_modules","./src" ]
+    }).on('error', sass.logError))
+    .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(gulp.dest(output));
+ });
+  
 // Compile Scripts
 gulp.task('scripts', function () {
    return gulp.src (
@@ -52,6 +62,7 @@ gulp.task('buildsrc', function () {
 
 // Set dist variables
 var inputcssdist         = './src/style.scss';
+var inputeditordist      = './src/style.scss';
 var inputscriptsdist     = './src/js/';
 var outputcssdist        = './dist/utksds-theme/';
 var outputjsdist         = './dist/utksds-theme/js';
@@ -76,6 +87,16 @@ gulp.task('distcss', function () {
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest(outputcssdist));
 });
+// create the distributed editor css file
+gulp.task('editordistcss', function () {
+  return gulp.src(inputeditordist)
+    .pipe(sass({
+       includePaths: ["./node_modules","./src" ]
+    }).on('error', sass.logError))
+    .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(gulp.dest(outputcssdist));
+});
+
 
 // copy the src directoy
 gulp.task('distsrc', function () {
@@ -97,6 +118,9 @@ gulp.task('watch', function() {
   gulp.watch('./src/scss/**/*.scss', gulp.series('sass'))
   .on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+  });  gulp.watch('./src/scss/**/*.scss', gulp.series('editorsass'))
+  .on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   });
   gulp.watch('./src/js/*.js', gulp.series('scripts'))
   .on('change', function(event) {
@@ -108,6 +132,6 @@ gulp.task('watch', function() {
   });
 });
 
-gulp.task('default', gulp.series('sass','scripts','buildsrc','watch'));
-gulp.task('build', gulp.series('sass','scripts','buildsrc'));
-gulp.task('dist', gulp.series('distcss','distjs','distsrc'));
+gulp.task('default', gulp.series('sass','editorsass','scripts','buildsrc','watch'));
+gulp.task('build',   gulp.series('sass','editorsass','scripts','buildsrc'));
+gulp.task('dist',    gulp.series('distcss','editordistcss','distjs','distsrc'));

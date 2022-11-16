@@ -1,7 +1,10 @@
 <?php if(has_nav_menu( 'menu-1' )){ ?>
-<nav id="site-navigation"   class="navbar-horizontal col-auto g-0">
-  <button class="navbar-toggler" type="button" id="mobile-menu-close" data-toggle="collapse" data-target="#site-navigation" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg><span class="visually-hidden">Close Menu</span></button>
-  	<?php
+<nav id="site-navigation"   class="offcanvas-lg offcanvas-start nav-primary">
+<button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-label="Toggle Navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="btn-hambuger"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path></svg>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg btn-close" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg> -->
+    </button>
+	  	<?php
   			wp_nav_menu(
   				array(
   					'theme_location' => 'menu-1',
@@ -9,7 +12,7 @@
 					'fallback_cb'      => false,
            			'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
   					'menu_id'        => 'primary-menu',
-  					'menu_class'        => 'list-unstyled',
+  					'menu_class'        => 'list-unstyled utwds-nav-menu',
   				)
   			);
      ?> 

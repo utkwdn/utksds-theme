@@ -1,0 +1,125 @@
+nav.nav-primary {
+  background: $utgray1;
+  display: flex;
+  align-items: stretch;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  margin-bottom: calc($spacer);
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    // background-color: red;
+    li {
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      // background-color: pink;
+    }
+  }
+}
+.utwds-nav-menu {
+  background: $utgray1;
+  // font-size: calc($font-size-sm * 0.9);
+  font-size: var(--wp--custom--typography--small);
+  // border: 1px solid blue;
+  padding: $spacer 0;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  // gap: calc($spacer * 1);
+  margin-left: calc($spacer / 2);
+  @media screen and (min-width: 900px) {
+    // border: 2px solid red;
+    flex-direction: row;
+  }
+
+  li {
+    display: block;
+    // float: left;
+    align-content: space-between;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    a {
+      text-decoration: none;
+      color: $utsmokeytext;
+      display: block;
+    }
+    &.current-menu-item,
+    &.current-menu-ancestor {
+      background: $utcoolrock;
+    }
+    &:hover {
+      background: $utcoolrock;
+      cursor: pointer;
+      height: 3rem;
+    }
+    ul {
+      background: $utgray1;
+      display: none;
+      left: 0;
+      margin: calc($spacer / 2) 0 0 0;
+      min-width: 10rem;
+      opacity: 0;
+      padding-left: 0;
+      position: absolute;
+      transition: all 0.5s ease;
+      visibility: hidden;
+      z-index: 10;
+      li ul {
+        display: none;
+      }
+    }
+
+    .menu-item-has-children {
+      border: 1px solid red;
+    }
+
+    li {
+      clear: both;
+      width: 100%;
+    }
+  }
+
+  li.current-menu-item a,
+  > li.current-menu-ancestor > a {
+    font-weight: bold;
+  }
+
+  li:hover > ul,
+  li:focus-within > ul,
+  li ul:hover,
+  li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+  }
+  li ul li {
+    height: auto;
+    padding: 0.5rem 1rem;
+    &:hover {
+      background: $utcoolrock;
+      cursor: pointer;
+      height: auto;
+      width: 100%;
+    }
+  }
+  li.current-menu-item {
+    background: $utgray2;
+    border-bottom: 2px solid $utorange;
+    // width: 100%;
+    // text-align: center;
+  }
+}

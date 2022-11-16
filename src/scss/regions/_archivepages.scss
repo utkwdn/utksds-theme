@@ -1,0 +1,45 @@
+.archive {
+    .content {
+        @include media-breakpoint-up(xl) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        nav[aria-label="breadcrumb"] {
+            width: 100%;
+        }
+        .post {
+            box-shadow: 0px 5px 30px 0 #0000001a;
+            border: 1px solid $utgray1;
+            margin: calc($spacer / 2);
+            @include media-breakpoint-up(xl) {
+                max-width: calc((100% / 2) - #{$spacer});
+            }
+            padding: $spacer;
+            .entry-title {
+                font-size: $font-size-xlg;
+                margin: calc($spacer / 2) 0;
+                line-height: 1.1;
+            }
+            .entry-title-link {
+                color: $utsmokey;
+            }
+            .entry-meta {
+                font-size: $font-size-sm;
+            }
+            .entry-footer {
+                @extend .orange-mark;
+            }
+        }
+        .pagination ul {
+            width: 100%;
+            @extend .pagination;
+            li {
+                @extend .page-item;
+                a {
+                    @extend .page-link;
+                }
+            }
+        }
+    }
+}
+

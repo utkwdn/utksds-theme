@@ -1,0 +1,21 @@
+.widget {
+//  background-color: rebeccapurple;
+  margin-top: calc($spacer * 3);
+  margin-bottom: $spacer;
+  .widget-title {
+    @extend .card-title;
+    @extend .text-uppercase;
+    @extend .orange-mark;
+    margin-bottom: $spacer;
+    font-size: $font-size-base;
+  }
+  ul {
+    @extend .list-unstyled;
+  }
+  input {
+    @extend .form-control;
+  }
+  label {
+    @extend .px-0;
+  }
+}
