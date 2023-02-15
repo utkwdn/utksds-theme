@@ -79,8 +79,10 @@ if ( ! function_exists( 'ut_ds_setup' ) ) :
 				'caption',
 				'style',
 				'script',
+				'align-wide'
 			)
 		);
+		add_theme_support( 'align-wide' );
 
 		// Set up the WordPress core custom background feature.
 		// add_theme_support(
@@ -239,7 +241,10 @@ function ut_designsystem_scripts() {
 
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION ); http://localhost/utksds-framework/build/assets
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/0.1.0/assets/css/style.css', array(), UTKDS_VERSION );
+wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'http://localhost:8888/wds/utksds-framework/build/assets/css/style.css', array(), UTKDS_VERSION );
+
+
+    // wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/0.1.0/assets/css/style.css', array(), UTKDS_VERSION );
    	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/0.1.0/assets/js/utk.js', array(), UTKDS_VERSION, true );
   	wp_enqueue_script( 'utk-googlecse-script',  'https://cse.google.com/cse.js?cx=da48cf0836de1c946', array(), null, true );
 
@@ -289,7 +294,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 
-
 /**
  * UTK Custom stuff
  */
@@ -300,6 +304,9 @@ require_once ( get_template_directory() . '/inc/functions/utk-color-palette.php'
 require_once ( get_template_directory() . '/inc/functions/utk-menus.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-nav-default.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-pagesettings.php' );
+require ( get_template_directory() .'/inc/utk-patterns.php' );
+
+
 
 // function register_navwalker(){
 //   require_once ( get_template_directory() . '/inc/functions/utk-nav-leftrail.php' );
