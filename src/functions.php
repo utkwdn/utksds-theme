@@ -20,7 +20,7 @@ $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.1.0' );
+	define( 'UTKDS_VERSION', '0.1.1' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
