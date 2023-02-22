@@ -239,9 +239,15 @@ function ut_designsystem_scripts() {
  //	    wp_enqueue_script('jquery');
  //   }
 
+ // PRODUCTION LOCATION
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION ); http://localhost/utksds-framework/build/assets
 
-wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'http://localhost:8888/wds/utksds-framework/build/assets/css/style.css', array(), UTKDS_VERSION );
+// LOCAL DEVELOPMENT
+// wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'http://localhost:8888/wds/utksds-framework/build/assets/css/style.css', array(), UTKDS_VERSION );
+
+// TESTING LOCATION
+wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'https://images.utk.edu/designsystem-test/css/style-aggregate-branch.css', array(), UTKDS_VERSION );
+
 
 
     // wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/0.1.0/assets/css/style.css', array(), UTKDS_VERSION );

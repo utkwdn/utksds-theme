@@ -53,7 +53,7 @@
         <div class="container-xxl">
           <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-6">
-              <h1 class="text-center mt-md-5 mb-2 mb-md-5 fw-lighter">Search</h1>
+              <h2 class="text-center mt-md-5 mb-2 mb-md-5 fw-lighter">Search</h2>
             </div>
           </div>
           <div class="row justify-content-center">
