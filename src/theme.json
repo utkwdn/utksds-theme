@@ -9,6 +9,11 @@
     "button-outline-group.php",
     "button-outline",
     "callout-quote-with-context",
+    "divider-tn-top-cover",
+    "divider-tn-top-grey-reflected",
+    "divider-tn-top-grey",
+    "divider-tn-top-orange-reflected",
+    "divider-tn-top-orange",
     "fancy-link-group",
     "fancy-link",
     "fw-text-double.php",
@@ -32,6 +37,7 @@
     "visual-separator-with-orange"
   ],
   "settings": {
+    "useRootPaddingAwareAlignments": true,
     "border": {
       "customColor": true,
       "customRadius": true,

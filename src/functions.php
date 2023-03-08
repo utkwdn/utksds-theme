@@ -20,7 +20,7 @@ $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.1.1' );
+	define( 'UTKDS_VERSION', '0.1.11' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -243,10 +243,10 @@ function ut_designsystem_scripts() {
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION ); http://localhost/utksds-framework/build/assets
 
 // LOCAL DEVELOPMENT
-wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'http://localhost:8888/wds/utksds-framework/build/assets/css/style.css', array(), UTKDS_VERSION );
+// wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'http://localhost:8888/wds/utksds-framework/build/assets/css/style.css', array(), UTKDS_VERSION );
 
 // TESTING LOCATION based on branch
-// wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'https://images.utk.edu/designsystem-test/css/style-aggregate-branch.css', array(), UTKDS_VERSION );
+wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'https://images.utk.edu/designsystem-test/css/style-aggregate-branch-02.css', array(), UTKDS_VERSION );
 
 
 
@@ -312,7 +312,16 @@ require_once ( get_template_directory() . '/inc/functions/utk-nav-default.php' )
 require_once ( get_template_directory() . '/inc/functions/utk-pagesettings.php' );
 require ( get_template_directory() .'/inc/utk-patterns.php' );
 
-
+/* If you want to use theme.json, but don't want to allow access to the template editor, add this to your functions.php file. */
+// remove_theme_support ( 'block-templates' );
+/* 
+Add support for block based templates 
+*/
+// function add_block_template_part_support() {
+//     add_theme_support( 'block-template-parts' );
+// }
+ 
+add_action( 'after_setup_theme', 'add_block_template_part_support' );
 
 // function register_navwalker(){
 //   require_once ( get_template_directory() . '/inc/functions/utk-nav-leftrail.php' );

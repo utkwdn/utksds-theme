@@ -12,6 +12,7 @@ function wds_register_block_pattern_categories() {
 	register_block_pattern_category_type( 'wds-article', array( 'label' => __( 'WDS Article', 'wds-article' ) ) );
 		register_block_pattern_category_type( 'wds-buttons', array( 'label' => __( 'WDS Buttons', 'wds-buttons' ) ) );
 		register_block_pattern_category_type( 'wds-cards', array( 'label' => __( 'WDS Cards', 'wds-cards' ) ) );
+		register_block_pattern_category_type( 'wds-divider', array( 'label' => __( 'WDS Divider', 'wds-divider' ) ) );
 		register_block_pattern_category_type( 'wds-gallery', array( 'label' => __( 'WDS Gallery', 'wds-gallery' ) ) );
 		register_block_pattern_category_type( 'wds-intro', array( 'label' => __( 'WDS Intro', 'wds-intro' ) ) );
 		register_block_pattern_category_type( 'wds-news', array( 'label' => __( 'WDS News', 'wds-news' ) ) );
@@ -30,6 +31,10 @@ function wds_register_block_pattern_categories() {
 		'wds-cards' => array(
 			'label'         => __( 'WDS Cards', 'wds-cards' ),
 			'categoryTypes' => array( 'wds-cards' ),
+		),
+		'wds-divider' => array(
+			'label'         => __( 'WDS Divider', 'wds-divider' ),
+			'categoryTypes' => array( 'wds-divider' ),
 		),
 		'wds-gallery' => array(
 			'label'         => __( 'WDS Gallery', 'wds-gallery' ),
