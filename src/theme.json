@@ -221,9 +221,22 @@
       "dropCap": false,
       "fontFamilies": [
         {
-          "fontFamily": "'Montserrat', 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif",
-          "name": "Montserrat",
-          "slug": "primary"
+          "fontFamily": "'Gotham A', 'Gotham B', 'Gotham SSm 4r', 'Gotham SSm A', 'Gotham SSm B', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif",
+          "name": "Gotham",
+          "slug": "primary",
+          "fontFace": [
+            {
+              "fontDisplay": "block",
+              "fontFamily": "Gotham",
+              "fontStretch": "normal",
+              "fontStyle": "normal",
+              "fontWeight": "200 400 700 800 900",
+              "src": [
+                "file:./images/fonts/Montseratt/Montserrat-Italic-VariableFont_wght.ttf",
+                "file:./images/fonts/Montseratt/Montserrat-VariableFont_wght.ttf"
+              ]
+            }
+          ]
         },
         {
           "fontFamily": "monospace",

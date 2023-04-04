@@ -58,6 +58,23 @@ if ( ! function_exists( 'ut_ds_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+	/*
+	* Add Custom image sizes that will generate on new image uploads 
+	*/
+			add_image_size( 'small', 300, 9999 ); // 300px wide unlimited height
+			add_image_size( 'cover-tall', 9999, 1100 ); // 1100px tall unlimited width
+
+			function utk_custom_image_sizes( $size_names ) {
+				$new_sizes = array(
+					'small' => 'Small',
+					'cover-tall' => 'Cover Tall'
+
+				);
+				return array_merge( $size_names, $new_sizes );
+			}
+			add_filter( 'image_size_names_choose', 'utk_custom_image_sizes' );
+
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
@@ -246,12 +263,15 @@ function ut_designsystem_scripts() {
 // wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'http://localhost:8888/wds/utksds-framework/build/assets/css/style.css', array(), UTKDS_VERSION );
 
 // TESTING LOCATION based on branch
-wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'https://images.utk.edu/designsystem-test/css/style-aggregate-branch-02.css', array(), UTKDS_VERSION );
+// wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'https://images.utk.edu/designsystem-test/css/style-aggregate-branch-02.css', array(), UTKDS_VERSION );
+
+// local – To enqueue style.css in theme
+wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 
 
     // wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/0.1.0/assets/css/style.css', array(), UTKDS_VERSION );
-   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/0.1.0/assets/js/utk.js', array(), UTKDS_VERSION, true );
+   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/0.2.0/assets/js/utk.js', array(), UTKDS_VERSION, true );
   	wp_enqueue_script( 'utk-googlecse-script',  'https://cse.google.com/cse.js?cx=da48cf0836de1c946', array(), null, true );
 
 }

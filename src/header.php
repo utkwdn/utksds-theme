@@ -43,17 +43,17 @@
 
 
 <?php if(has_nav_menu( 'menu-1' )){ ?>
-<nav class="navbar-horizontal col-auto">
+<nav class="navbar-horizontal col-auto g-0">
   	<?php
-      wp_nav_menu( array(
-      'theme_location' => 'menu-1',
-      'container'            => 'ul',
-      'fallback_cb'      => false,
-      'sub_menu' => true,
-      'depth'	          => 1, // 1 = no dropdowns, 2 = with dropdowns.
-      'menu_id'        => 'secondary-menu',
-      'menu_class'        => 'nav justify-content-center',
-      ) );
+  //    wp_nav_menu( array(
+  //    'theme_location' => 'menu-1',
+  //    'container'            => 'ul',
+  //    'fallback_cb'      => false,
+  //    'sub_menu' => true,
+   //   'depth'	          => 1, // 1 = no dropdowns, 2 = with dropdowns.
+   //   'menu_id'        => 'secondary-menu',
+   //   'menu_class'        => 'nav justify-content-center',
+   //   ) );
     ?>
 </nav>
 <?php } ?>
