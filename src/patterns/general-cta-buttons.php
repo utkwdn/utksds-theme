@@ -7,8 +7,8 @@
  */
 
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="margin-top:0px"><!-- wp:spacer {"height":"5vw"} -->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:0px"><!-- wp:spacer {"height":"5vw"} -->
 <div style="height:5vw" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
