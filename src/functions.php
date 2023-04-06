@@ -61,12 +61,12 @@ if ( ! function_exists( 'ut_ds_setup' ) ) :
 	/*
 	* Add Custom image sizes that will generate on new image uploads 
 	*/
-			add_image_size( 'small', 300, 9999 ); // 300px wide unlimited height
+			// add_image_size( 'small', 300, 9999 ); // 300px wide unlimited height
 			add_image_size( 'cover-tall', 9999, 1100 ); // 1100px tall unlimited width
 
 			function utk_custom_image_sizes( $size_names ) {
 				$new_sizes = array(
-					'small' => 'Small',
+					// 'small' => 'Small',
 					'cover-tall' => 'Cover Tall'
 
 				);
