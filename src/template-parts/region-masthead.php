@@ -14,9 +14,9 @@
 	<header id="masthead" class="site-header">
 
 
- 	<div class="container-xxl">
-				<div class="row  justify-content-between py-2  py-lg-0">
-  				<div class="col-10<?php if ($site_header == "two") { ?> col-md-12<?php } else { ?> col-md-10 col-lg-3 col-xl-4<?php }; ?> d-flex">
+ 	<div class="title-bar is-layout-constrained">
+				<div class="title-area">
+  				<div class="d-flex">
 			<?php
 			// Here is the function that puts a logo on the site.
 			// Regular UT logo by default, but if they upload a custom logo via the customizer, it'll display.
@@ -24,25 +24,30 @@
       $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
             if ( has_custom_logo() ) { ?>
 
-  				<div class="d-flex justify-content-center justify-content-lg-start"><a class="text-reset text-decoration-none d-flex my-md-2" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="site-logo align-self-center" src="<?php echo esc_url( $logo[0]  ); ?>" width="" height="" alt="<?php bloginfo( 'name' ); ?>"  rel="home"></a></div>
+  				<div class="d-flex "><a class="text-reset text-decoration-none d-flex my-md-2" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="site-logo " src="<?php echo esc_url( $logo[0]  ); ?>" width="" height="" alt="<?php bloginfo( 'name' ); ?>"  rel="home"></a></div>
 
 
         <?php } elseif ( is_front_page() || is_home() ) { ?>
-    				<a class="text-reset d-flex text-decoration-none text-uppercase align-self-center font-weight-light my-md-2" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-     				    <h1 class="site-title fw-light align-self-center mb-0"><?php bloginfo( 'name' ); ?></h1>
+    				<a class="text-reset d-flex text-decoration-none  font-weight-light my-md-2" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+     				    <h1 class="site-title fw-light mb-0"><?php bloginfo( 'name' ); ?></h1>
   				  </a>
 
 				<?php  } else { ?>
-    				<a class="text-reset d-flex text-decoration-none text-uppercase align-self-center font-weight-light my-md-2" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-     				  <span class="site-title fw-light align-self-center mb-0"><?php bloginfo( 'name' ); ?></span>
+    				<a class="text-reset d-flex text-decoration-none  font-weight-light my-md-2" id="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+     				  <span class="site-title fw-light  mb-0"><?php bloginfo( 'name' ); ?></span>
   		  		</a>
     				<?php  }; ?>
 
   				</div>
-				  <button class="btn btn-primary d-lg-none align-self-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-label="Toggle Navigation">
+				  <!-- <button class="btn btn-primary d-lg-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-label="Toggle Navigation">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="btn-hambuger"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path></svg>
-     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg btn-close" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg> -->
-    </button>
+    
+    </button> -->
+
+	<button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasRight" > 
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="btn-hambuger"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path></svg></button>
+
+
 				</div>
  	</div>
 	 <?php get_template_part( 'template-parts/nav-default' ); ?>
@@ -52,3 +57,4 @@
 
    <!-- #site-navigation -->
 	</header><!-- #masthead -->
+

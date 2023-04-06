@@ -1,6 +1,7 @@
 // Modal header
 // Top section of the modal w/ title and dismiss
-.modal-header {
+.modal-header,
+.offcanvas-header {
   border-bottom: none;
 
   .btn-close {

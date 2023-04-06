@@ -169,3 +169,41 @@
 //    background-color: $utcoolrock;
 //  }
 //}
+
+/* styling for offcanvas-header used for mobile navigation */
+.offcanvas-header {
+  justify-content: flex-end;
+  width: 100%;
+  .btn-close {
+    align-self: flex-end;
+  }
+}
+.offcanvas-body {
+  width: 100%;
+  #primary-menu {
+    margin-top: 0;
+  }
+  .utwds-nav-menu {
+    margin-top: 0;
+    width: 100%;
+    .sub-menu {
+      flex-direction: row;
+      display: flex;
+      flex: 1 1 auto;
+      ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+      }
+
+      li {
+        flex-basis: 90% !important;
+        display: flex;
+        background-color: transparent;
+        a {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+}

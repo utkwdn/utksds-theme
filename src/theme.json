@@ -230,13 +230,14 @@
               "fontFamily": "Gotham",
               "fontStretch": "normal",
               "fontStyle": "normal",
-              "fontWeight": "200 400 700 800 900",
-              "src": [
-                "file:./images/fonts/Montseratt/Montserrat-Italic-VariableFont_wght.ttf",
-                "file:./images/fonts/Montseratt/Montserrat-VariableFont_wght.ttf"
-              ]
+              "fontWeight": "200 400 700 800 900"
             }
           ]
+        },
+        {
+          "fontFamily": "'Montserrat', 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif",
+          "name": "Montserrat",
+          "slug": "secondary"
         },
         {
           "fontFamily": "monospace",

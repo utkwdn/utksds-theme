@@ -1,14 +1,50 @@
 //#masthead {
 //  border-top: 0.25rem solid $utorange;
 //  }
+
+.title-bar {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+
+  justify-content: flex-start;
+}
+
+.btn-hamburger {
+  transform: scale(1.2);
+  fill: #58595b;
+  @media screen and (min-width: 420px) {
+    margin-right: 0.75rem;
+  }
+}
+.title-area {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 1 1 auto;
+  align-items: flex-start;
+
+  flex-direction: row;
+  &:first-child {
+  }
+  .mobile-button-nav {
+    align-self: flex-end;
+    width: fit-content;
+  }
+}
+
 .site-title {
   // font-size: $font-size-lg;
-  font-size: $h3-font-size;
-  display: flex;
+  font-size: $h4-font-size;
+  @media screen and (min-width: 800px) {
+    font-size: $h4-font-size;
+  }
+
+  line-height: calc($headings-line-height * 1.2);
+  display: block;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
-  margin: 0.25 * $spacer;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: calc(2 * $spacer) cacl(0.55 * $spacer) cacl(0.25 * $spacer);
   position: relative;
   a {
     background-size: $spacer * 2 $spacer * 2 !important;
@@ -54,10 +90,11 @@ h1.site-title {
   background-size: 45px 45px;
   background-repeat: no-repeat;
   background-position: left center;
-  height: 45px;
+  min-height: 45px;
+  align-items: center;
   // width: 45px;
   span {
-    @include visually-hidden;
+    // @include visually-hidden;
   }
   @include media-breakpoint-up(sm) {
     min-height: 45px;
@@ -67,7 +104,7 @@ h1.site-title {
       height: auto !important;
       padding: 0 !important;
       margin: 0 !important;
-      overflow: hidden !important;
+      // overflow: hidden !important;
       clip: auto !important;
       white-space: normal !important;
     }
