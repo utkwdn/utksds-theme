@@ -223,7 +223,7 @@
         {
           "fontFamily": "'Montserrat', 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif",
           "name": "Montserrat",
-          "slug": "secondary",
+          "slug": "primary",
           "fontFace": [
             {
               "fontFamily": "Montserrat",
