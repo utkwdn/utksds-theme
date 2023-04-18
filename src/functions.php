@@ -341,7 +341,7 @@ Add support for block based templates
 //     add_theme_support( 'block-template-parts' );
 // }
  
-add_action( 'after_setup_theme', 'add_block_template_part_support' );
+// add_action( 'after_setup_theme', 'add_block_template_part_support' );
 
 // function register_navwalker(){
 //   require_once ( get_template_directory() . '/inc/functions/utk-nav-leftrail.php' );
