@@ -33,9 +33,9 @@
       justify-items: flex-start;
       align-items: flex-start;
       column-gap: calc($spacer * 4);
-      .widget-area {
-        // flex: 1;
-      }
+      // .widget-area {
+      //   // flex: 1;
+      // }
       main.content {
         flex: 3 1 auto;
         display: flex;
@@ -61,9 +61,9 @@
         .widget-area {
           margin-right: 0;
         }
-        main.content {
-          // margin-left: $spacer * 3;
-        }
+        // main.content {
+        //   // margin-left: $spacer * 3;
+        // }
       }
     }
   }

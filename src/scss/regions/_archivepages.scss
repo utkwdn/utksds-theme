@@ -68,9 +68,9 @@
             flex-direction: column;
             margin-bottom: calc($spacer * 1.5);
             column-gap: calc($spacer * 3);
-            & > * {
-              // flex-basis: 50%;
-            }
+            // & > * {
+            //   // flex-basis: 50%;
+            // }
           }
           .entry-footer {
             flex-basis: 100%;

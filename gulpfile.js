@@ -96,6 +96,18 @@ gulp.task('editordistcss', function () {
     .pipe(sass.sync({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(gulp.dest(outputcssdist));
 });
+// create the distributed editor css file
+gulp.task('editordistcss', function () {
+  return gulp
+    .src(inputeditordist)
+    .pipe(
+      sass({
+        includePaths: ['./node_modules', './src'],
+      }).on('error', sass.logError)
+    )
+    .pipe(sass.sync({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(gulp.dest(outputcssdist));
+});
 
 // copy the src directoy
 gulp.task('distsrc', function () {

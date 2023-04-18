@@ -24,8 +24,8 @@
   align-items: flex-start;
 
   flex-direction: row;
-  &:first-child {
-  }
+  // &:first-child {
+  // }
   .mobile-button-nav {
     align-self: flex-end;
     width: fit-content;
@@ -73,7 +73,6 @@
   width: 190px;
   height: 42px;
 }
-
 h1.site-title {
   margin-top: 0;
 }
@@ -93,9 +92,9 @@ h1.site-title {
   min-height: 45px;
   align-items: center;
   // width: 45px;
-  span {
-    // @include visually-hidden;
-  }
+  // span {
+  //   // @include visually-hidden;
+  // }
   @include media-breakpoint-up(sm) {
     min-height: 45px;
     span {
