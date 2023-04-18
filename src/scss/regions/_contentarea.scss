@@ -1,3 +1,24 @@
+// #content article >,
+// #content article .entry-content > {
+//   :not(.alignfull):not(.entry-content):not(.strip) {
+//     width: calc(100% - 30px);
+//     margin-right: auto;
+//     margin-left: auto;
+
+//     @include media-breakpoint-up(sm) {
+//       max-width: 540px;
+//     }
+//     @include media-breakpoint-up(md) {
+//       max-width: 720px;
+//     }
+//     @include media-breakpoint-up(lg) {
+//       max-width: 1060px;
+//     }
+//     @include media-breakpoint-up(xl) {
+//       max-width: 1540px;
+//     }
+//   }
+// }
 // helps control full-width and wide-width blocks
 .site-container {
   width: 100%;
@@ -9,14 +30,18 @@
   body.content-sidebar {
     .content-sidebar-wrap {
       display: flex;
-      justify-items: center;
+      justify-items: flex-start;
       align-items: flex-start;
-      .widget-area {
-        flex: 1 1 0;
-      }
+      column-gap: calc($spacer * 4);
+      // .widget-area {
+      //   // flex: 1;
+      // }
       main.content {
-        flex: 2 1 0;
-        margin-right: $spacer * 3;
+        flex: 3 1 auto;
+        display: flex;
+        column-gap: calc($spacer * 3);
+        // margin-right: $spacer * 5;
+        // border: 1px solid yellowgreen;
       }
     }
 
@@ -27,7 +52,7 @@
         }
         main.content {
           order: 1;
-          margin-left: $spacer * 3;
+          // margin-left: $spacer * 3;
         }
       }
     }
@@ -36,10 +61,14 @@
         .widget-area {
           margin-right: 0;
         }
-        main.content {
-          margin-left: $spacer * 3;
-        }
+        // main.content {
+        //   // margin-left: $spacer * 3;
+        // }
       }
     }
   }
+}
+// remove the empty sidebar from bottom pages that are not using it
+.page-template-default .sidebar-primary {
+  display: none;
 }

@@ -1,20 +1,21 @@
-.orange-mark {
+.orange-mark,
+.display-4 {
   position: relative;
-  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 2;
   margin-top: $spacer * 3;
-  &:before {
+  font-weight: $font-weight-ultra;
+  &::after {
     content: '';
     position: absolute;
     left: 0;
     width: 90px;
     margin-left: 0;
-    height: 6px;
+    height: 8px;
     background-color: $utorange;
-    top: 0;
-    bottom: auto;
+    top: auto;
+    bottom: 0;
   }
-  &.widget-title {
-    padding-top: $spacer;
-    margin-top: $spacer;
+  &.entry-title {
+    padding-bottom: clamp(1rem, 2vw, 2rem);
   }
 }

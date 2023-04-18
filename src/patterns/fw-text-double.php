@@ -1,21 +1,21 @@
 <?php
 /**
- * Title: Full Width Text with Double Images.
- * Slug: utkchancellor/fw-text-double
- * Categories: utkchancellor-general
+ * Title: Full Width Text with Double Images
+ * Slug: wds-text/fw-text-double
+ * Categories: wds-text
  * Viewport Width: 1280  
  */
 
 ?>
-<!-- wp:group {"align":"full","backgroundColor":"light","layout":{"inherit":true}} -->
+<!-- wp:group {"align":"full","backgroundColor":"light","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-light-background-color has-background"><!-- wp:heading -->
 <h2>Class Aptent Taciti</h2>
 <!-- /wp:heading -->
 
-<!-- wp:columns {"verticalAlignment":null} -->
+<!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"50%","className":"pe-3","layout":{"inherit":false}} -->
 <div class="wp-block-column is-vertically-aligned-top pe-3" style="flex-basis:50%"><!-- wp:paragraph -->
-<p>Vestibulum vulputate turpis ac ex tincidunt, at vestibulum mauris vehicula. Integer rhoncus purus sapien, eu bibendum urna fringilla quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean pretium quis turpis ut tristique. </p>
+<p>Use with page template Max Width, No Sidebars. Recommended Image Size: 572px x 572px. Vestibulum vulputate turpis ac ex tincidunt, at vestibulum mauris vehicula. Integer rhoncus purus sapien, eu bibendum urna fringilla quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean pretium quis turpis ut tristique. </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

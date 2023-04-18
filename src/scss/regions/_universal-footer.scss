@@ -10,11 +10,22 @@
   }
 }
 
-footer#colophon {
-  padding-top: $spacer;
+// footer#colophon {
+//   // padding-top: $spacer; // this was keeping site-inner from snugging up with footer
+// }
+
+#universal-footer img {
+  max-width: 300px;
+  margin-bottom: $spacer * 2;
+  margin-top: $spacer * 0.5;
 }
 
 #utk_footer_logo {
   max-width: 300px;
   margin-bottom: $spacer * 2;
+}
+
+.site-footer .wrap {
+  padding: $spacer 0;
+  //fixes copyright hitting the footer UT address section
 }

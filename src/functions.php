@@ -22,7 +22,7 @@
 
 if ( ! defined( 'UTKDS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'UTKDS_VERSION', '0.1.3' );
+	define( 'UTKDS_VERSION', '0.1.11' );
 }
 
 if ( ! function_exists( 'ut_ds_setup' ) ) :
@@ -60,6 +60,23 @@ if ( ! function_exists( 'ut_ds_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+	/*
+	* Add Custom image sizes that will generate on new image uploads 
+	*/
+			// add_image_size( 'small', 300, 9999 ); // 300px wide unlimited height
+			add_image_size( 'cover-tall', 9999, 1100 ); // 1100px tall unlimited width
+
+			function utk_custom_image_sizes( $size_names ) {
+				$new_sizes = array(
+					// 'small' => 'Small',
+					'cover-tall' => 'Cover Tall'
+
+				);
+				return array_merge( $size_names, $new_sizes );
+			}
+			add_filter( 'image_size_names_choose', 'utk_custom_image_sizes' );
+
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
@@ -81,8 +98,10 @@ if ( ! function_exists( 'ut_ds_setup' ) ) :
 				'caption',
 				'style',
 				'script',
+				'align-wide'
 			)
 		);
+		add_theme_support( 'align-wide' );
 
 		// Set up the WordPress core custom background feature.
 		// add_theme_support(
@@ -238,10 +257,22 @@ function ut_designsystem_scripts() {
  //	    wp_enqueue_script('jquery');
  //   }
 
+ // PRODUCTION LOCATION
 //    wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/latest/assets/css/style.css', array(), UTKDS_VERSION ); http://localhost/utksds-framework/build/assets
 
-    wp_enqueue_style( 'utk-bootstrap-designsytemstyles', get_template_directory_uri() . '/style.css', array() );
-   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/0.2.0/assets/js/utk.js', array(), true );
+// LOCAL DEVELOPMENT
+// wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'http://localhost:8888/wds/utksds-framework/build/assets/css/style.css', array(), UTKDS_VERSION );
+
+// TESTING LOCATION based on branch
+// wp_enqueue_style( 'utk-bootstrap-designsytemstyles', 'https://images.utk.edu/designsystem-test/css/style-aggregate-branch-02.css', array(), UTKDS_VERSION );
+
+// local – To enqueue style.css in theme
+wp_enqueue_style( 'style', get_stylesheet_uri() );
+
+
+
+    // wp_enqueue_style( 'utk-bootstrap-designsytemstyles',    'https://images.utk.edu/designsystem/v1/0.1.0/assets/css/style.css', array(), UTKDS_VERSION );
+   	wp_enqueue_script( 'utk-bootstrap-designsytemscripts',  'https://images.utk.edu/designsystem/v1/0.2.0/assets/js/utk.js', array(), UTKDS_VERSION, true );
   	wp_enqueue_script( 'utk-googlecse-script',  'https://cse.google.com/cse.js?cx=da48cf0836de1c946', array(), null, true );
 
 }
@@ -296,7 +327,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 
-
 /**
  * UTK Custom stuff
  */
@@ -307,6 +337,18 @@ require_once ( get_template_directory() . '/inc/functions/utk-color-palette.php'
 require_once ( get_template_directory() . '/inc/functions/utk-menus.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-nav-default.php' );
 require_once ( get_template_directory() . '/inc/functions/utk-pagesettings.php' );
+require ( get_template_directory() .'/inc/utk-patterns.php' );
+
+/* If you want to use theme.json, but don't want to allow access to the template editor, add this to your functions.php file. */
+// remove_theme_support ( 'block-templates' );
+/* 
+Add support for block based templates 
+*/
+// function add_block_template_part_support() {
+//     add_theme_support( 'block-template-parts' );
+// }
+ 
+// add_action( 'after_setup_theme', 'add_block_template_part_support' );
 
 // function register_navwalker(){
 //   require_once ( get_template_directory() . '/inc/functions/utk-nav-leftrail.php' );

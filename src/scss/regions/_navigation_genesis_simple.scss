@@ -26,9 +26,7 @@
   @extend .nav-link;
 }
 
-
 // Completely hide the sub nav on mobile, but keep the main menu fully expanded.
-
 
 // Here we put the full navigation off-canvas
 #site-navigation {
@@ -120,24 +118,23 @@
         background-color: $utcoolrock;
       }
       a {
-        padding:  $spacer;
+        padding: $spacer;
         &:hover {
           background-color: lighten($utcoolrock, 0.2);
         }
       }
     }
-
   }
   &.menu-secondary {
     li {
       a {
-        padding:  calc($spacer/2) $spacer;
-        background-color: darken($utcoolrock,0.8);
+        padding: calc($spacer/2) $spacer;
+        background-color: darken($utcoolrock, 0.8);
         &:hover {
           background-color: lighten($utcoolrock, 0.8);
         }
       }
-    } 
+    }
   }
 }
 

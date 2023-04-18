@@ -4,94 +4,48 @@
 /* Site Inner
 --------------------------------------------- */
 
-.site-inner {
-  clear: both;
-  margin: 0 auto;
-}
+// .site-inner {
+//   clear: both;
+//   margin: 0 auto;
+// }
 
+// body.is-fullscreen-mode {
+//   .alignfull {
+//     background: red;;
+//     width: 100vw;
+//     max-width: 100vw;
+//     margin: 0 calc(50% - 50vw);
+//     display: block;
+//     position: relative;
+//   }
 
+//   // controls the Full-Width Selection for certain blocks (groups, cover, overlay...)
+//   div.is-sidebar-opened {
+//     .alignfull {
+//       background: green;
+//       width: 100vw;
+//       max-width: 100vw;
+//       margin: 0 calc(50% - 50vw);
+//       display: block;
+//       position: relative;
+//     }
+//   }
+// }
+// body:not(.is-fullscreen-mode) {
+//   div.is-sidebar-opened {
+//     .alignfull {
+//       background: aqua;
+//       width: calc(100vw - 280px);
+//       max-width: calc(100vw - 280px);
+//       margin: 0 calc(50% - 50vw);
+//       display: block;
+//       position: relative;
+//     }
+//   }
 
-body.is-fullscreen-mode {
-  .alignfull {
-    background: red;;
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0 calc(50% - 50vw);
-    display: block;
-    position: relative;
-  }
+// }
 
-  // controls the Full-Width Selection for certain blocks (groups, cover, overlay...)
-  div.is-sidebar-opened {
-    .alignfull {
-      background: green;
-      width: 100vw;
-      max-width: 100vw;
-      margin: 0 calc(50% - 50vw);
-      display: block;
-      position: relative;
-    }
-  }
-}
-body:not(.is-fullscreen-mode) {
-  div.is-sidebar-opened {
-    .alignfull {
-      background: aqua;
-      width: calc(100vw - 280px);
-      max-width: calc(100vw - 280px);
-      margin: 0 calc(50% - 50vw);
-      display: block;
-      position: relative;
-    }
-  }
-
-}
-
-h1.adaOrange {
-  color: #f56a00 !important;
-  color: #58595b !important;
-}
-
-// experimental TN Section
-// Still in process and not functionging 100% yet
-.tnDivider {
-  position: relative;
-  width: 100vw;
-  height: auto;
-  transform-origin: left;
-}
-
-.tnTop {
-  position: absolute;
-  object-fit: cover;
-  width: 100%; //breaks the height of the page...
-  left: 0;
-  display: inline-block;
-  height: 100%;
-  height: auto;
-  margin: 0 auto;
-  background-color: $utgray2;
-  clip-path: path('M0,1L.3,.4s1.7,0,1.7,0,0-.2,0-.2h6.4v-.2H0V1Z');
-}
-
-.scaleUp {
-  transform: scale(300);
-  transform-origin: top left;
-  object-fit: cover;
-}
-
-.fullWidthBar-end {
-  &:after {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0 calc(50% - 50vw);
-    content: '';
-    display: block;
-    background-color: $utgray2;
-    position: absolute;
-    height: 300px;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-  }
-}
+// h1.adaOrange {
+//   color: #f56a00 !important;
+//   color: #58595b !important;
+// }

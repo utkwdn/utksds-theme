@@ -1,24 +1,23 @@
 <?php
 /**
- * Title: Article with Video.
- * Slug: utkchancellor/article-with-video
- * Categories: utkchancellor-general
+ * Title: Article with Video
+ * Slug: wds-article/article-with-video
+ * Categories: wds-article
  * Description: Article pattern with embedded video
- * Viewport Width: 1290
+ * Viewport Width: 1500
  */
 
 ?>
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"5vw"} -->
+<div style="height:5vw" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"className":"fs-5"} -->
 <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero leo, fringilla interdum enim ut, ultrices placerat nunc. Maecenas dapibus purus tortor, convallis cursus metus pulvinar eu. Pellentesque faucibus sagittis mi, vitae venenatis lorem. Cras bibendum metus velit, at viverra arcu faucibus id. Sed vel tellus tortor. Donec id hendrerit urna. Fusce auctor dictum tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris gravida dui lectus, sed semper dolor finibus quis.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"42px"} -->
-<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"4vw"} -->
+<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=CBYnIlkSdUU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
@@ -27,8 +26,8 @@ https://www.youtube.com/watch?v=CBYnIlkSdUU
 </div></figure>
 <!-- /wp:embed -->
 
-<!-- wp:spacer {"height":"42px"} -->
-<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"4vw"} -->
+<div style="height:4vw" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
@@ -43,7 +42,6 @@ https://www.youtube.com/watch?v=CBYnIlkSdUU
 <p>Ut commodo enim nisi, vel dictum ipsum egestas a. Donec venenatis tellus in neque blandit, non cursus erat congue. Sed non semper orci. Nunc interdum lorem faucibus sem hendrerit, posuere dapibus elit placerat. Etiam cursus, odio nec mollis condimentum, augue diam faucibus magna, eu tristique leo neque vel nibh. Donec viverra congue ligula, sed ornare tortor venenatis eget. Aliquam in sem ornare, lacinia diam ut, sollicitudin ligula. Vestibulum dignissim luctus imperdiet. Ut non consectetur massa. Donec tortor elit, maximus ac mi ac, suscipit auctor tellus. Proin sodales imperdiet sodales. Nunc lacinia imperdiet urna sed fringilla. Ut luctus, quam ac pulvinar molestie, ligula enim facilisis lacus, et blandit metus justo a turpis.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:group -->
+<!-- wp:spacer {"height":"10vw"} -->
+<div style="height:10vw" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->

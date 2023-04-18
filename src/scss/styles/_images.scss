@@ -12,3 +12,9 @@ figcaption {
   width: 100%;
   height: auto;
 }
+
+.wp-block-image {
+  &.alignfull {
+    margin: 0 calc(50% - 50vw);
+  }
+}

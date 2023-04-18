@@ -1,15 +1,15 @@
 <?php
 /**
- * Title: Article with Feature Quote.
- * Slug: utkchancellor/article-with-quote
- * Categories: utkchancellor-general
- * Viewport Width: 1280
+ * Title: Article with Feature Quote
+ * Slug: wds-article/article-with-quote
+ * Categories: wds-article
+ * Viewport Width: 1500
  */
 
 ?>
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<!-- wp:spacer {"height":"5vw"} -->
+<div style="height:5vw" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
@@ -20,8 +20,10 @@
 <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer accumsan laoreet dui, ut interdum arcu viverra vel. Praesent libero metus, condimentum vel libero eu, posuere dapibus odio. Donec in pulvinar turpis. Pellentesque sed lectus dolor. Nulla pretium, risus eu consectetur pellentesque, nibh urna condimentum sem, eu iaculis nisl erat vel nibh. Sed a euismod erat. Pellentesque pellentesque odio faucibus volutpat facilisis. Duis dolor urna, tempus id diam nec, viverra sagittis turpis. Nullam convallis eu est vitae fermentum. Etiam congue lacinia massa, vitae dapibus erat luctus sed. Etiam eget tortor mollis, eleifend risus ac, tempor leo. Nam sit amet ultricies elit. Fusce gravida blandit massa, sit amet vulputate neque ultricies sit amet.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:quote {"className":"ms-n5 my-5","fontSize":"medium"} -->
-<blockquote class="wp-block-quote ms-n5 my-5 has-medium-font-size"><p>Etiam cursus, odio nec mollis condimentum, augue diam faucibus magna, eu tristique leo neque vel</p></blockquote>
+<!-- wp:quote {"fontSize":"medium"} -->
+<blockquote class="wp-block-quote has-medium-font-size"><!-- wp:paragraph -->
+<p>Etiam cursus, odio nec mollis condimentum, augue diam faucibus magna, eu tristique leo neque vel</p>
+<!-- /wp:paragraph --></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:paragraph -->
@@ -44,15 +46,14 @@
 <p>Ut commodo enim nisi, vel dictum ipsum egestas a. Donec venenatis tellus in neque blandit, non cursus erat congue. Sed non semper orci. Nunc interdum lorem faucibus sem hendrerit, posuere dapibus elit placerat. Etiam cursus, odio nec mollis condimentum, augue diam faucibus magna, eu tristique leo neque vel nibh. Donec viverra congue ligula, sed ornare tortor venenatis eget. Aliquam in sem ornare, lacinia diam ut, sollicitudin ligula. Vestibulum dignissim luctus imperdiet. Ut non consectetur massa. Donec tortor elit, maximus ac mi ac, suscipit auctor tellus. Proin sodales imperdiet sodales. Nunc lacinia imperdiet urna sed fringilla. Ut luctus, quam ac pulvinar molestie, ligula enim facilisis lacus, et blandit metus justo a turpis.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"2rem"} -->
-<div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"2vw"} -->
+<div style="height:2vw" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
 <p><a href="https://#">This Article First Appeared in this Source</a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:group -->
+<!-- wp:spacer {"height":"5vw"} -->
+<div style="height:5vw" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->

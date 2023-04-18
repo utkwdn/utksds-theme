@@ -2,12 +2,12 @@
   @extend .visually-hidden;
 }
 .nav-links {
-  @extend .pagination;
+  @extend .pagination !optional;
 }
 .nav-previous,
 .nav-next {
-  @extend .page-item;
+  @extend .page-item !optional;
   a {
-    @extend .page-link;
+    @extend .page-link !optional;
   }
 }

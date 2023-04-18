@@ -1,7 +1,43 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
+  "patterns": [
+    "article-with-quote-skinny",
+    "article-with-quote",
+    "article-with-video",
+    "bio-card-group",
+    "button-outline-group.php",
+    "button-outline",
+    "callout-quote-with-context",
+    "divider-tn-top-cover",
+    "divider-tn-top-grey-reflected",
+    "divider-tn-top-grey",
+    "divider-tn-top-orange-reflected",
+    "divider-tn-top-orange",
+    "fancy-link-group",
+    "fancy-link",
+    "fw-text-double.php",
+    "gallery-two-up-on-orange-lgsm",
+    "gallery-two-up-on-orange-smlg",
+    "general-cta-buttons",
+    "hero-with-quote",
+    "media-text-callout-with-fancy-links",
+    "name-card-group",
+    "news-featured-op-ed",
+    "news-triple-on-modern-gray-with-image",
+    "new-triple",
+    "profile-card-group",
+    "special-news-with-header",
+    "sub-page-intro",
+    "subject-card-group",
+    "tertiary-page-intro",
+    "text-group-complex",
+    "text-link",
+    "text-offset-with-header",
+    "visual-separator-with-orange"
+  ],
   "settings": {
+    "useRootPaddingAwareAlignments": true,
     "border": {
       "customColor": true,
       "customRadius": true,
@@ -185,19 +221,26 @@
       "dropCap": false,
       "fontFamilies": [
         {
-          "fontFamily": "'Gotham A', 'Gotham B', 'Gotham SSm 4r', 'Gotham SSm A', 'Gotham SSm B', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif",
-          "name": "Gotham",
+          "fontFamily": "'Montserrat', 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif",
+          "name": "Montserrat",
           "slug": "primary",
           "fontFace": [
             {
-              "fontDisplay": "block",
-              "fontFamily": "Gotham",
+              "fontFamily": "Montserrat",
               "fontStretch": "normal",
               "fontStyle": "normal",
               "fontWeight": "200 400 700 800 900",
               "src": [
-                "file:./images/fonts/Montseratt/Montserrat-Italic-VariableFont_wght.ttf",
-                "file:./images/fonts/Montseratt/Montserrat-VariableFont_wght.ttf"
+                "file:./assets/fonts/montseratt/montserrat-VariableFont_wght.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Montserrat",
+              "fontStretch": "normal",
+              "fontStyle": "italic",
+              "fontWeight": "200 400 700 800 900",
+              "src": [
+                "file:./assets/fonts/montseratt/montserrat-Italic-VariableFont_wght.ttf"
               ]
             }
           ]
@@ -308,7 +351,12 @@
           }
         }
       },
-      "core/cover": {}
+      "core/cover": {},
+      "core/separator": {
+        "color": {
+          "text": "var(--wp--preset--color--orange)"
+        }
+      }
     },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--primary)",

@@ -185,6 +185,44 @@
   }
 }
 
+.framedGreyShadow {
+  filter: drop-shadow(1.25rem 1.25rem 0px $utgray2);
+  margin: 1rem;
+}
+
+.framedOrangeShadow {
+  filter: drop-shadow(1.25rem 1.25rem 0px $utorange);
+  @extend .hardware-excelerated;
+
+  margin: 1rem;
+  .wp-element-caption {
+    // filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5)) !important;
+    // border: 2px solid blue;
+    filter: none !important;
+  }
+}
+
+.framedThin {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: auto;
+    border-right: 2px solid $utorange;
+
+    border-bottom: 2px solid $utorange;
+    z-index: 0;
+    width: 100%;
+
+    top: 3rem;
+    right: -1rem;
+    bottom: -2rem;
+    left: 2rem;
+    z-index: 1rem;
+  }
+}
+
 // .framed {
 //   //  justify-content: center;
 //   // display: flex;
@@ -253,3 +291,64 @@ outline-offset: calc(-1 * ($spacer / 2));
  outline-offset: calc(-1 * ($spacer / 2));
 }
 */
+
+/* Clip Corner Styling used in Executive Sites */
+@at-root .clipCorner-tr-container {
+  --notchSize: 5vw;
+  clip-path: polygon(
+    0% 0%,
+    var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%,
+    100% var(--notchSize),
+    100% 100%,
+    100% 100%,
+    0% 100%,
+    0% 0%
+  );
+}
+.clipCorner-tr-container-sm {
+  @extend .clipCorner-tr-container;
+  --notchSize: 2.5vw !important;
+}
+
+.clipCorner-tr img {
+  @extend .clipCorner-tr-container;
+}
+
+.clipCorner-tl-container {
+  --notchSize: 5vw;
+  clip-path: polygon(
+    0 var(--notchSize),
+    var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.clipCorner-tl img {
+  @extend .clipCorner-tl-container;
+}
+
+.clipCorner-br-container {
+  --notchSize: 5vw;
+  clip-path: polygon(
+    0% 0%,
+    100% 0,
+    100% calc(100% - var(--notchSize)),
+    calc(100% - var(--notchSize)) 100%,
+    var(--notchSize) 100%,
+    0% 100%
+  );
+}
+
+.clipCorner-br-container-sm {
+  @extend .clipCorner-br-container;
+
+  --notchSize: 2.5vw !important;
+}
+.clipCorner-br img {
+  @extend .clipCorner-br-container;
+}

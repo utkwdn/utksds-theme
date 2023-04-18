@@ -19,7 +19,7 @@ $site_homeheadline = get_theme_mod( 'site_homeheadline' );
 ut_ds_post_thumbnail();
 get_template_part( 'template-parts/part-startheader' );
 get_template_part( 'template-parts/inc-breadcrumb' );
-the_title( '<header class="entry-header col-12"><h1 class="entry-title">', '</h1></header>' );
+the_title( '<header class="entry-header col-12"><h1 class="entry-title display-4 orange-mark">', '</h1></header>' );
 get_template_part( 'template-parts/part-endheader' );
 
 while ( have_posts() ) :

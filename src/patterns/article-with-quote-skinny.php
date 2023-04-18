@@ -1,9 +1,9 @@
 <?php
 /**
  * Title: Article with Feature Quote – Skinny
- * Slug: utkchancellor/article-with-quote-skinny
- * Categories: utkchancellor-general
- * Viewport Width: 1280
+ * Slug: wds-article/article-with-quote-skinny
+ * Categories: wds-article
+ * Viewport Width: 1500
  */
 
 ?>
@@ -23,8 +23,8 @@
 <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer accumsan laoreet dui, ut interdum arcu viverra vel. Praesent libero metus, condimentum vel libero eu, posuere dapibus odio. Donec in pulvinar turpis. Pellentesque sed lectus dolor. Nulla pretium, risus eu consectetur pellentesque, nibh urna condimentum sem, eu iaculis nisl erat vel nibh. Sed a euismod erat. Pellentesque pellentesque odio faucibus volutpat facilisis. Duis dolor urna, tempus id diam nec, viverra sagittis turpis. Nullam convallis eu est vitae fermentum. Etiam congue lacinia massa, vitae dapibus erat luctus sed. Etiam eget tortor mollis, eleifend risus ac, tempor leo. Nam sit amet ultricies elit. Fusce gravida blandit massa, sit amet vulputate neque ultricies sit amet.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:quote {"className":"ms-n5 my-5","fontSize":"medium"} -->
-<blockquote class="wp-block-quote ms-n5 my-5 has-medium-font-size"><p>Etiam cursus, odio nec mollis condimentum, augue diam faucibus magna, eu tristique leo neque vel</p></blockquote>
+<!-- wp:quote {"fontSize":"medium"} -->
+<blockquote class="wp-block-quote has-medium-font-size"><p>Etiam cursus, odio nec mollis condimentum, augue diam faucibus magna, eu tristique leo neque vel</p></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:paragraph -->

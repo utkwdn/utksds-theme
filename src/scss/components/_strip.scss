@@ -104,3 +104,12 @@ body {
     padding-top: 0;
   }
 }
+
+.strip {
+  .strip-fluid {
+    @include media-breakpoint-up(xxl) {
+      margin-left: calc(-50vw + 748px);
+      -ms-margin-left: calc(-50vw + 728px);
+    }
+  }
+}
