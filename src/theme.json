@@ -37,7 +37,7 @@
     "visual-separator-with-orange"
   ],
   "settings": {
-    "useRootPaddingAwareAlignments": true,
+    "useRootPaddingAwareAlignments": false,
     "border": {
       "customColor": true,
       "customRadius": true,
