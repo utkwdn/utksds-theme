@@ -11,22 +11,6 @@
 #searchHeader-open svg {
   fill: $utgray1;
 }
-.navbar-toggler {
-  #searchHeader-open {
-    display: none;
-  }
-  #searchHeader-close {
-    display: inline-block;
-  }
-  &.collapsed {
-    #searchHeader-close {
-      display: none;
-    }
-    #searchHeader-open {
-      display: inline-block;
-    }
-  }
-}
 
 // Wordpress compatibility
 

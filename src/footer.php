@@ -59,6 +59,8 @@
 
 
 <?php wp_footer(); ?>
-
+<script>
+  document.getElementById('q').value = document.getElementById('q').value + "site:<?php echo site_url();?> "
+</script>
 </body>
 </html>
