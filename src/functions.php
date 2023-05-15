@@ -63,13 +63,21 @@ if ( ! function_exists( 'ut_ds_setup' ) ) :
 	/*
 	* Add Custom image sizes that will generate on new image uploads 
 	*/
-			// add_image_size( 'small', 300, 9999 ); // 300px wide unlimited height
+			add_image_size( 'small', 300, 9999 ); // 300px wide unlimited height
+			add_image_size( 'medium-small', 450, 9999 ); // 450px wide unlimited height
 			add_image_size( 'cover-tall', 9999, 1100 ); // 1100px tall unlimited width
+			add_image_size( 'xl', 1200, 9999 ); // 1200px wide unlimited height
+			add_image_size( 'xxl', 2000, 9999 ); // 2000px wide unlimited height
+			add_image_size( 'xxxl', 3000, 9999 ); // 3000px wide unlimited height
 
 			function utk_custom_image_sizes( $size_names ) {
 				$new_sizes = array(
-					// 'small' => 'Small',
-					'cover-tall' => 'Cover Tall'
+					'small' => 'Small',
+					'cover-tall' => 'Cover Tall',
+					'medium-small' => 'Medium Small',
+					'xl' => 'Extra Large',
+					'xxl' => '2x Extra Large',
+					'xxxl' => '3x Extra Large'
 
 				);
 				return array_merge( $size_names, $new_sizes );
